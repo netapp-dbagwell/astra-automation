@@ -5,6 +5,8 @@ sidebar:
     - section: get-started
     - section: rest-core
     - section: object-model
+    - section: endpoints
+    - section: reference
 
 homepage:
   tiles:

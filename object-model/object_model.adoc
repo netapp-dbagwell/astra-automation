@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: object-model/object_model.html
+keywords:
+summary:
+---
+
+= Object model
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

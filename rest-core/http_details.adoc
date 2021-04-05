@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+permalink: rest-core/http_details.html
+keywords: http
+summary:
+---
+
+= HTTP details
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+
+=== HTTP methods
+
+xxx
+>> sometimes called "verbs"
+>> CRUD
+>> See REST endpoints and resources and workflows (add links)
+
+[NOTE]
+CRUD etc.
+
+[cols="15,15,70"*,options="header"]
+|===
+|Method
+|CRUD
+|Description
+|GET
+|Read
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|POST
+|Create
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|PUT
+|Update
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|DELETE
+|Delete
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|===
+
+=== MIME types
+
+xxx
+>> customer mime types, based on resource type
+>> see link:rest_endpoints_resources.html[REST endpoints and resources] for xxx
+
+=== Request headers
+
+xxx
+>> Authorization (bearer token)
+>> Content-Type (Content-Type: application/astra-user+json)
+
+=== Common query parameters
+
+xxx
+>> ?include=  field list
+
+=== Response headers
+
+xxx
+>> Location (for newly created resources)
+>> Content-Type (Content-Type: application/astra-user+json)
+
+=== HTTP status codes
+
+xxx
+>> grep the OpenAPI file for common codes to verify
+
+=== Illustration of an API transaction
+
+The figure below illustrates the request and response flow of an HTTP transaction when using the Astra REST API.
+REMOVE? ADD LATER?
+
+*Insert graphic*

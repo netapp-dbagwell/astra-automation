@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: object-model/url_format.html
+keywords:
+summary:
+---
+
+= URL format for API access
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+
+=== Relationship of the object model to REST endpoints
+
+xxx
+
+=== URL format
+
+xxx

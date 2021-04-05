@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: object-model/working_with_collections.html
+keywords: collections
+summary:
+---
+
+= Working with collections
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+
+>> Repeat endpoint access either individual object instance or collection of objects
+>> Several collection operations (bullet list)
+>> Separate section for each major operation type
+>> Exact supported operations supported for each resource type in reference content
+>> See API conventions page
+
+=== Filtering
+
+xxx
+
+=== Sorting
+
+xxx
+
+=== Including fields
+
+xxx
+>> with GET
+
+xxx

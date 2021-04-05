@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: rest-core/diagnostics_debugging.html
+keywords:
+summary:
+---
+
+= Diagnostics and debugging
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+
+[IMPORTANT]
+Has support for problem detail data been implemented yet or is it still a future feature? Have this question on the index page.
+
+>> New endpoint? unreadNotifications ?
+
+=== Events
+
+xxx
+
+=== Notifications
+
+xxx

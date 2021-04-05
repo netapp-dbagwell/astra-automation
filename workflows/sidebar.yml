@@ -1,0 +1,10 @@
+section: workflows
+title: Administrative workflows
+url: /workflows/workflows.html
+entries:
+  - title: Before you begin
+    url: /workflows/before_workflow_processes.html
+  - title: Users and roles
+    entries:
+      - title: Users
+        url: /workflows/wf_api_user.html

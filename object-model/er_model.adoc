@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: object-model/er_model.html
+keywords: objects, entities, relationships, uml
+summary:
+---
+
+= Entity-Relationship model
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+
+>> UML, can document the object model in UML
+
+== Introduction to the Astra object model
+
+xxx
+
+== Core objects
+
+xxx
+
+>> insert graphic
+
+== Topology and Kubernetes objects
+
+xxx
+
+>> insert graphic

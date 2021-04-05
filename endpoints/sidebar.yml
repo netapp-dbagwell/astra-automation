@@ -1,0 +1,16 @@
+section: endpoints
+title: REST endpoints and resources
+url: /endpoints/rest_endpoints_resources.html
+entries:
+  - title: Core
+    entries:
+      - title: Event API
+        url: /endpoints/ep_events.html
+  - title: Managed applications
+    entries:
+      - title: Application Asset API
+        url: /endpoints/ep_events.html
+  - title: Topology API
+    entries:
+      - title: App API
+        url: /endpoints/ep_events.html

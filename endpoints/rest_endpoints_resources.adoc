@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: endpoints/rest_endpoints_resources.html
+keywords:
+summary:
+---
+
+= REST endpoints and resources
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+This section provides a concise introduction to the endpoints and resources included with the Astra REST API.
+
+[NOTE]
+If you need more details on the REST endpoints, see link:api_reference.html[API reference]. And for practical examples of using the API, see link:workflows.html[Administrative workflows].

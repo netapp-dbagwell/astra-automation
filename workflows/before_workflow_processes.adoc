@@ -1,0 +1,66 @@
+---
+sidebar: sidebar
+permalink: workflows/before_workflow_processes.html
+keywords:
+summary:
+---
+
+= Before you begin
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You should prepare to review and use the administrative workflow processes. This includes understanding the format and structure of the workflows
+
+*See CM and OTS*
+
+== Introduction
+
+A _workflow_ is a sequence of one or more steps used to accomplish a specific administrative task or goal. With the Astra administratie workflows, each step is one of the following:
+
+* REST API call
+* Invocation of another workflow
+
+The workflows provided include the minimum steps and parameters needed to accomplish each task. You can use these workflows as a starting point and customize them for your environment as needed.
+
+== Organization in categories
+
+xxx
+>> Based on organization of underlying object model
+
+[cols="25,75"*,options="header"]
+|===
+|Category
+|Description
+|Users and accounts
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Billing and licensing
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|===
+
+== Common parameters and variables
+
+There are several parameters or variables common among the workflows.
+
+===== Presentation of tokens and identifiers
+
+Most of the variable tokens, identifiers, and other variables used in the sample REST API calls consist of long strings of letters, numbers, and special characters. They are considered opaque with no easily discernible content or meaning. Therefore, rather than include the actual original strings, smaller reserved keywords are used instead. This can have several benefits:
+
+    The Curl and JSON samples are clearer and easier to understand.
+
+    Because all keywords use the same format (including capital letters), you can quickly identify the location and content to insert or extract.
+
+    No value is lost, because the original values could not be copied and used with an actual deployment.
+
+A list of the keywords used in the workflow examples is presented in the table below.
+
+[cols="25,75"*,options="header"]
+|===
+|Keyword
+|Description
+|<ACCESS_TOKEN>
+|An access token is a temporary string which establishes identity and access to the Astra REST API
+|===

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: workflows/workflows.html
+keywords:
+summary:
+---
+
+= Administrative workflows
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+This section contains a set of workflows you can use to perform common administrative tasks.
+
+The workflows are organized in major categories as shown in the navigation subfolders. Some of the workflows are small and apply to only a single resource type or API endpoint, while other workflows can be larger and involve many API actions. To accommodate these differences, the workflow content under each category is arranged on the page as described in the table below.
+
+[cols="20,80"*,options="header"]
+|===
+|Workflow type
+|Description
+|Basic
+|These workflows use one type of API endpoint and typically consist of a single step. Given their small size, multiple workflows can be collected together on one page which all access the same resource type. For example, see link:wf_api_user.html[Managing Astra users].
+|Complex
+|Each of these workflows is larger and involves multiple resource types or steps. There is only one workflow on each page.
+|===
+
+[NOTE]
+Make sure to review link:before_workflow_processes.html[Before you begin] to prepare before using the administrative workflows.

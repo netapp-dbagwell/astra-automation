@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+permalink: rest-core/security.html
+keywords: security, Astra REST API
+summary:
+---
+
+= Security
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+
+[NOTE]
+All HTTP traffic is protected by TLS, etc. (not a separate section)
+
+=== OAuth 2 authorization tokens
+
+>> web UI and API?
+>> Auth0
+xxx
+>> Bearer tokens
+>> Are there two types (sign in CC, and then Astra service)?
+>> HTTP request headers
+
+=== Astra web token for REST API access
+
+xxx
+See link:getting_api_token.html[Getting an API token]
+
+== Access control
+
+xxx
+>> RBAC
+>> Check roles, DS earlier email?
+>> table below for Astra Service
+>> search OpenAPI JSON for "owner" or "viewer"
+
+[cols="20,80"*,options="header"]
+|===
+|Role
+|Description
+|Owner
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Admin
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Member
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Viewer
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|SRE
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===

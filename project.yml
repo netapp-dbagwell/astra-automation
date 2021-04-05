@@ -1,13 +1,14 @@
 sidebar:
   entries:
-    - title: Astra Automation docs
+    - title: Astra automation doc
       url: /index.html
     - section: get-started
+    - section: rest-core
 
 homepage:
   tiles:
     - title: Get started
       links:
         - title: Introduction
-          summary: Get an overview of the Astra automation options.
+          summary: Get an overview of the Astra REST API and automation options.
           url: /get-started/introduction.html

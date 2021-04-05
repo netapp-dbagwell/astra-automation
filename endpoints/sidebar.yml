@@ -9,8 +9,8 @@ entries:
   - title: Managed applications
     entries:
       - title: Application Asset API
-        url: /endpoints/ep_event.html
+        url: /endpoints/ep_app_asset.html
   - title: Topology API
     entries:
       - title: App API
-        url: /endpoints/ep_event.html
+        url: /endpoints/ep_app.html

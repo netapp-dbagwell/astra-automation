@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: wf_api_user.html
+permalink: workflows/wf_api_user.html
 keywords:
 summary:
 ---

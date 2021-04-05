@@ -1,0 +1,86 @@
+---
+sidebar: sidebar
+permalink: object-model/intro_rest_endpoints.html
+keywords: rest resources
+summary:
+---
+
+= Introduction to the REST API endpoints
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+>> definition of an endpoint (maybe in the basic concepts too?), access a resource instance or collection of resource instances
+>> Three categories
+>> Each endpoint provides access to a specific REST resource types
+>> include links to the endpoint topics in the tables below?
+
+[NOTE]
+For a more detailed description of the resources available with the Astra REST API, see link:rest_endpoints_resources.html[REST endpoints and resources].
+
+== Core endpoints
+
+xxx
+
+[cols="20,80"*,options="header"]
+|===
+|API
+|Description
+|Account
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Charge
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Entitlement
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Event
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Role Binding
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|User
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+
+== Managed Kubernetes Application endpoints
+
+xxx
+
+[cols="20,80"*,options="header"]
+|===
+|API
+|Description
+|Application Asset API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Application Backup API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Application Snapshot API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Managed App API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Schedule API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+== Topology endpoints
+
+xxx
+
+[cols="20,80"*,options="header"]
+|===
+|API
+|Description
+|App API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Cluster API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Cluster Nodes API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Managed Cluster API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Storage Class API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===

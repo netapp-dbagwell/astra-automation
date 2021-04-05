@@ -4,6 +4,7 @@ sidebar:
       url: /index.html
     - section: get-started
     - section: rest-core
+    - section: object-model
 
 homepage:
   tiles:

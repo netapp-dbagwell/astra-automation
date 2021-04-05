@@ -1,2 +1,13 @@
 sidebar:
   entries:
+    - title: Astra Automation docs
+      url: /index.html
+    - section: get-started
+
+homepage:
+  tiles:
+    - title: Get started
+      links:
+        - title: Introduction
+          summary: Get an overview of the Astra automation options.
+          url: /get-started/introduction.html

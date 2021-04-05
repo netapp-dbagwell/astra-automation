@@ -1,0 +1,14 @@
+---
+layout: astra
+sidebar: sidebar
+permalink: index.html
+lead: This is the lead for Astra Automation.
+summary: This is the lead for Astra Automation.
+---
+
+= Astra Automation Documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/

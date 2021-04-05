@@ -6,6 +6,7 @@ sidebar:
     - section: rest-core
     - section: object-model
     - section: endpoints
+    - section: workflows
     - section: reference
 
 homepage:

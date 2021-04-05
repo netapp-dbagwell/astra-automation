@@ -5,12 +5,12 @@ entries:
   - title: Core
     entries:
       - title: Event API
-        url: /endpoints/ep_events.html
+        url: /endpoints/ep_event.html
   - title: Managed applications
     entries:
       - title: Application Asset API
-        url: /endpoints/ep_events.html
+        url: /endpoints/ep_event.html
   - title: Topology API
     entries:
       - title: App API
-        url: /endpoints/ep_events.html
+        url: /endpoints/ep_event.html

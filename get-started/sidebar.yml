@@ -3,3 +3,9 @@ title: Get started
 entries:
   - title: Introduction
     url: /get-started/introduction.html
+  - title: Before you begin
+    url: /get-started/before_get_started.html
+  - title: Getting an API token
+    url: /get-started/getting_api_token.html
+  - title: Hello world
+    url: /get-started/hello_world.html

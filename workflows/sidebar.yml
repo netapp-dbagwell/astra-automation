@@ -5,7 +5,7 @@ entries:
   - title: Before you begin
     url: /workflows/before_workflow_processes.html
   - title: Users and roles
-    url: /workflows/admin_wf_users_roles.adoc
+    url: /workflows/admin_wf_users_roles.html
     entries:
       - title: Users
         url: /workflows/wf_api_user.html

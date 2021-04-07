@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: endpoints/epcat_managed_apps.html
+keywords:
+summary:
+---
+
+= Managed application APIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

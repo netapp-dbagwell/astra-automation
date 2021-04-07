@@ -16,4 +16,14 @@ summary:
 This section contains the details of the Astra REST API calls, including resources, endpoints, parameters, and status codes. You can use this content as a reference when developing applications for the API.
 
 [NOTE]
-David added this page as a placeholder in this draft web site to show where the API reference content will be. The actual content will be generated using an automated build process that Ben is working on with the IE tools team. It is expected there will be multiple pages in this section with the corresponding sidebar entries.
+The API reference documentation is currently available online with the Astra service.
+
+.Before you begin
+
+xxx
+
+.Steps
+
+. Sign in to the Astra service using your account credentials.
+
+. Click xxx

@@ -2,6 +2,7 @@ sidebar:
   entries:
     - title: Astra automation doc
       url: /index.html
+    - section: intro
     - section: get-started
     - section: rest-core
     - section: object-model
@@ -15,4 +16,52 @@ homepage:
       links:
         - title: Introduction
           summary: Get an overview of the Astra REST API and automation options.
-          url: /get-started/introduction.html
+          url: /intro/introduction.html
+        - title: Before you begin
+          summary: Prepare to get started using the API.
+          url: /get-started/before_get_started.html
+        - title: Get an API token
+          summary: Generate a token you need for API access.
+          url: /get-started/get_api_token.html
+        - title: Hello world
+          summary: Test basic access to the REST API.
+          url: /get-started/hello_world.html
+    - title: REST implementation
+      links:
+        - title: Concepts
+          summary: Review basics REST concepts.
+          url: /rest-core/concepts.html
+        - title: HTTP details
+          summary: Understand details of the HTTP implementation.
+          url: /rest-core/http_details.html
+        - title: Security
+          summary: Review API security
+          url: /rest-core/security.html
+        - title: Diagnostics
+          summary: Be ready to debug and support the API.
+          url: /rest-core/diagnostics_debugging.html
+    - title: Object model
+      links:
+        - title: Introduction to REST endpoints
+          summary: Introduction and summary of the REST endpoints.
+          url: /object-model/intro_rest_endpoints.html
+        - title: Entity-Relationship model
+          summary: Internal object nmodel and REST resources.
+          url: /object-model/er_model.html
+        - title: URL format for API access
+          summary: Format of the URL used with the API.
+          url: /object-model/url_format.html
+        - title: Working with collections
+          summary: Advanced techniques for collections.
+          url: /object-model/working_with_collections.html
+    - title: Endpoints and resources
+      links:
+        - title: Core APIs
+          summary: Core Astra REST APIs.
+          url: /endpoints/epcat_core.html
+        - title: Managed application APIs
+          summary: REST APIs for managed applications.
+          url: /endpoints/epcat_managed_apps.html
+        - title: Topology APIs
+          summary: Topology REST APIs.
+          url: /endpoints/epcat_topology.html

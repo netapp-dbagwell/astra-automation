@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: get-started/introduction.html
+permalink: intro/introduction.html
 keywords: introduction, Astra REST API
 summary:
 ---

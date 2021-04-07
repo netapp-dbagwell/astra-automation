@@ -16,3 +16,8 @@ homepage:
         - title: Introduction
           summary: Get an overview of the Astra REST API and automation options.
           url: /get-started/introduction.html
+    - title: REST implementation
+      links:
+        - title: Concepts
+          summary: Review basics concepts.
+          url: /rest-core/concepts.html

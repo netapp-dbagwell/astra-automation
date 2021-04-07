@@ -24,6 +24,8 @@ entries:
     entries:
       - title: Application Asset API
         url: /endpoints/ep_app_asset.html
+      - title: Schedule API
+        url: /endpoints/ep_schedule.html
   - title: Topology API
     url: /endpoints/epcat_topology.html
     entries:

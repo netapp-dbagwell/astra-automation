@@ -1,0 +1,79 @@
+---
+sidebar: sidebar
+permalink: ep_user.html
+keywords:
+summary:
+---
+
+= Astra User API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The User API provides the REST endpoints you need to create and manage Astra users.
+
+== Introduction
+
+xxx
+>> conceptual overview
+
+==== Endpoints
+
+xxx
+
+[cols="25,75"*,options="header"]
+|===
+|Type
+|Endpoint
+|Collection
+|/accounts/{account_id}/core/v1/users
+|Instance
+|/accounts/{account_id}/core/v1/users/{user_id}
+|===
+
+==== Resource definition
+
+xxx
+>> either bullet list of key or common fields, or use table?
+>> see the section below for more details
+>> metadata
+
+==== Relation to other endpoints
+
+xxx
+>> relational to other sources, upstream/downstream, dependents, and so on
+
+==== Headers
+
+>> HTTP headers
+>> include MIME types
+
+== API operations
+
+There are several operations you can perform with the xxx
+
+Format of path? include account and account id? Or from one of three (such as, core) and below? Confirm can use in all resources
+
+[cols="15,10,30,45"*,options="header"]
+|===
+|Action
+|HTTP
+|Path
+|Description
+|Create user
+|POST
+|/core/v1/users
+|Create a new user based on the contents of the request body. After creation, you must associate it with an account.
+|List users
+|GET
+|/core/v1/users
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+== Resource schema
+
+xxx
+>> More details on the resource schema

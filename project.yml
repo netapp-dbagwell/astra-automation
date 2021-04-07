@@ -30,3 +30,14 @@ homepage:
         - title: Introduction to REST endpoints
           summary: Introduction and summary of the REST endpoints.
           url: /object-model/intro_rest_endpoints.html
+    - title: Endpoints and resources
+      links:
+        - title: Core APIs
+          summary: Core Astra REST APIs.
+          url: /endpoints/epcat_core.html
+        - title: Managed application APIs
+          summary: REST APIs for managed applications.
+          url: /endpoints/epcat_managed_apps.html
+        - title: Topology APIs
+          summary: Topology REST APIs.
+          url: /endpoints/epcat_topology.html

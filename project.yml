@@ -30,6 +30,15 @@ homepage:
         - title: Introduction to REST endpoints
           summary: Introduction and summary of the REST endpoints.
           url: /object-model/intro_rest_endpoints.html
+        - title: Entity-Relationship model
+          summary: Internal object nmodel and REST resources.
+          url: /object-model/er_model.html
+        - title: URL format for API access
+          summary: Format of the URL used with the API.
+          url: /object-model/url_format.html
+        - title: Working with collections
+          summary: Advanced techniques for collections.
+          url: /object-model/working_with_collections.html
     - title: Endpoints and resources
       links:
         - title: Core APIs

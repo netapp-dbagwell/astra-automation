@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: endpoints/ep_role_binding.html
+keywords:
+summary:
+---
+
+= Role Binding API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

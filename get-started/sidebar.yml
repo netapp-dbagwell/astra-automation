@@ -1,8 +1,6 @@
 section: get-started
 title: Get started
 entries:
-  - title: Introduction
-    url: /get-started/introduction.html
   - title: Before you begin
     url: /get-started/before_get_started.html
   - title: Getting an API token

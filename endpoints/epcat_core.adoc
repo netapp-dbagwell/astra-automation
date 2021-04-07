@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: endpoints/epcat_core.html
+keywords:
+summary:
+---
+
+= Core APIs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

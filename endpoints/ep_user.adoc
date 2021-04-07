@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: ep_user.html
+permalink: endpoints/ep_user.html
 keywords:
 summary:
 ---
 
-= Astra User API
+= User API
 :hardbreaks:
 :nofooter:
 :icons: font

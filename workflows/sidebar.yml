@@ -9,3 +9,5 @@ entries:
     entries:
       - title: Users
         url: /workflows/wf_api_user.html
+  - title: Events and notifications
+    url: /workflows/admin_wf_events.html

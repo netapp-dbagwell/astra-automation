@@ -15,6 +15,12 @@ summary:
 [.lead]
 This section contains a set of workflows you can use to perform common administrative tasks.
 
+>> Organized around functional or administrative areas
+
+[NOTE]
+Make sure to review link:before_workflow_processes.html[Before you begin] to prepare before using the administrative workflows.
+
+
 The workflows are organized in major categories as shown in the navigation subfolders. Some of the workflows are small and apply to only a single resource type or API endpoint, while other workflows can be larger and involve many API actions. To accommodate these differences, the workflow content under each category is arranged on the page as described in the table below.
 
 [cols="20,80"*,options="header"]
@@ -26,6 +32,3 @@ The workflows are organized in major categories as shown in the navigation subfo
 |Complex
 |Each of these workflows is larger and involves multiple resource types or steps. There is only one workflow on each page.
 |===
-
-[NOTE]
-Make sure to review link:before_workflow_processes.html[Before you begin] to prepare before using the administrative workflows.

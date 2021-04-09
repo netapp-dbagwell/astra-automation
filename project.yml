@@ -54,7 +54,7 @@ homepage:
         - title: Working with collections
           summary: Advanced techniques for collections.
           url: /object-model/working_with_collections.html
-    - title: Endpoints and resources
+    - title: API endpoints and resources
       links:
         - title: Introduction to REST endpoints
           summary: A high-level introduction to the REST endpoints.

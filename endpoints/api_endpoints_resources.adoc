@@ -15,5 +15,7 @@ summary:
 [.lead]
 This section provides a concise introduction to the endpoints and resources included with the Astra REST API.
 
+>> Organized around endpoints and resources
+
 [NOTE]
 If you need more details on the REST API, including HTTP methods, parameters, and status codes, see link:../reference/api_reference.html[API reference]. And for practical examples of using the API, see link:../workflows/workflows.html[Administrative workflows].

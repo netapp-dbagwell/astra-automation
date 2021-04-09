@@ -57,10 +57,14 @@ Most of the variable tokens, identifiers, and other variables used in the sample
 
 A list of the keywords used in the workflow examples is presented in the table below.
 
+>> Access token and API token are different
+
 [cols="25,75"*,options="header"]
 |===
 |Keyword
 |Description
 |<ACCESS_TOKEN>
+|AUTH0 - An access token is a temporary string which establishes identity and access to the Astra REST API
+|<API_TOKEN>
 |An access token is a temporary string which establishes identity and access to the Astra REST API
 |===

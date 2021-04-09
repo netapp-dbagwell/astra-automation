@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/admin_wf_events.html
+keywords:
+summary:
+---
+
+= Events and notifications
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

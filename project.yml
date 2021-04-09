@@ -57,11 +57,11 @@ homepage:
     - title: Endpoints and resources
       links:
         - title: Introduction to REST endpoints
-          summary: An introduction to the REST endpoints.
+          summary: A high-level introduction to the REST endpoints.
           url: /object-model/intro_rest_endpoints.html
         - title: API endpoints and resources
-          summary: Description of the endpoints organized into REST APIs.
+          summary: Description of all the endpoints as organized into REST APIs.
           url: /endpoints/api_endpoints_resources.html
         - title: User API
-          summary: An example of one of the availaable APIs.
+          summary: An example of one of the available APIs.
           url: /endpoints/ep_user.html

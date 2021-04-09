@@ -1,33 +1,26 @@
 section: endpoints
-title: REST endpoints and resources
-url: /endpoints/rest_endpoints_resources.html
+title: API endpoints and resources
+url: /endpoints/api_endpoints_resources.html
 entries:
-  - title: Core
-    url: /endpoints/epcat_core.html
-    entries:
-      - title: Credential API
-        url: /endpoints/ep_credential.html
-      - title: Event API
-        url: /endpoints/ep_event.html
-      - title: Notification API
-        url: /endpoints/ep_notification.html
-      - title: Role Binding API
-        url: /endpoints/ep_role_binding.html
-      - title: Token API
-        url: /endpoints/ep_token.html
-      - title: Unread Notification API
-        url: /endpoints/ep_unread_notification.html
-      - title: User API
-        url: /endpoints/ep_user.html
-  - title: Managed applications
-    url: /endpoints/epcat_managed_apps.html
-    entries:
-      - title: Application Asset API
-        url: /endpoints/ep_app_asset.html
-      - title: Schedule API
-        url: /endpoints/ep_schedule.html
-  - title: Topology API
-    url: /endpoints/epcat_topology.html
-    entries:
-      - title: App API
-        url: /endpoints/ep_app.html
+  - title: Credential API
+    url: /endpoints/ep_credential.html
+  - title: Event API
+    url: /endpoints/ep_event.html
+  - title: Notification API
+    url: /endpoints/ep_notification.html
+  - title: Role Binding API
+    url: /endpoints/ep_role_binding.html
+  - title: Token API
+    url: /endpoints/ep_token.html
+  - title: Unread Notification API
+    url: /endpoints/ep_unread_notification.html
+  - title: User API
+    url: /endpoints/ep_user.html
+  - title: Application Asset API
+    url: /endpoints/ep_app_asset.html
+  - title: Schedule API
+    url: /endpoints/ep_schedule.html
+  - title: App API
+    url: /endpoints/ep_app.html
+  - title: Volume API
+    url: /endpoints/ep_volume.html

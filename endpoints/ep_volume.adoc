@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: endpoints/epcat_core.html
+permalink: endpoints/ep_app.html
 keywords:
 summary:
 ---
 
-= Core APIs
+= App API
 :hardbreaks:
 :nofooter:
 :icons: font

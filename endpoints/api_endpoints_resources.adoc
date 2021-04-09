@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: endpoints/rest_endpoints_resources.html
+permalink: endpoints/Application_endpoints_resources.html
 keywords:
 summary:
 ---
 
-= REST endpoints and resources
+= API endpoints and resources
 :hardbreaks:
 :nofooter:
 :icons: font

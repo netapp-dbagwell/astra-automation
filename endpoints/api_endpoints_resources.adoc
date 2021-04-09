@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: endpoints/Application_endpoints_resources.html
+permalink: endpoints/api_endpoints_resources.html
 keywords:
 summary:
 ---

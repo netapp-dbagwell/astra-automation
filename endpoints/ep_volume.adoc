@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: endpoints/ep_app.html
+permalink: endpoints/ep_volume.html
 keywords:
 summary:
 ---
 
-= App API
+= Volume API
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -8,5 +8,5 @@ entries:
     url: /rest-core/http_details.html
   - title: Security
     url: /rest-core/security.html
-  - title: Diagnostics
-    url: /rest-core/diagnostics_debugging.html
+  - title: Diagnostics and support
+    url: /rest-core/diagnostics_support.html

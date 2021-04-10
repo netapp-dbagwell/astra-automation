@@ -63,6 +63,7 @@ The following table summaries the HTTP headers used with the Astra REST API.
 >> Location (for newly created resources)
 >> Content-Type (Content-Type: application/astra-user+json)
 
+[cols="30,15,55"*,options="header"]
 |===
 |Header
 |Type
@@ -106,8 +107,8 @@ The query parameter `continue` is defined in the OpenAPI file, but never used. S
 
 The HTTP status codes used by the Astra REST API are described below.
 
-[IMPORTANT]
-Must review and cut content. Where find the complete list?
+[NOTE]
+The Astra REST API uses the *Problem Details for HTTP APIs* standard. See link:diagnostics_support.html[Diagnostics and support] for more information.
 
 [cols="15,20,65"*,options="header"]
 |===
@@ -123,13 +124,17 @@ Must review and cut content. Where find the complete list?
 |Created
 |An object is successfully created; the location response header includes the unique identifier for the object.
 
-|202
-|Accepted
-|A long-running background job has been started to perform the request, but the operation has not completed yet.
+|204
+|xxx
+|xxx
 
 |400
 |Bad request
 |The request input is not recognized or is inappropriate.
+
+|401
+|xxx
+|xxx
 
 |403
 |Forbidden
@@ -139,10 +144,6 @@ Must review and cut content. Where find the complete list?
 |Not found
 |The resource referred to in the request does not exist.
 
-|405
-|Method not allowed
-|The HTTP verb in the request is not supported for the resource.
-
 |409
 |Conflict
 |An attempt to create an object failed because the object already exists.
@@ -151,7 +152,7 @@ Must review and cut content. Where find the complete list?
 |Internal error
 |A general internal error occurred at the server.
 
-|501
-|Not implemented
-|The URI is known but is not capable of performing the request.
+|503
+|xxx
+|xxx
 |===

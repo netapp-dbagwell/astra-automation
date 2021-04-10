@@ -11,5 +11,3 @@ entries:
         url: /workflows/wf_api_users.html
   - title: Events and notifications
     url: /workflows/admin_wf_events.html
-      - title: Events
-        url: /workflows/wf_api_events.html

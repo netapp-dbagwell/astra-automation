@@ -15,14 +15,9 @@ summary:
 [.lead]
 The User API provides the REST endpoints you need to create and manage Astra users.
 
-== Introduction
+=== Endpoints
 
-xxx
->> conceptual overview
-
-==== Endpoints
-
-xxx
+The endpoints included with the User API as shown in the table below.
 
 [cols="25,75"*,options="header"]
 |===
@@ -34,26 +29,43 @@ xxx
 |/accounts/{account_id}/core/v1/users/{user_id}
 |===
 
-==== Resource definition
+=== Resource definition
 
 xxx
 >> either bullet list of key or common fields, or use table?
 >> see the section below for more details
 >> metadata
 
-==== Relation to other endpoints
+===== Media type
 
 xxx
+
+===== Resource schema
+
+xxx ???
+>> More details on the resource schema
+
+===== Resource example
+
+xxx
+
+=== Relation to other endpoints
+
+xxx ???
 >> relational to other sources, upstream/downstream, dependents, and so on
 
-==== Headers
+=== API definition
+
+There are several operations you can perform with the xxx
+
+===== HTTP headers
+
+xxx
 
 >> HTTP headers
 >> include MIME types
 
-== API operations
-
-There are several operations you can perform with the xxx
+===== Operations
 
 Format of path? include account and account id? Or from one of three (such as, core) and below? Confirm can use in all resources
 
@@ -72,8 +84,3 @@ Format of path? include account and account id? Or from one of three (such as, c
 |/core/v1/users
 |Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
 |===
-
-== Resource schema
-
-xxx
->> More details on the resource schema

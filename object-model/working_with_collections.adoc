@@ -23,10 +23,6 @@ xxx
 >> See *API conventions* page
 >> QP: include, filter, orderBy, limit, skip, count (see HTTP details)
 
-== Overview
-
-xxx
-
 == Filtering
 
 xxx

@@ -13,11 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
-
->> Walk through URL from left to right
->> Everything accessed through or under account
->> Assume need account ID and so get from web user interface (along with API token)
+The format of the endpoint path needed to access the Astra REST API is a combination of variables and reflects the underlying object model.
 
 === Account as the root
 

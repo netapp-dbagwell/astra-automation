@@ -60,6 +60,25 @@ xxx
 
 xxx
 >> ?include=  field list
+>> See *API conventions*
+
+>> Also see *Consolidated* because each API operation has a list of valid QP, see 13.4.3.2 (User, List)
+
+[cols="20,80"*,options="header"]
+|===
+|Query parameter
+|Description
+|include
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|limit
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|orderBy
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|skip
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|continuation
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|===
 
 === Response headers
 
@@ -71,10 +90,3 @@ xxx
 
 xxx
 >> grep the OpenAPI file for common codes to verify
-
-=== Illustration of an API transaction
-
-The figure below illustrates the request and response flow of an HTTP transaction when using the Astra REST API.
-REMOVE? ADD LATER?
-
-*Insert graphic*

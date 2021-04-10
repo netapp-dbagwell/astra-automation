@@ -108,7 +108,7 @@ The headers used with the User API are shown in the table below.
 A summary of the API operations provided with the User API is shown in the table below.
 
 [NOTE]
-The *Path* for each operation has been abbreviated by removing `/accounts/{account_id}` prefix. You would need to include this in the full URL when issuing an actual API request.
+The *Path* for each operation has been abbreviated by removing the `/accounts/{account_id}` prefix. You must include this in the full URL when issuing an actual API request.
 
 [cols="15,10,30,45"*,options="header"]
 |===

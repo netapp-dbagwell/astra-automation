@@ -8,6 +8,8 @@ entries:
     url: /workflows/admin_wf_identity.html
     entries:
       - title: Users
-        url: /workflows/wf_api_user.html
+        url: /workflows/wf_api_users.html
   - title: Events and notifications
     url: /workflows/admin_wf_events.html
+      - title: Events
+        url: /workflows/wf_api_events.html

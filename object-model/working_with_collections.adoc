@@ -19,7 +19,8 @@ xxx
 >> Several collection operations (bullet list)
 >> Separate section for each major operation type
 >> Exact supported operations supported for each resource type in reference content
->> See API conventions page
+
+>> See *API conventions* page
 
 === Filtering
 

@@ -29,7 +29,7 @@ You can retrieve the users defined to Astra.
 
 Curl example::
 [source,curl]
-curl --location --request GET 'https://staging.cloudmanager.cloud.netapp.com/occm/api/vsa/metadata/buckets' --header 'x-agent-id: <AGENT_ID>' --header 'Authorization: Bearer <ACCESS_TOKEN>'
+curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer <API_TOKEN>'
 
 Input::
 
@@ -41,12 +41,4 @@ The Astra users are returned as objects in an array.
 
 JSON output example::
 [source,json]
-[
-    {
-        "user": "Martha"
-    }
-]
-
-== *Create user*
-
-xxx
+{"items": [{}]}

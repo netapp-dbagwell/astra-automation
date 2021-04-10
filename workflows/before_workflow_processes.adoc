@@ -26,7 +26,7 @@ A _workflow_ is a sequence of one or more steps used to accomplish a specific ad
 
 The workflows provided include the minimum steps and parameters needed to accomplish each task. You can use these workflows as a starting point and customize them for your environment as needed.
 
-== Organization in categories
+== General organization
 
 xxx
 >> Based on organization of underlying object model
@@ -42,7 +42,7 @@ xxx
 |Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
 |===
 
-== Types of workflows
+== Workflow types
 
 >> Not just endpoints and resources but around different APIs
 
@@ -81,6 +81,8 @@ An access token and API token are different as described below.
 |===
 |Keyword
 |Description
+|xxx
+|*See the -o ep output of the python script*
 |<ACCESS_TOKEN>
 |AUTH0 - An access token is a temporary string which establishes identity and access to the Astra REST API
 |<API_TOKEN>

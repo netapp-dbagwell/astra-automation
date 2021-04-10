@@ -71,7 +71,7 @@ homepage:
           summary: Prepare to start using the workflows.
           url: /workflows/before_workflow_processes.html
         - title: Identity management
-          summary: Workflows used to administer on users, roles, and tokens.
+          summary: Workflows used to administer users, credentials, roles, and tokens.
           url: /workflows/admin_wf_identity.html
         - title: Events and notifications
           summary: Workflows used to manage events and notifications.

@@ -15,8 +15,8 @@ summary:
 [.lead]
 You can generate an authorization token at the Astra web interface to access the REST API.
 
-[IMPORTANT]
-Make sure the steps are correct with the most recent Astra code.
+[NOTE]
+Astra API tokens never expire, however you can revoke a token if needed.
 
 .Before you begin
 

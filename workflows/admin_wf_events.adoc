@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: workflows/admin_wf_users_roles.html
+permalink: workflows/admin_wf_events.html
 keywords:
 summary:
 ---
 
-= Users and roles
+= Events and notifications
 :hardbreaks:
 :nofooter:
 :icons: font

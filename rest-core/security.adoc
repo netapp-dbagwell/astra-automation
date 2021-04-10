@@ -27,15 +27,16 @@ xxx
 >> Are there two types (sign in CC, and then Astra service)?
 >> HTTP request headers
 
-=== Astra web token for REST API access
+=== Astra API tokens
 
 xxx
 See link:getting_api_token.html[Getting an API token]
 
-== Access control
+== Roles and access control
 
 xxx
 >> RBAC
+>> bind user to role?
 >> Check roles, DS earlier email?
 >> table below for Astra Service
 >> search OpenAPI JSON for "owner" or "viewer"

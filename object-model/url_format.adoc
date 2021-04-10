@@ -19,10 +19,19 @@ xxx
 >> Everything accessed through or under account
 >> Assume need account ID and so get from web user interface (along with API token)
 
-=== Relationship of the object model to REST endpoints
+=== Account as the root
+
+xxx
+>> Relationship of the object model to REST endpoints
+
+=== Resource categories
 
 xxx
 
-=== URL format
+=== Versioning
+
+xxx
+
+=== Summary of the URL format
 
 xxx

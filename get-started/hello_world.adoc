@@ -20,7 +20,7 @@ The example provided below is very simple. The administrative workflow samples l
 
 .Before you begin
 
-You must have the Curl utility available on your local workstation. Also perform the task link:get_api_token.html[Getting an API access token] to generate a token and retrieve the account identifier.
+You must have the Curl utility available on your local workstation. Also generate a token and retrieve the account identifier as described in the task link:get_api_token.html[Getting an API access token].
 
 .Curl example
 

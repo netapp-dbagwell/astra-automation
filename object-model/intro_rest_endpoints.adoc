@@ -13,18 +13,29 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
->> definition of an endpoint (maybe in the basic concepts too?), access a resource instance or collection of resource instances
->> Three categories
->> Each endpoint provides access to a specific REST resource types
->> include links to the endpoint topics in the tables below?
+The endpoints of the Astra REST API provide access to the server resources.
 
-[NOTE]
-For a more detailed description of the resources available with the Astra REST API, see link:rest_endpoints_resources.html[REST endpoints and resources].
+== Types of endpoints
 
-== Core endpoints
+An endpoint is described in terms of the URI and API actions. There are two types of endpoints as described below.
 
-xxx
+[cols="20,80"*,options="header"]
+|===
+|Type
+|Description
+|Instance
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Collection
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+== Organization
+
+The resource endpoints provided in the Astra REST API are organized into three categories as described below.
+
+==== Core resources
+
+The core endpoints provide foundational services needed to establish and maintain xxx
 
 [cols="20,80"*,options="header"]
 |===
@@ -47,9 +58,9 @@ xxx
 |===
 
 
-== Managed Kubernetes Application endpoints
+==== Managed Kubernetes Application resources
 
-xxx
+The managed Kubernetes endpoints xxx
 
 [cols="20,80"*,options="header"]
 |===
@@ -67,9 +78,9 @@ xxx
 |Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
 |===
 
-== Topology endpoints
+==== Topology resources
 
-xxx
+The topology endpoints xxx
 
 [cols="20,80"*,options="header"]
 |===

@@ -13,10 +13,10 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-Most customers initially access the NetApp Astra service using a web browser. However, the service also includes a REST API which you can access directly using a programming language or utility such as Curl. Some of the highlights and benefits of the API are presented below.
+Most customers initially access the NetApp Astra service using a web browser. However, the service also includes a REST API which you can access directly using a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
 
 [NOTE]
-In addition to accessing the REST API directly, you use other automation technologies that are based on the API. Ansible is very popular.
+In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API. Ansible is very popular.
 
 ==== Built on REST technology and design principles
 

@@ -15,6 +15,10 @@ summary:
 [.lead]
 xxx
 
+>> Walk through URL from left to right
+>> Everything accessed through or under account
+>> Assume need account ID and so get from web user interface (along with API token)
+
 === Relationship of the object model to REST endpoints
 
 xxx

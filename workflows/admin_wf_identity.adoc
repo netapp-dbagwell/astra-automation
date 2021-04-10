@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: endpoints/epcat_core.html
+permalink: workflows/admin_wf_identity.html
 keywords:
 summary:
 ---
 
-= Core APIs
+= Identity management
 :hardbreaks:
 :nofooter:
 :icons: font

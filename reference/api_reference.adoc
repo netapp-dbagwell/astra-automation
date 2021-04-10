@@ -13,17 +13,23 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-This section contains the details of the Astra REST API calls, including resources, endpoints, parameters, and status codes. You can use this content as a reference when developing applications for the API.
+You can access the details of all calls in the Astra REST API, including the HTTP methods, input parameters, and status codes. This content forms a reference when developing applications for the API.
 
 [NOTE]
-The API reference documentation is currently available online with the Astra service.
+The REST API reference documentation is currently available online with the Astra service.
 
 .Before you begin
 
-xxx
+You need an account for the Astra service.
 
 .Steps
 
 . Sign in to the Astra service using your account credentials.
++
+link:https://astra.netapp.io[https://astra.netapp.io^]
 
-. Click xxx
+. Click the figure icon at the top right of the page and select *API access*.
+
+. At the top of the page, copy the URL displayed under *API Documentation* and paste it into your browser.
+
+. Provide your account credentials if needed.

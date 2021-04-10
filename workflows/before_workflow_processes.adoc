@@ -30,15 +30,32 @@ The workflows provided include the minimum steps and parameters needed to accomp
 
 xxx
 >> Based on organization of underlying object model
+>> Organized around functional or administrative areas
 
 [cols="25,75"*,options="header"]
 |===
 |Category
 |Description
-|Users and accounts
+|Identity management
 |Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
-|Billing and licensing
+|Events and notifications
 |Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|===
+
+== Types of workflows
+
+>> Not just endpoints and resources but around different APIs
+
+Some of the workflows are small and apply to only a single resource type or API endpoint, while other workflows can be larger and involve many API actions. To accommodate these differences, the workflow content under each category is arranged on the page as described in the table below.
+
+[cols="20,80"*,options="header"]
+|===
+|Workflow type
+|Description
+|Basic
+|These workflows use one type of API endpoint and typically consist of a single step. Given their small size, multiple workflows can be collected together on one page which all access the same resource type. For example, see link:wf_api_user.html[Managing Astra users].
+|Complex
+|Each of these workflows is larger and involves multiple resource types or steps. There is only one workflow on each page.
 |===
 
 == Common parameters and variables
@@ -49,18 +66,23 @@ There are several parameters or variables common among the workflows.
 
 Most of the variable tokens, identifiers, and other variables used in the sample REST API calls consist of long strings of letters, numbers, and special characters. They are considered opaque with no easily discernible content or meaning. Therefore, rather than include the actual original strings, smaller reserved keywords are used instead. This can have several benefits:
 
-    The Curl and JSON samples are clearer and easier to understand.
+* The Curl and JSON samples are clearer and easier to understand.
 
-    Because all keywords use the same format (including capital letters), you can quickly identify the location and content to insert or extract.
+* Because all keywords use the same format (including capital letters), you can quickly identify the location and content to insert or extract.
 
-    No value is lost, because the original values could not be copied and used with an actual deployment.
+* No value is lost, because the original values could not be copied and used with an actual deployment.
 
 A list of the keywords used in the workflow examples is presented in the table below.
+
+[NOTE]
+An access token and API token are different as described below.
 
 [cols="25,75"*,options="header"]
 |===
 |Keyword
 |Description
 |<ACCESS_TOKEN>
+|AUTH0 - An access token is a temporary string which establishes identity and access to the Astra REST API
+|<API_TOKEN>
 |An access token is a temporary string which establishes identity and access to the Astra REST API
 |===

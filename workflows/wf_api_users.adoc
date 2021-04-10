@@ -38,7 +38,3 @@ None
 Output::
 
 The Astra users are returned as objects in an array.
-
-JSON output example::
-[source,json]
-{"items": [{}]}

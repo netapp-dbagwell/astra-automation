@@ -100,7 +100,7 @@ A summary of the API operations provided with the User API is shown in the table
 [NOTE]
 The *Path* for each operation has been abbreviated by removing the `/accounts/{account_id}` prefix. You must include this in the full URL when issuing an actual API request.
 
-[cols="15,10,30,45"*,options="header"]
+[cols="15,10,25,50"*,options="header"]
 |===
 |Action
 |HTTP
@@ -113,17 +113,17 @@ The *Path* for each operation has been abbreviated by removing the `/accounts/{a
 |List users
 |GET
 |/core/v1/users
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Returns an array of JSON objects for the user resources based on the query parameters.
 |Read user
 |GET
-|/core/v1/users
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|/core/v1/users/{user_id}
+|Returns a JSON object for the user resource based on the user id.
 |Replace user
-|GET
-|/core/v1/users
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|PUT
+|/core/v1/users/{user_id}
+|Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
 |Delete user
 |DELETE
-|/core/v1/users
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|/core/v1/users/{user_id}
+|Removes the stored user resource.
 |===

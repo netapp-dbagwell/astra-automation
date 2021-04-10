@@ -13,6 +13,6 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The Astra REST API is composed of several smaller APIs, each providing access to a primary resource type through one or more REST endpoints. This section provides a concise description of these APIs, which is useful as part of planning an Astra automation deployment.
+The Astra REST API is composed of several smaller APIs, each providing access to a specific resource type through one or more REST endpoints. This section provides a concise description of these APIs, which is useful as part of planning an Astra automation deployment.
 
-For a complete description of the Astra REST API including the individual endpoints, parameters, and status codes, see link:../reference/api_reference.html[API reference]. For practical examples of making API calls to perform common administrative tasks, see link:../workflows/workflows.html[Administrative workflows].
+For a more complete description of the Astra REST API, including the endpoints, input parameters, and status codes, see link:../reference/api_reference.html[API reference]. And or practical examples of making API calls to perform common administrative tasks, see link:../workflows/workflows.html[Administrative workflows].

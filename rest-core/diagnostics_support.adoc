@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Diagnostics and debugging
+= Diagnostics and support
 :hardbreaks:
 :nofooter:
 :icons: font

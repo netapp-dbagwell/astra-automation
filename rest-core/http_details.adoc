@@ -108,7 +108,7 @@ The query parameter `continue` is defined in the OpenAPI file, but never used. S
 The HTTP status codes used by the Astra REST API are described below.
 
 [NOTE]
-The Astra REST API uses the *Problem Details for HTTP APIs* standard. See link:diagnostics_support.html[Diagnostics and support] for more information.
+The Astra REST API also uses the *Problem Details for HTTP APIs* standard. See link:diagnostics_support.html[Diagnostics and support] for more information.
 
 [cols="15,20,65"*,options="header"]
 |===
@@ -125,16 +125,16 @@ The Astra REST API uses the *Problem Details for HTTP APIs* standard. See link:d
 |An object is successfully created; the location response header includes the unique identifier for the object.
 
 |204
-|xxx
-|xxx
+|No content
+|The request was successful although no content was returned.
 
 |400
 |Bad request
 |The request input is not recognized or is inappropriate.
 
 |401
-|xxx
-|xxx
+|Unauthorized
+|The user is not authorized and must authentiate.
 
 |403
 |Forbidden
@@ -153,6 +153,6 @@ The Astra REST API uses the *Problem Details for HTTP APIs* standard. See link:d
 |A general internal error occurred at the server.
 
 |503
-|xxx
-|xxx
+|Service unavailable
+|The service is not ready to handle the request for some reason.
 |===

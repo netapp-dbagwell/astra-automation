@@ -13,20 +13,20 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The User API provides the REST endpoints you need to create and manage Astra users.
+The User API provides access to manage the Astra user resources.
 
 == Endpoints
 
-The endpoints included with the User API as shown in the table below.
+The endpoints included with the User API are shown in the table below.
 
 [cols="25,75"*,options="header"]
 |===
 |Type
 |Endpoint
 |Collection
-|/accounts/{account_id}/core/v1/users
+|`/accounts/{account_id}/core/v1/users`
 |Instance
-|/accounts/{account_id}/core/v1/users/{user_id}
+|`/accounts/{account_id}/core/v1/users/{user_id}`
 |===
 
 == Resource definition
@@ -38,7 +38,10 @@ xxx
 
 ==== Media type
 
-xxx
+The following media types are supported:
+
+* application/astra-user
+* application/astra-user+json
 
 ==== Resource schema
 
@@ -47,27 +50,66 @@ xxx ???
 
 ==== Resource example
 
-xxx
-
-== Relation to other endpoints
-
-xxx ???
->> relational to other sources, upstream/downstream, dependents, and so on
+[source,json]
+{
+    "type" :  "application/astra-user",
+    "version" : "1.0",
+    "id" : "11c0cfa1-4f27-4ef7-a21c-cb452fc5c9aa",
+    "state" : "active",
+    "isEnabled" : "true",
+    "authID" : "HteLK3hk28sdbDLKHReB",
+    "authProvider" : "cloud-central",
+    "firstName" : "John",
+    "lastName" : "Doe",
+    "companyName" : "NetApp, Inc.",
+    "email" : "jdoe@example.com",
+    "phone" : "408-555-22222",
+    "postalAddress" : {
+         "addressCountry" : "US",
+         "addressLocality" : "Sunnyvale",
+         "addressRegion" : "California",
+         "postalCode" : "94089",
+         "streetAddress1" : "495 East Java Drive"
+    },
+    "sendWelcomeEmail" : "true",
+    "enableTimestamp" : "2020-08-05T14:24:54.128427Z",
+    "lastActTimestamp" : "2020-08-05T14:24:54.128427Z",
+    "metadata" : {
+        "labels" : [  ],
+        "creationTimestamp" : "2020-08-06T12:24:52.256624Z",
+        "modificationTimestamp" : "2020-08-06T12:24:52.256624Z",
+        "createdBy" : "11c0cfa1-4f27-4ef7-a21c-cb452fc5c9aa"
+    }
+}
 
 == API definition
 
-There are several operations you can perform with the xxx
+The User API is defined through the use of HTTP headers and methods.
 
 ==== HTTP headers
 
-xxx
+The headers used with the User API are shown in the table below.
 
->> HTTP headers
->> include MIME types
+[cols="25,15,60"*,options="header"]
+|===
+|Header
+|Type
+|Description
+|Authorization
+|Request
+|Bearer token of the user or API key for the user
+|Location
+|Response
+|Full URL of the newly created resource
+|===
 
 ==== Operations
 
-Format of path? include account and account id? Or from one of three (such as, core) and below? Confirm can use in all resources
+A summary of the API operations provided with the User API is shown in the table below.
+
+>> Format of path?
+>> include account and account id?
+>> Or from one of three (such as, core) and below?
 
 [cols="15,10,30,45"*,options="header"]
 |===

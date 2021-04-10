@@ -64,7 +64,7 @@ homepage:
           url: /object-model/intro_rest_endpoints.html
         - title: API endpoints and resources
           summary: Description of all the endpoints as organized into REST APIs.
-          url: /endpoints/api_endpoints_resources.html
+          url: /endpoints/resource_apis.html
         - title: User API
           summary: An example of one of the available APIs.
           url: /endpoints/ep_user.html

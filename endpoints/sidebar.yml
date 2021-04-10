@@ -1,6 +1,6 @@
 section: endpoints
-title: API endpoints and resources
-url: /endpoints/api_endpoints_resources.html
+title: Resource APIs
+url: /endpoints/resource_apis.html
 entries:
   - title: App API
     url: /endpoints/ep_app.html

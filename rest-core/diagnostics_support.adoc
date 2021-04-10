@@ -38,5 +38,30 @@ There are several Astra features exposed through API resources that provide diag
 
 == HTTP problem details
 
-xxxx
->> RFC 7807
+The Astra REST API implements the Problem Detail standard as defined in link:https://www.rfc-editor.org/rfc/rfc7807.txt[RFC 7807].
+
+All HTTP responses with a 4xx and 5xx Status Code include a problem detail. When included, each problem detail response shall include a response header of `Content-type: application/problem+json`.
+
+=== Format of the JSON response
+
+Each problem detail response shall include a response body, in JSON format, that includes the following fields.
+
+>> table
+
+=== Summary of the problem detail data
+
+[cols="10,25,55,10"*,options="header"]
+|===
+|HTTP status
+|Title
+|Detail
+|Extensions
+|404
+|Resource not found
+|The resource specified in the request URI was not found
+|None
+|===
+
+=== Addition extensions
+
+xxx

@@ -21,6 +21,7 @@ xxx
 >> Exact supported operations supported for each resource type in reference content
 
 >> See *API conventions* page
+>> QP: include, filter, orderBy, limit, skip, count (see HTTP details)
 
 === Filtering
 

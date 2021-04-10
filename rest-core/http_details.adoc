@@ -13,17 +13,14 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The details of how HTTP is used with the Astra REST API are presented below.
 
 === HTTP methods
 
-xxx
->> sometimes called "verbs"
->> CRUD
->> See REST endpoints and resources and workflows (add links)
+The HTTP methods or verbs supported by the API are presented in the table below.
 
 [NOTE]
-CRUD etc.
+CRUD is the model for how an API is used. Each operation can be categories as a create, read, update, or delete.
 
 [cols="15,15,70"*,options="header"]
 |===
@@ -32,16 +29,22 @@ CRUD etc.
 |Description
 |GET
 |Read
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Retrieves object properties on a resource instance or collection.
 |POST
 |Create
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Creates a new resource instance based on the input parameters.
 |PUT
 |Update
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Updates an existing resource instance based on the input parameters.
 |DELETE
 |Delete
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Deletes an existing resource instance.
+|HEAD
+|Read
+|Essentially issues a GET request but only returns the HTTP headers.
+|OPTIONS
+|Read
+|Used to determine what HTTP methods are supported at a specific endpoint.
 |===
 
 === MIME types
@@ -50,43 +53,105 @@ xxx
 >> customer mime types, based on resource type
 >> see link:rest_endpoints_resources.html[REST endpoints and resources] for xxx
 
-=== Request headers
+=== Request and response headers
 
-xxx
+The following table summaries the HTTP headers used with the Astra REST API.
+
 >> Authorization (bearer token)
 >> Content-Type (Content-Type: application/astra-user+json)
 
-=== Common query parameters
+>> Location (for newly created resources)
+>> Content-Type (Content-Type: application/astra-user+json)
 
-xxx
->> ?include=  field list
->> See *API conventions*
+|===
+|Header
+|Type
+|Description
+|Authorization
+|Request
+|Bearer token of the user or API key for the user
+|Location
+|Response
+|Full URL of the newly created resource
+|===
 
->> Also see *Consolidated* because each API operation has a list of valid QP, see 13.4.3.2 (User, List)
+=== Query parameters
+
+The following query parameters are available for use with the Astra REST API.
+
+// got from oav_v1.py -o top-c1
+
+[IMPORTANT]
+The query parameter `continue` is defined in the OpenAPI file, but never used. So I have not included it.
 
 [cols="20,80"*,options="header"]
 |===
 |Query parameter
 |Description
 |include
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
-|limit
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Contains the fields that should be returned when reading a collection.
+|filter
+|Indicates the fields that must match for a resource to be returned when reading a collection.
 |orderBy
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Determines the sort order of resources returned when reading a collection.
+|limit
+|Limits the maximum number of resources returned when reading a collection.
 |skip
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
-|continuation
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Sets the number of resources to pass over and skip when reading a collection.
+|count
+|Indicates if the total number of resources should be returned in the metadata object.
 |===
-
-=== Response headers
-
-xxx
->> Location (for newly created resources)
->> Content-Type (Content-Type: application/astra-user+json)
 
 === HTTP status codes
 
-xxx
->> grep the OpenAPI file for common codes to verify
+The HTTP status codes used by the Astra REST API are described below.
+
+[IMPORTANT]
+Must review and cut content. Where find the complete list?
+
+[cols="15,20,65"*,options="header"]
+|===
+|Code
+|Meaning
+|Description
+
+|200
+|OK
+|Indicates success for calls that do not create a new object.
+
+|201
+|Created
+|An object is successfully created; the location response header includes the unique identifier for the object.
+
+|202
+|Accepted
+|A long-running background job has been started to perform the request, but the operation has not completed yet.
+
+|400
+|Bad request
+|The request input is not recognized or is inappropriate.
+
+|403
+|Forbidden
+|Access is denied due to an authorization error.
+
+|404
+|Not found
+|The resource referred to in the request does not exist.
+
+|405
+|Method not allowed
+|The HTTP verb in the request is not supported for the resource.
+
+|409
+|Conflict
+|An attempt to create an object failed because the object already exists.
+
+|500
+|Internal error
+|A general internal error occurred at the server.
+
+|501
+|Not implemented
+|The URI is known but is not capable of performing the request.
+|===

@@ -13,11 +13,11 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The User API provides access to manage the Astra user resources.
+The User API allows you to manage the Astra user resources.
 
 == Endpoints
 
-The endpoints included with the User API are shown in the table below.
+The following endpoints are included with the User API.
 
 [cols="25,75"*,options="header"]
 |===
@@ -31,22 +31,12 @@ The endpoints included with the User API are shown in the table below.
 
 == Resource definition
 
-xxx
->> either bullet list of key or common fields, or use table?
->> see the section below for more details
->> metadata
-
 ==== Media type
 
 The following media types are supported:
 
 * application/astra-user
 * application/astra-user+json
-
-==== Resource schema
-
-xxx ???
->> More details on the resource schema
 
 ==== Resource example
 
@@ -88,7 +78,7 @@ The User API is defined through the use of HTTP headers and methods.
 
 ==== HTTP headers
 
-The headers used with the User API are shown in the table below.
+The following headers are used with the User API.
 
 [cols="30,15,55"*,options="header"]
 |===
@@ -119,9 +109,21 @@ The *Path* for each operation has been abbreviated by removing the `/accounts/{a
 |Create user
 |POST
 |/core/v1/users
-|Create a new user based on the contents of the request body. After creation, you must associate it with an account.
+|Create a new user based on the contents of the request body.
 |List users
 |GET
+|/core/v1/users
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Read user
+|GET
+|/core/v1/users
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Replace user
+|GET
+|/core/v1/users
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Delete user
+|DELETE
 |/core/v1/users
 |Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
 |===

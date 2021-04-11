@@ -18,7 +18,7 @@ homepage:
     - title: Get started
       links:
         - title: Introduction
-          summary: Get an overview of the Astra REST API and automation options.
+          summary: Get an overview of the Astra REST API.
           url: /intro/introduction.html
         - title: Before you begin
           summary: Prepare to get started using the API.
@@ -32,16 +32,16 @@ homepage:
     - title: REST implementation
       links:
         - title: Concepts
-          summary: Review basics REST concepts.
+          summary: Review basic REST concepts.
           url: /rest-core/concepts.html
         - title: HTTP details
-          summary: Understand details of the HTTP implementation.
+          summary: Understand the details of the HTTP implementation.
           url: /rest-core/http_details.html
         - title: Security
-          summary: Review API security
+          summary: Review API security technologies.
           url: /rest-core/security.html
         - title: Diagnostics
-          summary: Be ready to debug and support the API.
+          summary: Be ready to debug and support your API applications.
           url: /rest-core/diagnostics_debugging.html
     - title: Object model
       links:
@@ -49,13 +49,13 @@ homepage:
           summary: Introduction and summary of the REST endpoints.
           url: /object-model/intro_rest_endpoints.html
         - title: Entity-Relationship model
-          summary: Internal object nmodel and REST resources.
+          summary: Internal object model and REST resources.
           url: /object-model/er_model.html
-        - title: URL format for API access
+        - title: URL format for API access.
           summary: Format of the URL used with the API.
           url: /object-model/url_format.html
         - title: Working with collections
-          summary: Advanced techniques for collections.
+          summary: Using query parameters to access collections.
           url: /object-model/working_with_collections.html
     - title: Resource APIs
       links:
@@ -66,7 +66,7 @@ homepage:
           summary: Description of the endpoints as organized into separate resource APIs.
           url: /endpoints/resource_apis.html
         - title: User API
-          summary: An example of a resource API.
+          summary: An example of a typical resource API.
           url: /endpoints/ep_user.html
     - title: Administrative workflows
       links:
@@ -74,8 +74,8 @@ homepage:
           summary: Prepare to start using the workflows.
           url: /workflows/before_workflow_processes.html
         - title: Identity management
-          summary: Workflows used to administer users, credentials, roles, and tokens.
+          summary: Workflowsto administer users, credentials, roles, and tokens.
           url: /workflows/admin_wf_identity.html
         - title: Events and notifications
-          summary: Workflows used to manage events and notifications.
+          summary: Workflows to manage events and notifications.
           url: /workflows/admin_wf_events.html

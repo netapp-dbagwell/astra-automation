@@ -1,0 +1,17 @@
+---
+sidebar: sidebar
+permalink: rest-core/rest_web_services.html
+keywords: 
+summary:
+---
+
+= REST web services
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+>> OA rest_web_services_foundation

@@ -6,6 +6,8 @@ entries:
     url: /object-model/intro_rest_endpoints.html
   - title: Entity-Relationship model
     url: /object-model/er_model.html
+  - title: Versioning considerations
+    url: /object-model/versioning.html
   - title: URL format for API access
     url: /object-model/url_format.html
   - title: Working with collections

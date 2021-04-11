@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: rest-core/concepts.html
+permalink: rest-core/basic_operation.html
 keywords: concepts
 summary:
 ---
 
-= Basic concepts
+= Basic operational characteristics
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,6 +16,8 @@ summary:
 xxx
 
 >> Guiding Astra REST API, see "API conventions"
+>> OA / basic operational characteristics
+>> remove overlapping content at bottom
 
 === Resource types and schemas
 

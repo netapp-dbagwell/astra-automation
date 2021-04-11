@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: object-model/versioning.html
+keywords:
+summary:
+---
+
+= Versioning considerations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

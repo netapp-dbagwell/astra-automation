@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: information/additional_resources.html
+keywords:
+summary:
+---
+
+= Additional resources
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+There are additional resources you can access to get help and find more information about NetApp cloud services and support as well as general REST and cloud concepts.
+
+=== NetApp cloud resources
+
+* https://cloud.netapp.com/[NetApp Cloud Solutions^]
++
+Central site for the NetApp cloud solutions.
+
+* https://services.cloud.netapp.com/redirect-to-login?startOnSignup=false[NetApp Cloud Central console^]
++
+NetApp Cloud Central service console with sign in.
+
+* https://mysupport.netapp.com/[NetApp Support^]
++
+Access troubleshooting tools, documentation, and technical support assistance.
+
+=== REST concepts and cloud technology
+
+* PhD https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm[dissertation^] by Roy Fielding
++
+This publication introduced and established the REST application development model.
+
+* https://auth0.com/[Auth0^]
++
+This is the authentication platform service used by Astra.
+
+* https://www.rfc-editor.org/[RFC editor^]
++
+Authoritative source for web and Internet standards as a collection of uniquely numbered RFC documents.

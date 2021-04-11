@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can access the details of all calls in the Astra REST API, including the HTTP methods, input parameters, and status codes. This content forms a reference when developing applications for the API.
+You can access the details of all the Astra REST API calls, including the HTTP methods, input parameters, and status codes. This content forms a reference when developing API applications.
 
 [NOTE]
 The REST API reference documentation is currently available online with the Astra service.

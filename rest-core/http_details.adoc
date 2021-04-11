@@ -13,17 +13,14 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The details of how HTTP is used with the Astra REST API are presented below.
 
 === HTTP methods
 
-xxx
->> sometimes called "verbs"
->> CRUD
->> See REST endpoints and resources and workflows (add links)
+The HTTP methods or verbs supported by the API are presented in the table below.
 
 [NOTE]
-CRUD etc.
+CRUD is the model for how an API is used. Each operation can be categories as a create, read, update, or delete.
 
 [cols="15,15,70"*,options="header"]
 |===
@@ -32,16 +29,22 @@ CRUD etc.
 |Description
 |GET
 |Read
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Retrieves object properties on a resource instance or collection.
 |POST
 |Create
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Creates a new resource instance based on the input parameters.
 |PUT
 |Update
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Updates an existing resource instance based on the input parameters.
 |DELETE
 |Delete
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Deletes an existing resource instance.
+|HEAD
+|Read
+|Essentially issues a GET request but only returns the HTTP headers.
+|OPTIONS
+|Read
+|Used to determine what HTTP methods are supported at a specific endpoint.
 |===
 
 === MIME types
@@ -50,31 +53,106 @@ xxx
 >> customer mime types, based on resource type
 >> see link:rest_endpoints_resources.html[REST endpoints and resources] for xxx
 
-=== Request headers
+=== Request and response headers
 
-xxx
+The following table summaries the HTTP headers used with the Astra REST API.
+
 >> Authorization (bearer token)
 >> Content-Type (Content-Type: application/astra-user+json)
 
-=== Common query parameters
-
-xxx
->> ?include=  field list
-
-=== Response headers
-
-xxx
 >> Location (for newly created resources)
 >> Content-Type (Content-Type: application/astra-user+json)
 
+[cols="30,15,55"*,options="header"]
+|===
+|Header
+|Type
+|Description
+|Authorization
+|Request
+|Bearer token of the user or API key for the user
+|Location
+|Response
+|Full URL of the newly created resource
+|===
+
+=== Query parameters
+
+The following query parameters are available for use with the Astra REST API.
+
+// got from oav_v1.py -o top-c1
+
+[IMPORTANT]
+The query parameter `continue` is defined in the OpenAPI file, but never used. So I have not included it.
+
+[cols="20,80"*,options="header"]
+|===
+|Query parameter
+|Description
+|include
+|Contains the fields that should be returned when reading a collection.
+|filter
+|Indicates the fields that must match for a resource to be returned when reading a collection.
+|orderBy
+|Determines the sort order of resources returned when reading a collection.
+|limit
+|Limits the maximum number of resources returned when reading a collection.
+|skip
+|Sets the number of resources to pass over and skip when reading a collection.
+|count
+|Indicates if the total number of resources should be returned in the metadata object.
+|===
+
 === HTTP status codes
 
-xxx
->> grep the OpenAPI file for common codes to verify
+The HTTP status codes used by the Astra REST API are described below.
 
-=== Illustration of an API transaction
+[NOTE]
+The Astra REST API also uses the *Problem Details for HTTP APIs* standard. See link:diagnostics_support.html[Diagnostics and support] for more information.
 
-The figure below illustrates the request and response flow of an HTTP transaction when using the Astra REST API.
-REMOVE? ADD LATER?
+[cols="15,20,65"*,options="header"]
+|===
+|Code
+|Meaning
+|Description
 
-*Insert graphic*
+|200
+|OK
+|Indicates success for calls that do not create a new object.
+
+|201
+|Created
+|An object is successfully created; the location response header includes the unique identifier for the object.
+
+|204
+|No content
+|The request was successful although no content was returned.
+
+|400
+|Bad request
+|The request input is not recognized or is inappropriate.
+
+|401
+|Unauthorized
+|The user is not authorized and must authentiate.
+
+|403
+|Forbidden
+|Access is denied due to an authorization error.
+
+|404
+|Not found
+|The resource referred to in the request does not exist.
+
+|409
+|Conflict
+|An attempt to create an object failed because the object already exists.
+
+|500
+|Internal error
+|A general internal error occurred at the server.
+
+|503
+|Service unavailable
+|The service is not ready to handle the request for some reason.
+|===

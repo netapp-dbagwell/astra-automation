@@ -13,16 +13,11 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The User API provides the REST endpoints you need to create and manage Astra users.
+The User API allows you to manage the Astra user resources.
 
-== Introduction
+== Endpoints
 
-xxx
->> conceptual overview
-
-==== Endpoints
-
-xxx
+The following endpoints are included with the User API.
 
 [cols="25,75"*,options="header"]
 |===
@@ -34,30 +29,78 @@ xxx
 |/accounts/{account_id}/core/v1/users/{user_id}
 |===
 
-==== Resource definition
+== Resource definition
 
-xxx
->> either bullet list of key or common fields, or use table?
->> see the section below for more details
->> metadata
+==== Media type
 
-==== Relation to other endpoints
+The following media types are supported:
 
-xxx
->> relational to other sources, upstream/downstream, dependents, and so on
+* application/astra-user
+* application/astra-user+json
 
-==== Headers
+==== Resource example
 
->> HTTP headers
->> include MIME types
+[source,json]
+{
+    "type" :  "application/astra-user",
+    "version" : "1.0",
+    "id" : "11c0cfa1-4f27-4ef7-a21c-cb452fc5c9aa",
+    "state" : "active",
+    "isEnabled" : "true",
+    "authID" : "HteLK3hk28sdbDLKHReB",
+    "authProvider" : "cloud-central",
+    "firstName" : "John",
+    "lastName" : "Doe",
+    "companyName" : "NetApp, Inc.",
+    "email" : "jdoe@example.com",
+    "phone" : "408-555-22222",
+    "postalAddress" : {
+         "addressCountry" : "US",
+         "addressLocality" : "Sunnyvale",
+         "addressRegion" : "California",
+         "postalCode" : "94089",
+         "streetAddress1" : "495 East Java Drive"
+    },
+    "sendWelcomeEmail" : "true",
+    "enableTimestamp" : "2020-08-05T14:24:54.128427Z",
+    "lastActTimestamp" : "2020-08-05T14:24:54.128427Z",
+    "metadata" : {
+        "labels" : [  ],
+        "creationTimestamp" : "2020-08-06T12:24:52.256624Z",
+        "modificationTimestamp" : "2020-08-06T12:24:52.256624Z",
+        "createdBy" : "11c0cfa1-4f27-4ef7-a21c-cb452fc5c9aa"
+    }
+}
 
-== API operations
+== API definition
 
-There are several operations you can perform with the xxx
+The User API is defined through the use of HTTP headers and methods.
 
-Format of path? include account and account id? Or from one of three (such as, core) and below? Confirm can use in all resources
+==== HTTP headers
 
-[cols="15,10,30,45"*,options="header"]
+The following headers are used with the User API.
+
+[cols="30,15,55"*,options="header"]
+|===
+|Header
+|Type
+|Description
+|Authorization
+|Request
+|Bearer token of the user or API key for the user
+|Location
+|Response
+|Full URL of the newly created resource
+|===
+
+==== Operations
+
+A summary of the API operations provided with the User API is shown in the table below.
+
+[NOTE]
+The *Path* for each operation has been abbreviated by removing the `/accounts/{account_id}` prefix. You must include this in the full URL when issuing an actual API request. See link:../workflows/workflows.html[Administrative workflows] for more information.
+
+[cols="15,10,25,50"*,options="header"]
 |===
 |Action
 |HTTP
@@ -66,14 +109,21 @@ Format of path? include account and account id? Or from one of three (such as, c
 |Create user
 |POST
 |/core/v1/users
-|Create a new user based on the contents of the request body. After creation, you must associate it with an account.
+|Create a new user based on the contents of the request body.
 |List users
 |GET
 |/core/v1/users
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Returns an array of JSON objects for the user resources based on the query parameters.
+|Read user
+|GET
+|/core/v1/users/{user_id}
+|Returns a JSON object for the user resource based on the user id.
+|Replace user
+|PUT
+|/core/v1/users/{user_id}
+|Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
+|Delete user
+|DELETE
+|/core/v1/users/{user_id}
+|Removes the stored user resource.
 |===
-
-== Resource schema
-
-xxx
->> More details on the resource schema

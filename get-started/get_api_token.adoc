@@ -42,4 +42,4 @@ https://astra.netapp.io/[https://astra.netapp.io^]
 
 .After you finish
 
-You will need the to access the Astra API through Curl or another programming language. It must be included in the `Authorization` bearer token with each API request.
+When you access the Astra REST API through Curl or a programming language, you must include in the API bearer token in the `Authorization` request header.

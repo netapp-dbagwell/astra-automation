@@ -19,17 +19,19 @@ xxx
 >> Several collection operations (bullet list)
 >> Separate section for each major operation type
 >> Exact supported operations supported for each resource type in reference content
->> See API conventions page
 
-=== Filtering
+>> See *API conventions* page
+>> QP: include, filter, orderBy, limit, skip, count (see HTTP details)
 
-xxx
-
-=== Sorting
+== Filtering
 
 xxx
 
-=== Including fields
+== Sorting
+
+xxx
+
+== Including fields
 
 xxx
 >> with GET

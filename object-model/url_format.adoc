@@ -13,16 +13,21 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The format of the endpoint path needed to access the Astra REST API is a combination of variables and reflects the underlying object model.
 
->> Walk through URL from left to right
->> Everything accessed through or under account
->> Assume need account ID and so get from web user interface (along with API token)
-
-=== Relationship of the object model to REST endpoints
+=== Account as the root
 
 xxx
+>> Relationship of the object model to REST endpoints
 
-=== URL format
+=== Resource categories
+
+xxx
+
+=== Versioning
+
+xxx
+
+=== Summary of the URL format
 
 xxx

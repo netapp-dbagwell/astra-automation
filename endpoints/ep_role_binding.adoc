@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Role Binding API
+= Role binding API
 :hardbreaks:
 :nofooter:
 :icons: font

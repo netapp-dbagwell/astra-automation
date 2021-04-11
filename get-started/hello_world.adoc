@@ -15,24 +15,16 @@ summary:
 [.lead]
 You can issue a simple command at your workstation’s CLI to get started using the Astra REST API and confirm its availability.
 
->> What Curl command? List users? List myself? List the role I am using?
-
 [NOTE]
 The example provided below is very simple. The administrative workflow samples later in this guide use a more robust format.
 
 .Before you begin
 
-You must have the Curl utility available on your local workstation.
-
-Perform the task link:getting_api_token.html[Getting an API access token] to generate a token needed to access the Astra REST API.
+You must have the Curl utility available on your local workstation. Also generate a token and retrieve the account identifier as described in the task link:get_api_token.html[Getting an API access token].
 
 .Curl example
 
-The following Curl command retrieves xxx.
+The following Curl command retrieves a list of Astra users.
 
 [source,curl]
-curl --location --request GET 'https://staging.astra.netapp.com' --header 'Content-Type: application/json' --header 'Authorization: Bearer <ACCESS_TOKEN>'
-
-.After you finish
-
-*Remove ?*
+curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer <API_TOKEN>'

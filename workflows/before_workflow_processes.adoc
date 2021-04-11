@@ -55,7 +55,7 @@ Most of the variable tokens, identifiers, and other variables used in the sample
 There are two types of variables identifiers used in the workflow samples.
 
 Path parameters::
-These are variables used in the URL endpoint paths as defined in the API specification. For example, considered the endpoint available in the User API: `/accounts/{account_id}/core/v1/users`. In this case, the `account_id` is rendered as *<ACCOUNT_ID>* in a Curl example. This same pattern applies to all the path parameters.
+These are variables used in the URL endpoint paths as defined in the API specification. For example, considered the following endpoint available in the User API: `/accounts/{account_id}/core/v1/users`. In this case, the `account_id` will be rendered as *<ACCOUNT_ID>* in a Curl sample. This same pattern applies to all the path parameters (such as, `user_id` and `app_id`).
 
 Additional keywords::
 There are additional keywords reserved for common variables as presented in the table below.
@@ -65,10 +65,10 @@ There are additional keywords reserved for common variables as presented in the 
 |Keyword
 |Description
 |<API_TOKEN>
-|An access token is a temporary string which establishes identity and access to the Astra REST API.
+|This is a bearer token generated at the Astra web user interface and included with the HTTP `Authorization` request header in an API call.
 |===
 
-Here is an example using the different types of keywords (*<ACCOUNT_ID>* and *<API_TOKEN>*):
+Here is an example using the different types of keywords ()*<ACCOUNT_ID>* and *<API_TOKEN>*):
 
 [source,curl]
 curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer <API_TOKEN>'

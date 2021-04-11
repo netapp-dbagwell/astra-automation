@@ -31,18 +31,18 @@ homepage:
           url: /get-started/hello_world.html
     - title: REST implementation
       links:
-        - title: Basic operational considerations
-          summary: Understand the basic operation of the REST API.
-          url: /rest-core/basic_operation.html
-        - title: Resources and collections
-          summary: Become familiar with the REST resources and collections.
-          url: /rest-core/resources_collections.html
+        - title: REST web services
+          summary: Technology foundations of REST web services.
+          url: /rest-core/rest_web_services.html
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
         - title: Security
           summary: Review the API security technologies.
           url: /rest-core/security.html
+        - title: Diagnostics and support
+          summary: Prepare to support Astra applications.
+          url: /rest-core/diagnostics_support.html
     - title: Object model
       links:
         - title: Entity-Relationship model
@@ -59,11 +59,11 @@ homepage:
           url: /object-model/working_with_collections.html
     - title: Resource APIs
       links:
-        - title: Introduction to REST endpoints
-          summary: A high-level introduction to the REST endpoints.
-          url: /object-model/intro_rest_endpoints.html
+        - title: Resources and collections
+          summary: Become familiar with the REST resources and collections.
+          url: /rest-core/resources_collections.html
         - title: Details of the resource APIs
-          summary: Description of the endpoints organized into separate resource APIs.
+          summary: Concise introduction to the various resource APIs.
           url: /endpoints/resource_apis.html
         - title: User API
           summary: An example of a typical resource API.

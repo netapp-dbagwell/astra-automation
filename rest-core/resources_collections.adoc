@@ -40,7 +40,6 @@ xxx
 
 xxx
 
-
 == Types of endpoints
 
 An endpoint is described in terms of the URI and API actions. There are two types of endpoints as described below.

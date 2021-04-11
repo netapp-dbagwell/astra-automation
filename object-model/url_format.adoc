@@ -15,6 +15,10 @@ summary:
 [.lead]
 The format of the endpoint path needed to access the Astra REST API is a combination of variables and reflects the underlying object model.
 
+[NOTE]
+The URL format used to access the Astra REST API is tightly coupled with the underlying object model. See link:url_format.html[URL format for API access] for more information.
+
+
 === Account as the root
 
 xxx

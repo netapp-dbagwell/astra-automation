@@ -34,9 +34,9 @@ homepage:
         - title: Basic operational considerations
           summary: Understand the basic operation of the REST API.
           url: /rest-core/basic_operation.html
-        - title: Resource definitions
-          summary: Become familiar with the REST resources and common characteristics.
-          url: /rest-core/resource_defs.html
+        - title: Resources and collections
+          summary: Become familiar with the REST resources and collections.
+          url: /rest-core/resources_collections.html
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html

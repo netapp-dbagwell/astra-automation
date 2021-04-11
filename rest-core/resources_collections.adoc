@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: rest-core/resource_defs.html
+permalink: rest-core/resources_collections.html
 keywords: concepts
 summary:
 ---
 
-= Resource definitions
+= Resources and collections
 :hardbreaks:
 :nofooter:
 :icons: font

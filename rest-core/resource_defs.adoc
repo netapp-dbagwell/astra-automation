@@ -15,8 +15,9 @@ summary:
 [.lead]
 xxx
 
+*key value pairs*
 *balance with oper considerations*
-*common format, metadata*
+*common format, four values, metadata*
 *object state*
 
 >> Guiding Astra REST API, see "API conventions"
@@ -38,3 +39,81 @@ xxx
 === Collections of resource instances
 
 xxx
+
+
+== Types of endpoints
+
+An endpoint is described in terms of the URI and API actions. There are two types of endpoints as described below.
+
+[cols="20,80"*,options="header"]
+|===
+|Type
+|Description
+|Instance
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Collection
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+== Organization
+
+The resource endpoints provided in the Astra REST API are organized into three categories as described below.
+
+==== Core resources
+
+The core endpoints provide foundational services needed to establish and maintain xxx
+
+[cols="20,80"*,options="header"]
+|===
+|API
+|Description
+|Credential
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Event
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Notification
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Role Binding
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Token
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Unread notification
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|User
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+
+==== Managed Kubernetes Application resources
+
+The managed Kubernetes endpoints xxx
+
+[cols="20,80"*,options="header"]
+|===
+|API
+|Description
+|Application asset
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Application backup
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Application snapshot
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Managed app
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Schedule
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+==== Topology resources
+
+The topology endpoints xxx
+
+[cols="20,80"*,options="header"]
+|===
+|API
+|Description
+|App API
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Volume
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===

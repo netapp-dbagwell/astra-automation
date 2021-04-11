@@ -42,7 +42,7 @@ homepage:
           url: /rest-core/security.html
         - title: Diagnostics
           summary: Be ready to debug and support your API applications.
-          url: /rest-core/diagnostics_debugging.html
+          url: /rest-core/diagnostics_support.html
     - title: Object model
       links:
         - title: Entity-Relationship model
@@ -62,8 +62,8 @@ homepage:
         - title: Introduction to REST endpoints
           summary: A high-level introduction to the REST endpoints.
           url: /object-model/intro_rest_endpoints.html
-        - title: API endpoints and resources
-          summary: Description of the endpoints as organized into separate resource APIs.
+        - title: Details of the resource APIs
+          summary: Description of the endpoints organized into separate resource APIs.
           url: /endpoints/resource_apis.html
         - title: User API
           summary: An example of a typical resource API.

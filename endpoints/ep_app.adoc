@@ -13,4 +13,151 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The App allows you to access and administer the unmanaged Kubernetes applications.
+
+== Endpoints
+
+The endpoints included with this API are shown in the table below.
+
+[cols="25,75"*,options="header"]
+|===
+|Type
+|Endpoint
+|Collection
+|/accounts/{account_id}/topology/v1/apps
+|Instance
+|/accounts/{account_id}/topology/v1/apps/{app_id}
+|Collection
+|/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}/apps
+|Instance
+|/accounts/{account_id}/topology/v1/managedClusters/{managedCluster_id}/apps/{app_id}
+|===
+
+== Resource definition
+
+==== Media type
+
+The following media types are supported:
+
+* application/astra-app
+* application/astra-app+json
+
+==== State
+
+The App resource type maintains a state which can be one of the values in the table below.
+
+[cols="20,80"*,options="header"]
+|===
+|State
+|Description
+|running
+|The application is running normally.
+|provisioning
+|The application is in the process of being provisioned.
+|discovering
+|Aspects of the application are in the process of being discovered.
+|pending
+|The application is scheduled for discovery.
+|failed
+|The application is in a failure state.
+|removed
+|The application has been removed from the cluster and is no longer running.
+|unknown
+|The state of the application cannot be determined.
+|===
+
+==== Resource example
+
+[source,json]
+{
+    "type" : "application/astra-app",
+    "version" : "1.0",
+    "id" : "6d549395-2f93-492d-8201-874bc4ef6b98",
+    "name" : "Jenkins",
+    "state" : "running",
+    "stateUnready" : [ ],
+    "managedState" : "unmanaged",
+    "managedStateUnready" : [ ],
+    "protectionState" : "unmanaged",
+    "protectionStateUnready" : [ ],
+    "appDefnSource" : "namespace",
+    "system" : "false",
+    "pods" : [ {
+        "podName" : "Test",
+        "podNamespace" : "Jenkins",
+        "nodeName" : "A4-1",
+        "containers" : [ {
+            "containerName" : "jenkins-build-1",
+            "image" : "jenkins:master-8923844",
+            "containerState" : "available",
+            "containerStateUnready" : [ ]
+        } ],
+        "podState" : "complete",
+        "podStateUnready" : [ ],
+        "podLabels" : [ ],
+        "podCreationTimestamp" : "2020-08-06T12:24:52.256624Z"
+    } ],
+    "namespace" : "production",
+    "clusterName" : "GKE-22",
+    "clusterID" : "0f284377-e5dc-4dcd-bacd-3197f2b8a347",
+    "clusterType" : "kubernetes",
+    "metadata" : {
+        "labels" : [ ],
+        "creationTimestamp" : "2020-08-06T12:24:52.256624Z",
+        "modificationTimestamp" : "2020-08-06T12:24:52.256624Z",
+        "createdBy" : "11c0cfa1-4f27-4ef7-a21c-cb452fc5c9aa"
+    }
+}
+
+== API operations
+
+The operations available with this API can be defined in terms of the HTTP headers and methods.
+
+==== HTTP headers
+
+The following headers are used with this API.
+
+[cols="30,15,55"*,options="header"]
+|===
+|Header
+|Type
+|Description
+|Authorization
+|Request
+|Bearer token of the user or API key for the user.
+|Location
+|Response
+|Full URL of the newly created resource.
+|===
+
+==== Summary of API calls
+
+A summary of the API calls available with this API is shown in the table below.
+
+[cols="15,10,25,50"*,options="header"]
+|===
+|Action
+|HTTP
+|Path
+|Description
+|Create app
+|POST
+|/topology/v1/managedClusters/{managedCluster_id}/apps
+|Create a new user based on the contents of the request body.
+|List apps
+|GET
+|
+|Returns an array of JSON objects for the user resources based on the query parameters.
+|Read app
+|GET
+|
+|Returns a JSON object for the user resource based on the user id.
+|Replace app
+|PUT
+|
+|Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
+|Delete app
+|DELETE
+|
+|Removes the stored app resource.
+|===

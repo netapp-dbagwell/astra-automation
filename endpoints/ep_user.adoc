@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The User API allows you to manage the Astra users
+The User API allows you to access and administer the Astra users.
 
 == Endpoints
 
@@ -40,11 +40,19 @@ The following media types are supported:
 
 ==== State
 
-The User resource type maintains a state which can be one of the following:
+The User resource type maintains a state which can be one of the values in the table below.
 
-* pending
-* active
-* suspended
+[cols="20,80"*,options="header"]
+|===
+|State
+|Description
+|pending
+|The user account is in the process of being created. The API caller can read and modify the user resource. This is the default value.
+|active
+|The user account is operational. The user can log in if account `isEnabled` is `true`.
+|suspended
+|The user account is suspended and cannot be used regardless of account `isEnabled` setting.
+|===
 
 ==== Resource example
 
@@ -82,7 +90,7 @@ The User resource type maintains a state which can be one of the following:
 
 == API operations
 
-The operations available with this API are defined in terms of the HTTP headers and methods.
+The operations available with this API can be defined in terms of the HTTP headers and methods.
 
 ==== HTTP headers
 

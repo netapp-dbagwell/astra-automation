@@ -22,29 +22,27 @@ A _workflow_ is a sequence of one or more steps used to accomplish a specific ad
 * REST API call
 * Invocation of another workflow
 
-The provided workflows include the minimum steps and parameters needed to accomplish each task. You can use these workflows as a starting point and customize them for your environment as needed.
+The workflows provided include the minimum steps and parameters needed to accomplish each task. You can use these workflows as a starting point and customize them for your environment as needed.
 
 == Workflow types
 
->> Not just endpoints and resources but around different APIs
-
-Some of the workflows are small and apply to only a single resource type or API endpoint, while other workflows can be larger and involve many API actions. To accommodate these differences, there are different types of workflows as described in the table below.
+Each of the Astra resource APIs provides access to a primary resource type available as either an instance or collection. The administrative workflows access and use these resources. Some of the workflows are small and apply to only a single resource type, while others workflows can be larger and involve many resource types or API operations. To accommodate these differences, there are different types of workflows as described in the table below.
 
 [cols="20,80"*,options="header"]
 |===
 |Workflow type
 |Description
 |Basic
-|These workflows use one type of API endpoint and typically consist of a single step. Given their small size, multiple workflows can be collected together on one page which all access the same resource type. For example, see link:wf_api_user.html[Managing Astra users].
+|These workflows use one resource type and typically consist of a single step. Given their small size, multiple workflows focused on a single resource can be collected together on one page.
 |Complex
-|Each of these workflows is larger and involves multiple resource types or steps. There is only one workflow on each page.
+|Each of these workflows is larger and involves multiple resource types or steps. In this case, there is only one workflow on each page.
 |===
 
 == Common parameters and variables
 
 There are several parameters or variables common among the workflows.
 
-===== Presentation of tokens and identifiers
+==== Presentation of API tokens and other variables
 
 Most of the variable tokens, identifiers, and other variables used in the sample REST API calls consist of long strings of letters, numbers, and special characters. They are considered opaque with no easily discernible content or meaning. Therefore, rather than include the actual original strings, smaller reserved keywords are used instead. This can have several benefits:
 
@@ -54,16 +52,18 @@ Most of the variable tokens, identifiers, and other variables used in the sample
 
 * No value is lost, because the original values could not be copied and used with an actual deployment.
 
-A list of the keywords used in the workflow examples is presented in the table below.
+There are two types of variables identifiers used in the workflow samples:
+
+Path parameters::
+These are variables used in the URL endpoint paths as defined in the API specification. For example, considered the endpoint available in the User API: `/accounts/{account_id}/core/v1/users`. In this case, the `account_id` is rendered as *<ACCOUNT_ID>* in the Curl example. This same pattern applies to all the path parameters.
+
+Additional keywords::
+There are additional keywords reserved for common variables as presented in the table below.
 
 [cols="25,75"*,options="header"]
 |===
 |Keyword
 |Description
-|<ACCESS_TOKEN>
-|AUTH0 - An access token is a temporary string which establishes identity and access to the Astra REST API
 |<API_TOKEN>
-|An access token is a temporary string which establishes identity and access to the Astra REST API
-|<ACCOUNT_ID>
-|xxx
+|An access token is a temporary string which establishes identity and access to the Astra REST API.
 |===

@@ -31,14 +31,14 @@ homepage:
           url: /get-started/hello_world.html
     - title: REST implementation
       links:
-        - title: Concepts
-          summary: Review basic REST concepts.
-          url: /rest-core/concepts.html
+        - title: Basic operational considerations
+          summary: Understand the basic operation of the REST API.
+          url: /rest-core/basic_operation.html
         - title: HTTP details
-          summary: Understand the details of the HTTP implementation.
+          summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
         - title: Security
-          summary: Review API security technologies.
+          summary: Review the API security technologies.
           url: /rest-core/security.html
         - title: Diagnostics
           summary: Be ready to debug and support your API applications.
@@ -47,8 +47,9 @@ homepage:
       links:
         - title: Entity-Relationship model
           summary: Internal object model and REST resources.
+          url: /object-model/er_model.html
         - title: Versioning
-          summary: Versioning considerations for the API resources.
+          summary: Versioning considerations for the API and resources.
           url: /object-model/versioning.html
         - title: URL format for API access.
           summary: Format of the URL used with the API.

@@ -5,7 +5,7 @@ keywords: concepts
 summary:
 ---
 
-= Basic operational characteristics
+= Basic operational considerations
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: object-model/er_model.html
+permalink: object-model/er_design.html
 keywords: objects, entities, relationships, uml
 summary:
 ---
 
-= Entity-Relationship model
+= Entity-Relationship design
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,6 +14,8 @@ summary:
 
 [.lead]
 Entity-Relationship modeling is a powerful software design tool. The Astra service and associated REST API have been designed using ER modeling and UML.
+
+>> Designed using ER model technique
 
 == Introduction to the Astra object model
 

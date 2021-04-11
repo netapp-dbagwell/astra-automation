@@ -2,8 +2,8 @@ section: object-model
 title: Object model
 url: /object-model/object_model.html
 entries:
-  - title: Entity-Relationship model
-    url: /object-model/er_model.html
+  - title: Entity-Relationship design
+    url: /object-model/er_design.html
   - title: Versioning considerations
     url: /object-model/versioning.html
   - title: URL format for API access

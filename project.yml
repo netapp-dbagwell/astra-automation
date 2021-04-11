@@ -45,8 +45,8 @@ homepage:
           url: /rest-core/diagnostics_support.html
     - title: Object model
       links:
-        - title: Entity-Relationship model
-          summary: Internal object model and REST resources.
+        - title: Entity-Relationship design
+          summary: Designed using ER modeling.
           url: /object-model/er_model.html
         - title: Versioning
           summary: Versioning considerations for the API and resources.

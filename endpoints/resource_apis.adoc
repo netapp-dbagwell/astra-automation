@@ -15,4 +15,16 @@ summary:
 [.lead]
 The Astra REST API is composed of several smaller APIs, each providing access to a specific resource type through one or more REST endpoints. This section provides a concise description of these APIs, which is useful as part of planning an Astra automation deployment.
 
+==== Before you begin
+
+Each of the resource APIs is described in a consistent format. The following information is provided for each API:
+
+* List of REST endpoints
+* Overview of the resource definition
+* Summary of the available API operations
+
+Note that the *Path* for each API operation has been abbreviated by removing the `/accounts/{account_id}` prefix. You must include this in the full URL when issuing an actual API request.
+
+==== Additional information
+
 For a more complete description of the Astra REST API, including the endpoints, input parameters, and status codes, see link:../reference/api_reference.html[API reference]. And or practical examples of making API calls to perform common administrative tasks, see link:../workflows/workflows.html[Administrative workflows].

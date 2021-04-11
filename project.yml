@@ -45,17 +45,16 @@ homepage:
           url: /rest-core/diagnostics_debugging.html
     - title: Object model
       links:
-        - title: Introduction to REST endpoints
-          summary: Introduction and summary of the REST endpoints.
-          url: /object-model/intro_rest_endpoints.html
         - title: Entity-Relationship model
           summary: Internal object model and REST resources.
-          url: /object-model/er_model.html
+        - title: Versioning
+          summary: Versioning considerations for the API resources.
+          url: /object-model/versioning.html
         - title: URL format for API access.
           summary: Format of the URL used with the API.
           url: /object-model/url_format.html
         - title: Working with collections
-          summary: Using query parameters to access collections.
+          summary: Using query parameters to access the resource collections.
           url: /object-model/working_with_collections.html
     - title: Resource APIs
       links:

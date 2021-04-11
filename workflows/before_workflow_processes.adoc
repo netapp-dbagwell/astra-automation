@@ -68,7 +68,7 @@ There are additional keywords reserved for common variables as presented in the 
 |An access token is a temporary string which establishes identity and access to the Astra REST API.
 |===
 
-Here is an example where both types of keywords are used.
+Here is an example using the different types of keywords (*<ACCOUNT_ID>* and *<API_TOKEN>*):
 
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/*<ACCOUNT_ID>*/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer *<API_TOKEN>*'
+curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer <API_TOKEN>'

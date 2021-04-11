@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_api_user.html
+permalink: workflows/wf_api_users.html
 keywords:
 summary:
 ---
@@ -14,6 +14,9 @@ summary:
 
 [.lead]
 There are several basic workflow tasks you can use to manage your Astra users.
+
+[NOTE]
+The workflows below are all *basic* and consist of a single REST API call.
 
 == Get users
 
@@ -29,7 +32,7 @@ You can retrieve the users defined to Astra.
 
 Curl example::
 [source,curl]
-curl --location --request GET 'https://staging.cloudmanager.cloud.netapp.com/occm/api/vsa/metadata/buckets' --header 'x-agent-id: <AGENT_ID>' --header 'Authorization: Bearer <ACCESS_TOKEN>'
+curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer <API_TOKEN>'
 
 Input::
 
@@ -38,15 +41,3 @@ None
 Output::
 
 The Astra users are returned as objects in an array.
-
-JSON output example::
-[source,json]
-[
-    {
-        "user": "Martha"
-    }
-]
-
-== *Create user*
-
-xxx

@@ -1,0 +1,67 @@
+---
+sidebar: sidebar
+permalink: rest-core/diagnostics_support.html
+keywords:
+summary:
+---
+
+= Diagnostics and support
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+
+[IMPORTANT]
+Has support for problem detail data been implemented yet or is it still a future feature? Have this question on the index page.
+
+>> New endpoint? unreadNotifications ?
+
+== API resources
+
+There are several Astra features exposed through API resources that provide diagnostic information and support.
+
+[cols="20,80"*,options="header"]
+|===
+|Type
+|Description
+|Event
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Notification
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Unread notification
+|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|===
+
+== HTTP problem details
+
+The Astra REST API implements the Problem Detail standard as defined in link:https://www.rfc-editor.org/rfc/rfc7807.txt[RFC 7807].
+
+All HTTP responses with a 4xx and 5xx Status Code include a problem detail. When included, each problem detail response shall include a response header of `Content-type: application/problem+json`.
+
+=== Format of the JSON response
+
+Each problem detail response shall include a response body, in JSON format, that includes the following fields.
+
+>> table
+
+=== Summary of the problem detail data
+
+[cols="10,25,55,10"*,options="header"]
+|===
+|HTTP status
+|Title
+|Detail
+|Extensions
+|404
+|Resource not found
+|The resource specified in the request URI was not found
+|None
+|===
+
+=== Addition extensions
+
+xxx

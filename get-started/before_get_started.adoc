@@ -17,15 +17,15 @@ There are several steps you should take to prepare to use the Astra REST API and
 
 ===== Review REST concepts and implementation
 
-Make sure to review link:rest_implementation.html[Core REST implementation] for information about REST concepts and the details regarding how the Cloud Manager REST API is designed.
+Make sure to review link:../rest-core/rest_implementation.html[Core REST implementation] for information about REST concepts and the details regarding how the Cloud Manager REST API is designed.
 
 ===== Have Cloud Central account credentials
-You'll need the _Auth0_ account credentials to acquire an access token which is required for all the workflow processes.
+You'll need the *Auth0* account credentials to acquire an access token which is required for all the workflow processes.
 
 ===== Prepare to use the workflow processes
 
-Review link:workflow_processes.html[Understand the workflow processes] for more information about the organization and content of the workflows.
+Review link:../workflows/workflows.html[Administrative workflows] for more information about the organization and content of the workflows.
 
 ===== Getting more information
 
-You should be aware of the additional information resources as suggested in link:additional_resources.html[Additional resources].
+You should be aware of the additional information resources as suggested in link:../information/additional_resources.html[Additional resources].

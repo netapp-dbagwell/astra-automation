@@ -13,40 +13,22 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You should prepare to review and use the administrative workflow processes. This includes understanding the format and structure of the workflows
-
-*See CM and OTS*
+You should prepare to review and use the administrative workflow processes. This includes understanding their format and structure.
 
 == Introduction
 
-A _workflow_ is a sequence of one or more steps used to accomplish a specific administrative task or goal. With the Astra administratie workflows, each step is one of the following:
+A _workflow_ is a sequence of one or more steps used to accomplish a specific administrative task or goal. With the Astra, each step of an administrative workflows is one of the following:
 
 * REST API call
 * Invocation of another workflow
 
-The workflows provided include the minimum steps and parameters needed to accomplish each task. You can use these workflows as a starting point and customize them for your environment as needed.
+The provided workflows include the minimum steps and parameters needed to accomplish each task. You can use these workflows as a starting point and customize them for your environment as needed.
 
-== Organization in categories
-
-xxx
->> Based on organization of underlying object model
->> Organized around functional or administrative areas
-
-[cols="25,75"*,options="header"]
-|===
-|Category
-|Description
-|Identity management
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
-|Events and notifications
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
-|===
-
-== Types of workflows
+== Workflow types
 
 >> Not just endpoints and resources but around different APIs
 
-Some of the workflows are small and apply to only a single resource type or API endpoint, while other workflows can be larger and involve many API actions. To accommodate these differences, the workflow content under each category is arranged on the page as described in the table below.
+Some of the workflows are small and apply to only a single resource type or API endpoint, while other workflows can be larger and involve many API actions. To accommodate these differences, there are different types of workflows as described in the table below.
 
 [cols="20,80"*,options="header"]
 |===
@@ -74,9 +56,6 @@ Most of the variable tokens, identifiers, and other variables used in the sample
 
 A list of the keywords used in the workflow examples is presented in the table below.
 
-[NOTE]
-An access token and API token are different as described below.
-
 [cols="25,75"*,options="header"]
 |===
 |Keyword
@@ -85,4 +64,6 @@ An access token and API token are different as described below.
 |AUTH0 - An access token is a temporary string which establishes identity and access to the Astra REST API
 |<API_TOKEN>
 |An access token is a temporary string which establishes identity and access to the Astra REST API
+|<ACCOUNT_ID>
+|xxx
 |===

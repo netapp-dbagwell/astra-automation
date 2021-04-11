@@ -5,7 +5,7 @@ keywords: introduction, Astra REST API
 summary:
 ---
 
-= Introduction to the Astra REST API and automation options
+= Introduction to the Astra REST API
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,10 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-Most customers typically access the NetApp Astra service using a web browser. However, the service also includes a REST API which you can access directly using a programming language or utility such as Curl. The Astra REST API is based on modern technologies and current best practices. Some of the highlights and benefits of the API are presented below.
+Most customers initially access the NetApp Astra service using a web browser. However, the service also includes a REST API which you can access directly using a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
+
+[NOTE]
+In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API. Ansible is very popular.
 
 ==== Built on REST technology and design principles
 
@@ -21,6 +24,7 @@ The Astra API has been designed using REST technology and current best practices
 
 * Hypertext Transfer Protocol (HTTP)
 * JavaScript Object Notation (JSON)
+* Problem Details for HTTP APIs
 * Transport Layer Security (TLS)
 
 ==== Clear mapping between REST endpoint resources and object model
@@ -29,8 +33,7 @@ The external REST endpoints used to access the resources map to a consistent obj
 
 ==== Access to the NetApp cloud token-based security
 
-xxx
->> see separate popup content, based on Oauth 2, Auth0
+To use the REST API, you first need to access the Astra web user interface. Sign in to the service is managed using the OAuth2 standard as provided by Auth0.com.
 
 ==== Rich set of query parameters
 
@@ -39,7 +42,7 @@ The REST API provides a rich set of query parameters that can be used to access 
 * Filtering
 * Sorting
 * Pagination
-* Etc.
+* Count
 
 ==== Alignment with the Astra web UI
 

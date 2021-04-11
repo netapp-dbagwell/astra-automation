@@ -13,9 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
-
->> UML, can document the object model in UML
+Entity-Relationship modeling is a powerful software design tool. The Astra service and associated REST API have been designed using ER modeling and UML.
 
 == Introduction to the Astra object model
 

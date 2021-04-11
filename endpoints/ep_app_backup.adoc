@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: endpoints/ep_unread_notification.html
+permalink: endpoints/ep_app_backup.html
 keywords:
 summary:
 ---
 
-= Unread notification API
+= Application backup API
 :hardbreaks:
 :nofooter:
 :icons: font

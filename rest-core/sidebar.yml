@@ -6,8 +6,6 @@ entries:
     url: /rest-core/rest_web_services.html
   - title: Resources and collections
     url: /rest-core/resources_collections.html
-  - title: Basic operation
-    url: /rest-core/basic_operation.html
   - title: HTTP details
     url: /rest-core/http_details.html
   - title: Security

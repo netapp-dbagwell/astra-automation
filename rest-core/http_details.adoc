@@ -15,6 +15,14 @@ summary:
 [.lead]
 The details of how HTTP is used with the Astra REST API are presented below.
 
+>> See bottom of rest web services, must complete CRUD
+
+=== Format of the URL
+
+xxx
+
+See link:../object-model/url_format.html[URL format for API access] for more information.
+
 === HTTP methods
 
 The HTTP methods or verbs supported by the API are presented in the table below.

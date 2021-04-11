@@ -15,6 +15,8 @@ summary:
 [.lead]
 The Astra REST API operates on resource instances and collections of resource instances. These resources and collections provide the foundation for what is possible with the API.
 
+>> See RESTful rant at API conventions 3.0 and add to this page
+
 [NOTE]
 Conceptually a REST *resource* is similar to an *object* used with object-oriented programming (OOP) languages and systems. Sometimes these terms can be used interchangeably depending on the context. But in generally, "resource" is preferred when referring to external API actions and "object" is used when the data is stored internally at the server.
 
@@ -24,9 +26,9 @@ Most REST APIs, particularly those created using the OpenAPI specification, shar
 
 === Resource types and instances
 
-Resources are defined to model system or server-based entities. A resource type is the definition, somewhat similarlike a class definition with OOP
+Resources are defined to model system or server-based entities. A resource type is the definition, somewhat similar like a class definition with OOP
 
- Externally these resources are represented with JSON using key-value pairs.
+Externally these resources are represented with JSON using key-value pairs.
 
 Every REST resource is assigned a unique identifier when it is created, which in most cases is a 128-bit UUIDv4. The assigned UUID values are immutable and are used both externally and internally within Astra to access and manage the resources.
 

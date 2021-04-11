@@ -13,11 +13,11 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The User API allows you to manage the Astra user resources.
+The User API allows you to manage the Astra users
 
 == Endpoints
 
-The following endpoints are included with the User API.
+The endpoints included with this API are shown in the table below.
 
 [cols="25,75"*,options="header"]
 |===
@@ -37,6 +37,14 @@ The following media types are supported:
 
 * application/astra-user
 * application/astra-user+json
+
+==== State
+
+The User resource type maintains a state which can be one of the following:
+
+* pending
+* active
+* suspended
 
 ==== Resource example
 
@@ -74,11 +82,11 @@ The following media types are supported:
 
 == API operations
 
-The User API is defined through the use of HTTP headers and methods.
+The operations available with this API are defined in terms of the HTTP headers and methods.
 
 ==== HTTP headers
 
-The following headers are used with the User API.
+The following headers are used with this API.
 
 [cols="30,15,55"*,options="header"]
 |===
@@ -87,15 +95,15 @@ The following headers are used with the User API.
 |Description
 |Authorization
 |Request
-|Bearer token of the user or API key for the user
+|Bearer token of the user or API key for the user.
 |Location
 |Response
-|Full URL of the newly created resource
+|Full URL of the newly created resource.
 |===
 
-==== Summary of operations
+==== Summary of API calls
 
-A summary of the API operations provided with the User API is shown in the table below.
+A summary of the API calls available with this API is shown in the table below.
 
 [cols="15,10,25,50"*,options="header"]
 |===

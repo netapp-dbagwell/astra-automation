@@ -15,52 +15,55 @@ summary:
 [.lead]
 xxx
 
+[NOTE]
+xxx interchangeably
+
+== Defining and using REST resources
+
+xxx
+
+==== Resource types and instances
+
+xxx
+xxx
 *key value pairs*
-*balance with oper considerations*
-*common format, four values, metadata*
-*object state*
+>> UUIDv4
+>> see "object references and access" (OA)
 
->> Guiding Astra REST API, see "API conventions"
->> OA / basic operational characteristics
->> remove overlapping content at bottom
+==== Schema definitions
 
-=== Resource types and schemas
+xxx
+>> OpenAPI spec
+
+==== Collections of resource instances
+
+xxx
+
+==== Relation to REST endpoints
+
+xxx
+
+==== Common format for Astra resources
 
 xxx
 >> metadata (list? table?)
 >> First 3-4 variables always included (list? table?)
 
-=== Resource instances and identifiers
+*object state*
 
-xxx
->> UUIDv4
->> see "object references and access" (OA)
+>> Guiding Astra REST API, see "API conventions"
+>> OA / basic operational characteristics
 
-=== Collections of resource instances
-
-xxx
-
-== Types of endpoints
-
-An endpoint is described in terms of the URI and API actions. There are two types of endpoints as described below.
-
-[cols="20,80"*,options="header"]
-|===
-|Type
-|Description
-|Instance
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Collection
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|===
-
-== Organization
+== Summary of resources for the Astra REST API
 
 The resource endpoints provided in the Astra REST API are organized into three categories as described below.
 
+>> Resource categories
+>> core, managed applications, topology
+
 ==== Core resources
 
-The core endpoints provide foundational services needed to establish and maintain xxx
+The core resources provide foundational services needed to establish and maintain xxx
 
 [cols="20,80"*,options="header"]
 |===
@@ -81,7 +84,6 @@ The core endpoints provide foundational services needed to establish and maintai
 |User
 |Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
 |===
-
 
 ==== Managed Kubernetes Application resources
 

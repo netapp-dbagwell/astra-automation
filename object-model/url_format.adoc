@@ -13,22 +13,21 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The format of the endpoint path needed to access the Astra REST API is a combination of variables and reflects the underlying object model.
+The format of the URL endpoint path needed to access the Astra REST API is a composite value and is based on the underlying object model.
 
-[NOTE]
-The URL format used to access the Astra REST API is tightly coupled with the underlying object model. See link:url_format.html[URL format for API access] for more information.
+[IMPORTANT]
+I think it's a good idea to describe how versioning works. But the last time I spoke with David Slik, this area of the API was still undecided.
 
-
-=== Account as the root
+==== Account as the root
 
 xxx
 >> Relationship of the object model to REST endpoints
 
-=== Resource categories
+==== Resource categories
 
 xxx
 
-=== Versioning
+==== Versioning
 
 xxx
 

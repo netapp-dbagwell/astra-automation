@@ -47,11 +47,11 @@ The User resource type maintains a state which can be one of the values in the t
 |State
 |Description
 |pending
-|The user account is in the process of being created. The API caller can read and modify the user resource. This is the default value.
+|The user account is in the process of being created (default). The API caller can read and modify the user resource.
 |active
-|The user account is operational. The user can log in if account `isEnabled` is `true`.
+|The user account is operational. The user can sign in if account `isEnabled` is `true`.
 |suspended
-|The user account is suspended and cannot be used regardless of account `isEnabled` setting.
+|The user account is suspended and cannot be used regardless of account setting `isEnabled`.
 |===
 
 ==== Resource example
@@ -90,7 +90,7 @@ The User resource type maintains a state which can be one of the values in the t
 
 == API operations
 
-The operations available with this API can be defined in terms of the HTTP headers and methods.
+The operations available with this API are defined in terms of the HTTP headers and methods.
 
 ==== HTTP headers
 
@@ -109,34 +109,34 @@ The following headers are used with this API.
 |Full URL of the newly created resource.
 |===
 
-==== Summary of API calls
+==== Summary of the API calls
 
 A summary of the API calls available with this API is shown in the table below.
 
-[cols="15,10,25,50"*,options="header"]
+[cols="20,10,70"*,options="header"]
 |===
 |Action
 |HTTP
 |Path
-|Description
+
 |Create user
 |POST
 |/core/v1/users
-|Create a new user based on the contents of the request body.
+
 |List users
 |GET
 |/core/v1/users
-|Returns an array of JSON objects for the user resources based on the query parameters.
+
 |Read user
 |GET
 |/core/v1/users/{user_id}
-|Returns a JSON object for the user resource based on the user id.
+
 |Replace user
 |PUT
 |/core/v1/users/{user_id}
-|Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
+
 |Delete user
 |DELETE
 |/core/v1/users/{user_id}
-|Removes the stored user resource.
+
 |===

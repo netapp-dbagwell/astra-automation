@@ -111,7 +111,7 @@ The App resource type maintains a state which can be one of the values in the ta
 
 == API operations
 
-The operations available with this API can be defined in terms of the HTTP headers and methods.
+The operations available with this API are defined in terms of the HTTP headers and methods.
 
 ==== HTTP headers
 
@@ -130,34 +130,34 @@ The following headers are used with this API.
 |Full URL of the newly created resource.
 |===
 
-==== Summary of API calls
+==== Summary of the API calls
 
 A summary of the API calls available with this API is shown in the table below.
 
-[cols="15,10,25,50"*,options="header"]
+[cols="20,10,70"*,options="header"]
 |===
 |Action
 |HTTP
 |Path
-|Description
+
 |Create app
 |POST
 |/topology/v1/managedClusters/{managedCluster_id}/apps
-|Create a new user based on the contents of the request body.
+
 |List apps
 |GET
 |
-|Returns an array of JSON objects for the user resources based on the query parameters.
+
 |Read app
 |GET
 |
-|Returns a JSON object for the user resource based on the user id.
+
 |Replace app
 |PUT
 |
-|Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
+
 |Delete app
 |DELETE
 |
-|Removes the stored app resource.
+
 |===

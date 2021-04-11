@@ -13,12 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
-
-[IMPORTANT]
-Has support for problem detail data been implemented yet or is it still a future feature? Have this question on the index page.
-
->> New endpoint? unreadNotifications ?
+There are several support features available with the Astra REST API that can be used for diagnostics and debugging.
 
 == API resources
 
@@ -29,11 +24,11 @@ There are several Astra features exposed through API resources that provide diag
 |Type
 |Description
 |Event
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|System activities that are recorded as part of Astra processing.
 |Notification
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|A subset of the Events that are considered important enough to be presented to the user.
 |Unread notification
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|The notifications that have yet to be read or retrieved by the user.
 |===
 
 == HTTP problem details

@@ -13,22 +13,15 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-Entity-Relationship modeling is a powerful software design tool. The Astra service and associated REST API have been designed using ER modeling and UML.
+Entity-Relationship modeling is a powerful software design tool. The Astra service and associated REST API have been designed using ER modeling with UML.
 
->> Designed using ER model technique
-
-== Introduction to the Astra object model
-
-xxx
+[IMPORTANT]
+My intention has been to recreate UML diagrams for the endpoints. Would like to see if that is a good idea.
 
 == Core objects
 
-xxx
-
->> insert graphic
+*INSERT GRAPHIC*
 
 == Topology and Kubernetes objects
 
-xxx
-
->> insert graphic
+*INSERT GRAPHIC*

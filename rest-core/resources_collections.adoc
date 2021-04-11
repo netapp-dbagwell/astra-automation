@@ -13,108 +13,120 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The Astra REST API operates on resource instances and collections of resource instances. These resources and collections provide the foundation for what is possible with the API.
 
 [NOTE]
-xxx interchangeably
+Conceptually a REST *resource* is similar to an *object* used with object-oriented programming (OOP) languages and systems. Sometimes these terms can be used interchangeably depending on the context. But in generally, "resource" is preferred when referring to external API actions and "object" is used when the data is stored internally at the server.
 
 == Defining and using REST resources
 
-xxx
+Most REST APIs, particularly those created using the OpenAPI specification, share a common approach regarding their structure and definition.
 
-==== Resource types and instances
+=== Resource types and instances
 
-xxx
-xxx
-*key value pairs*
->> UUIDv4
->> see "object references and access" (OA)
+Resources are defined to model system or server-based entities. A resource type is the definition, somewhat similarlike a class definition with OOP
 
-==== Schema definitions
+ Externally these resources are represented with JSON using key-value pairs.
 
-xxx
->> OpenAPI spec
+Every REST resource is assigned a unique identifier when it is created, which in most cases is a 128-bit UUIDv4. The assigned UUID values are immutable and are used both externally and internally within Astra to access and manage the resources.
 
-==== Collections of resource instances
+[NOTE]
+The universally unique identifier version 4 (UUIDv4) is a widely used standard. UUIDv4 values are randomly generated.
 
-xxx
+The UUIDv4 values are used to
 
-==== Relation to REST endpoints
+=== Collections of resource instances
 
 xxx
 
-==== Common format for Astra resources
+=== Format for all Astra resources
 
-xxx
->> metadata (list? table?)
->> First 3-4 variables always included (list? table?)
+Each Astra resource is defined using a common format.
 
-*object state*
+===== Common data
 
->> Guiding Astra REST API, see "API conventions"
->> OA / basic operational characteristics
+Every API resource has the common key-values shown in the following table.
+
+[cols="15,85"*,options="header"]
+|===
+|Key
+|Description
+
+|type
+|Every resource shall have a globally unique resource type contained in the value of the "type" key. This shall be known as the "resource type".
+
+|version
+|Every resource shall have a version identifier contained in the value of the "version" key. This shall be known as the "resource version".
+
+|id
+|Every resource shall have a globally unique identifier contained in the value of the "id" key. This shall be known as the "resource identifier". The resource identifier shall act as the primary key for collections.
+
+|metadata
+|Every resource shall have a metadata object. The metadata object contains user and system labels.
+|===
+
+===== Metadata object
+
+Each Astra resource includes a metadata JSON object with the key-values shown in the following table. The key value is `metadata`.
+
+[cols="15,85"*,options="header"]
+|===
+|Key
+|Description
+
+|labels
+|JSON Array of client-specified labels associated with the resource.
+
+|creationTimestamp
+|JSON string containing a timestamp indicating when the resource was created.
+
+|modificationTimestamp
+|JSON String containing an ISO-8601 formatted timestamp indicating when the resource was last altered.
+
+|createdBy
+|JSON String containing a UUIDv4 identifier of the User ID that created the resource. If the resource was created by an internal system component, and there is no UUID associated with the creating entity, the NULL UUID shall be used.
+
+|===
+
+===== Resource state
+
+Selected resource types have a state value which can be used to control access and orchestrate orderly lifecycle transitions.
 
 == Summary of resources for the Astra REST API
 
-The resource endpoints provided in the Astra REST API are organized into three categories as described below.
+The resource endpoints provided in the Astra REST API are organized into three categories including:
 
->> Resource categories
->> core, managed applications, topology
+* Core
+* Managed applications
+* Topology
 
-==== Core resources
+The resources are listed below. See link:../endpoints/resource_apis.html[Resource APIs] for more informaiton.
 
-The core resources provide foundational services needed to establish and maintain xxx
+===== Core resources
 
-[cols="20,80"*,options="header"]
-|===
-|API
-|Description
-|Credential
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Event
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Notification
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Role Binding
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Token
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Unread notification
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|User
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|===
+The core resource endpoints provide foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
 
-==== Managed Kubernetes Application resources
+* Credential
+* Event
+* Notification
+* Role Binding
+* Token
+* Unread notification
+* User
 
-The managed Kubernetes endpoints xxx
+===== Managed application resources
 
-[cols="20,80"*,options="header"]
-|===
-|API
-|Description
-|Application asset
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Application backup
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Application snapshot
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Managed app
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Schedule
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|===
+The managed application resource endpoints provide access to the managed Kubernetes applications. The endpoints include:
+
+* Application asset
+* Application backup
+* Application snapshot
+* Managed app
+* Schedule
 
 ==== Topology resources
 
-The topology endpoints xxx
+The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
 
-[cols="20,80"*,options="header"]
-|===
-|API
-|Description
-|App API
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|Volume
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
-|===
+* App
+* Volume

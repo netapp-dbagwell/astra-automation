@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Resource APIs
+= Resources
 :hardbreaks:
 :nofooter:
 :icons: font

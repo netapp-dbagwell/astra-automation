@@ -2,8 +2,10 @@ section: rest-core
 title: Core REST implementation
 url: /rest-core/rest_implementation.html
 entries:
-  - title: Basic concepts
-    url: /rest-core/concepts.html
+  - title: REST web services
+    url: /rest-core/rest_web_services.html
+  - title: Resources and collections
+    url: /rest-core/resources_collections.html
   - title: HTTP details
     url: /rest-core/http_details.html
   - title: Security

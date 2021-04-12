@@ -13,12 +13,13 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The Astra REST API provides a multi-faceted
 
 [NOTE]
-All HTTP traffic is protected by TLS, etc. (not a separate section)
+In addition to the core security technologies used with Astra, all HTTP traffic is protected using transport layer security (TLS).
 
 === OAuth 2 authorization tokens
+
 
 >> web UI and API?
 >> Auth0
@@ -46,13 +47,13 @@ xxx
 |Role
 |Description
 |Owner
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|The creator and owner of the resource.
 |Admin
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|xxx
 |Member
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Yyyy yyyy blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
 |Viewer
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
+|Yyyy yyyy blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
 |SRE
-|Blah blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx xxxx
+|Yyyy yyyy blah xxx xxxxx xx xxxx xxx xxxx xxxxxx xxx xxx xxxx xxx xxxx x
 |===

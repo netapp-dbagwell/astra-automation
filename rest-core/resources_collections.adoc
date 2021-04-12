@@ -140,22 +140,3 @@ The topology resource endpoints provide access to the unmanaged applications and
 
 * App
 * Volume
-
-== API transaction and the CRUD model
-
-xxx
-
-===== Request and response API transaction
-
-Every REST API call is performed as an HTTP request to the ONTAP system which generates an associated response to the client. This request/response pair is considered an API transaction. Before using the API, you should be familiar with the input variables available to control a request and the contents of the response output.
-
-===== Support for CRUD operations
-
-Each of the resources available through the ONTAP REST API is accessed based on the CRUD model:
-
-* Create
-* Read
-* Update
-* Delete
-
-For some of the Astra resources, only a subset of the operations is supported. You should review the link:../reference/api_reference.html[API reference] for more information.

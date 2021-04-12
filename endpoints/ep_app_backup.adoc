@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Application backup API
+= Application backup
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Managed application API
+= Managed application
 :hardbreaks:
 :nofooter:
 :icons: font

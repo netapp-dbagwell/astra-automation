@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Application snapshot API
+= Application snapshot
 :hardbreaks:
 :nofooter:
 :icons: font

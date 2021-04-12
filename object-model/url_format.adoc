@@ -13,24 +13,33 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The format of the URL path needed to access a resource through the Astra REST API is a composite value and is based on the underlying object model.
-
-[IMPORTANT]
-I think it's a good idea to describe how versioning works. But the last time I spoke with David Slik, this area of the API was still undecided.
+The format of the URL path used to access a resource through the Astra REST API is a composite value based on the underlying object model.
 
 ==== Account as the root
 
-xxx
->> Relationship of the object model to REST endpoints
+The root of the resource path used to reach every endpoint is the Astra account. And so all paths in the URL begin with `/account/{account_id}`. Internally this reflects a design where all resource access is based on the specific account being used.
 
 ==== Endpoint resource category
 
+The Astra resource endpoints fall into three different categories:
+
+* Core
+* Managed application
+* Topology
+
+See link:../rest-code/resources_collections.html[Resources and collections] for more information.
+
+==== Category version
+
+Each of the three resource categories has a version which controls which resources are accessed. Initially version 1 (`v1`) can be used.
+
+[IMPORTANT]
+I think it's a good idea to describe how versioning works, category versus individual resource. But the last time I spoke with David Slik, this area of the API was still undecided.
+
+==== Resource instance or collection
+
 xxx
 
-==== Versioning
+==== Example
 
-xxx
-
-=== Summary of the URL format
-
-xxx
+Based on several variables, a typical path to an endpoint is `/accounts/{account_id}/core/v1/users`.

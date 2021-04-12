@@ -34,9 +34,6 @@ homepage:
         - title: REST web services
           summary: Technology foundations of REST web services.
           url: /rest-core/rest_web_services.html
-        - title: Resources and collections
-          summary: Understand how the Astra resources can be accessed.
-          url: /rest-core/resources_collections.html
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
@@ -54,16 +51,16 @@ homepage:
         - title: Working with collections
           summary: Using query parameters to access the resource collections.
           url: /object-model/working_with_collections.html
-    - title: Resource APIs
+    - title: Resources
       links:
         - title: Resources and collections
           summary: Become familiar with the REST resources and collections.
           url: /rest-core/resources_collections.html
-        - title: Details of the resource APIs
-          summary: Concise introduction to the various resource APIs.
-          url: /endpoints/resource_apis.html
+        - title: Details of the Astra REST API resources
+          summary: Concise introduction to the various resources.
+          url: /endpoints/resources.html
         - title: User API
-          summary: An example of a typical resource API.
+          summary: An example of a typical resource.
           url: /endpoints/ep_user.html
     - title: Administrative workflows
       links:

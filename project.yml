@@ -34,12 +34,12 @@ homepage:
         - title: REST web services
           summary: Technology foundations of REST web services.
           url: /rest-core/rest_web_services.html
+        - title: Resources and collections
+          summary: Understand how the Astra resources can be accessed.
+          url: /rest-core/resources_collections.html
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
-        - title: Security
-          summary: Review the API security technologies.
-          url: /rest-core/security.html
         - title: Diagnostics and support
           summary: Prepare to support Astra applications.
           url: /rest-core/diagnostics_support.html

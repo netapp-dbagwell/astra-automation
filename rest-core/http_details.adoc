@@ -34,6 +34,47 @@ Each of the resource instances and collections available through the ONTAP REST 
 
 For some of the Astra resources, only a subset of these operations is supported. You should review the link:../reference/api_reference.html[API reference] for more information about a specific API call.
 
+== Security
+
+The Astra REST API provides a multiple layers of security.
+
+===== Astra API tokens
+
+xxx
+See link:getting_api_token.html[Getting an API token]
+
+xxx
+
+===== OAuth 2 authorization tokens
+
+xxxx
+
+>> web UI and API?
+>> Auth0
+xxx
+>> Bearer tokens
+>> Are there two types (sign in CC, and then Astra service)?
+>> HTTP request headers
+
+===== Roles and access control
+
+xxx
+>> RBAC
+>> bind user to role?
+>> Check roles, DS earlier email?
+>> table below for Astra Service
+>> search OpenAPI JSON for "owner" or "viewer"
+
+* Owner
+* Admin
+* Member
+* Viewer
+* SRE
+
+===== TLS protection for network connections
+
+All HTTP network traffic is protected using transport layer security (TLS) standard.
+
 == HTTP methods
 
 The HTTP methods or verbs supported by the API are presented in the table below.

@@ -13,62 +13,61 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The Astra REST API is defined in terms of how HTTP and the related parameters are used to operate on resource instances and collections. The details of how HTTP is used with the Astra API are presented below.
+The Astra REST API is defined by how HTTP and the related parameters are used to act on the resources. The details of the Astra HTTP implementation are presented below.
 
-== API transaction and the CRUD model
+== API transactions and the CRUD model
 
 The Astra REST API implements a transactional model with well-defined operations and state transitions.
 
 ===== Request and response API transaction
 
-Every REST API call is performed as an HTTP request to the ONTAP system which generates an associated response to the client. This request/response pair is considered an API transaction. Before using the API, you should be familiar with the input variables available to control a request and the contents of the response output.
+Every REST API call is performed as an HTTP request to the Astra service. Each request generates an associated response back to the client. This request-response pair can be considered to be an API transaction.
 
-===== Support for CRUD operations
+===== Support for CRUD operational model
 
-Each of the resources available through the ONTAP REST API is accessed based on the CRUD model:
+Each of the resource instances and collections available through the ONTAP REST API is accessed based on the CRUD model. There are four primary operations, each of which maps to a single HTTP method. The operations include:
 
 * Create
 * Read
 * Update
 * Delete
 
-For some of the Astra resources, only a subset of the operations is supported. You should review the link:../reference/api_reference.html[API reference] for more information.
+For some of the Astra resources, only a subset of these operations is supported. You should review the link:../reference/api_reference.html[API reference] for more information about a specific API call.
 
-== Format of the URL
-
-xxx
-
-
-=== HTTP methods
+== HTTP methods
 
 The HTTP methods or verbs supported by the API are presented in the table below.
-
-[NOTE]
-See link:../object-model/url_format.html[URL format for API access] for more information about the format of the URL.
 
 [cols="15,15,70"*,options="header"]
 |===
 |Method
 |CRUD
 |Description
+
 |GET
 |Read
 |Retrieves object properties for a resource instance or collection. This is considered a *list* operation when used with a collection.
+
 |POST
 |Create
 |Creates a new resource instance based on the input parameters. The long-term URL is returned in a `Location` response header.
+
 |PUT
 |Update
 |Updates an entire resource instance with the supplied JSON request body. Key values that are not user modifiable are preserved.
+
 |DELETE
 |Delete
 |Deletes an existing resource instance.
+
 |HEAD
 |Read
 |Essentially issues a GET request but only returns the HTTP response headers.
+
 |OPTIONS
 |Read
 |Used to determine what HTTP methods are supported at a specific REST endpoint.
+
 |===
 
 === Request and response headers
@@ -86,7 +85,7 @@ The following table summaries the HTTP headers used with the Astra REST API.
 
 |Accept
 |Request
-|
+|With
 
 |Authorization
 |Request
@@ -94,11 +93,11 @@ The following table summaries the HTTP headers used with the Astra REST API.
 
 |Content-Type
 |Response
-|x
+|Returned based on the `Accept` request header.
 
 |Etag
 |Response
-|xxx
+|Included with a successful as defined with RFC 7232. The value is a hexadecimal representation of the MD5 value.
 
 |If-Match
 |Request
@@ -114,7 +113,7 @@ The following table summaries the HTTP headers used with the Astra REST API.
 
 |Location
 |Response
-|Contains the full URL of the newly created resource
+|Contains the full URL of the newly created resource.
 
 |===
 

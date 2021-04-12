@@ -13,35 +13,43 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The Astra REST API operates on resource instances and collections of resource instances. These resources and collections provide the foundation for what is possible with the API.
-
->> See RESTful rant at API conventions 3.0 and add to this page
+The Astra REST API provides access to resource instances and collections of resource instances. These resources provide the foundation for the actions available with the API.
 
 [NOTE]
-Conceptually a REST *resource* is similar to an *object* used with object-oriented programming (OOP) languages and systems. Sometimes these terms can be used interchangeably depending on the context. But in generally, "resource" is preferred when referring to external API actions and "object" is used when the data is stored internally at the server.
+Conceptually a REST *resource* is similar to an *object* used with object-oriented programming (OOP) languages and systems. Sometimes these terms can be used interchangeably depending on the context. But in generally, the term "resource" is preferred when referring to the external API actions while "object" is used when the data is stored internally at the server.
 
-== Defining and using REST resources
+== Attributes of an Astra resources
 
-Most REST APIs, particularly those created using the OpenAPI specification, share a common approach regarding their structure and definition.
+The Astra resource APIs conform to RESTful design principles. Each Astra resource instance is created based on a resource type. A set of resource instances is known as a collection. All API calls act on an individual resource or a collection of resources.
 
-=== Resource types and instances
+===== Resource types
 
-Resources are defined to model system or server-based entities. A resource type is the definition, somewhat similar like a class definition with OOP
+The resource types included with the Astra REST API have the following characteristics:
 
-Externally these resources are represented with JSON using key-value pairs.
+* Every resource type is defined using a schema (typically in JSON)
+* Every resource schema includes the resource type and version
 
-Every REST resource is assigned a unique identifier when it is created, which in most cases is a 128-bit UUIDv4. The assigned UUID values are immutable and are used both externally and internally within Astra to access and manage the resources.
+===== Resource instances
 
-[NOTE]
-The universally unique identifier version 4 (UUIDv4) is a widely used standard. UUIDv4 values are randomly generated.
+Resource instances available through the Astra REST API have the following characteristics:
 
-The UUIDv4 values are used to
+* Created based on a resource type as indicated by a *mimetype* value
+* Composed of stateful data which is maintained by the Astra service
+* Accessible through a unique and long-lived URL
+* Has one or more representations in JSON which is appended to the mimetype
 
-=== Collections of resource instances
+===== Resource instances
 
-xxx
+Resource collections available through the Astra REST API have the following characteristics:
 
-=== Format for all Astra resources
+* The set of resource instances of a specific resource type is known as a collection
+* Collections of resource instances have a unique and long-lived URL
+
+===== Instance identifiers
+
+Every REST resource instance is assigned a unique identifier when it is created. This identifier a 128-bit UUIDv4 value. The assigned UUID values are globally unique and immutable. After issuing an API call that creates a new object instance, a URL with the associated id value is returned to the caller in the location header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
+
+== Common type definition for Astra resources
 
 Each Astra resource is defined using a common format.
 
@@ -126,9 +134,28 @@ The managed application resource endpoints provide access to the managed Kuberne
 * Managed app
 * Schedule
 
-==== Topology resources
+===== Topology resources
 
 The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
 
 * App
 * Volume
+
+== API transaction and the CRUD model
+
+xxx
+
+===== Request and response API transaction
+
+Every REST API call is performed as an HTTP request to the ONTAP system which generates an associated response to the client. This request/response pair is considered an API transaction. Before using the API, you should be familiar with the input variables available to control a request and the contents of the response output.
+
+===== Support for CRUD operations
+
+Each of the resources available through the ONTAP REST API is accessed based on the CRUD model:
+
+* Create
+* Read
+* Update
+* Delete
+
+For some of the Astra resources, only a subset of the operations is supported. You should review the link:../reference/api_reference.html[API reference] for more information.

@@ -36,34 +36,21 @@ For some of the Astra resources, only a subset of these operations is supported.
 
 == Security
 
-The Astra REST API provides a multiple layers of security.
+The Astra REST API provides multiple layers of security.
 
 ===== Astra API tokens
 
-xxx
-See link:getting_api_token.html[Getting an API token]
+To use the Astra REST API, you must provide an API token on every request in the `Authorization` request header. Note the following:
 
-xxx
+* You can generate an API token at the Astra web user interface.
+* A token never expires after it is created.
+* You can revoke a token at any time at the Astra web user interface.
 
-===== OAuth 2 authorization tokens
-
-xxxx
-
->> web UI and API?
->> Auth0
-xxx
->> Bearer tokens
->> Are there two types (sign in CC, and then Astra service)?
->> HTTP request headers
+See link:getting_api_token.html[Getting an API token] for more information.
 
 ===== Roles and access control
 
-xxx
->> RBAC
->> bind user to role?
->> Check roles, DS earlier email?
->> table below for Astra Service
->> search OpenAPI JSON for "owner" or "viewer"
+Each Astra user is assigned to a single role. The role is used to restrict access to the API calls. The defined roles include:
 
 * Owner
 * Admin

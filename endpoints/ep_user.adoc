@@ -13,13 +13,13 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The User API allows you to manage the Astra user resources.
+The User API allows you to access and administer the Astra users.
 
 == Endpoints
 
-The following endpoints are included with the User API.
+The endpoints included with this API are shown in the table below.
 
-[cols="25,75"*,options="header"]
+[cols="20,80"*,options="header"]
 |===
 |Type
 |Endpoint
@@ -37,6 +37,22 @@ The following media types are supported:
 
 * application/astra-user
 * application/astra-user+json
+
+==== State
+
+The User resource type maintains a state which can be one of the values in the table below.
+
+[cols="15,85"*,options="header"]
+|===
+|State
+|Description
+|pending
+|The user account is in the process of being created (default). The API caller can read and modify the user resource.
+|active
+|The user account is operational. The user can sign in if account `isEnabled` is `true`.
+|suspended
+|The user account is suspended and cannot be used regardless of account setting `isEnabled`.
+|===
 
 ==== Resource example
 
@@ -72,13 +88,13 @@ The following media types are supported:
     }
 }
 
-== API definition
+== API operations
 
-The User API is defined through the use of HTTP headers and methods.
+The operations available with this API are defined in terms of the HTTP headers and methods.
 
 ==== HTTP headers
 
-The following headers are used with the User API.
+The following headers are used with this API.
 
 [cols="30,15,55"*,options="header"]
 |===
@@ -87,43 +103,40 @@ The following headers are used with the User API.
 |Description
 |Authorization
 |Request
-|Bearer token of the user or API key for the user
+|Bearer token of the user or API key for the user.
 |Location
 |Response
-|Full URL of the newly created resource
+|Full URL of the newly created resource.
 |===
 
-==== Operations
+==== Summary of the API calls
 
-A summary of the API operations provided with the User API is shown in the table below.
+A summary of the API calls available with this API is shown in the table below.
 
-[NOTE]
-The *Path* for each operation has been abbreviated by removing the `/accounts/{account_id}` prefix. You must include this in the full URL when issuing an actual API request. See link:../workflows/workflows.html[Administrative workflows] for more information.
-
-[cols="15,10,25,50"*,options="header"]
+[cols="25,15,60"*,options="header"]
 |===
 |Action
 |HTTP
 |Path
-|Description
+
 |Create user
 |POST
 |/core/v1/users
-|Create a new user based on the contents of the request body.
+
 |List users
 |GET
 |/core/v1/users
-|Returns an array of JSON objects for the user resources based on the query parameters.
+
 |Read user
 |GET
 |/core/v1/users/{user_id}
-|Returns a JSON object for the user resource based on the user id.
+
 |Replace user
 |PUT
 |/core/v1/users/{user_id}
-|Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
+
 |Delete user
 |DELETE
 |/core/v1/users/{user_id}
-|Removes the stored user resource.
+
 |===

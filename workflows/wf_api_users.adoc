@@ -15,9 +15,6 @@ summary:
 [.lead]
 There are several basic workflow tasks you can use to manage your Astra users.
 
-[NOTE]
-The workflows below are all *basic* and consist of a single REST API call.
-
 == Get users
 
 You can retrieve the users defined to Astra.

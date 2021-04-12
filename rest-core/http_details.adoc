@@ -15,9 +15,20 @@ summary:
 [.lead]
 The details of how HTTP is used with the Astra REST API are presented below.
 
+>> See bottom of rest web services, must complete CRUD
+
+=== Format of the URL
+
+xxx
+
+See link:../object-model/url_format.html[URL format for API access] for more information.
+
 === HTTP methods
 
 The HTTP methods or verbs supported by the API are presented in the table below.
+
+>> PUT:
+Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
 
 [NOTE]
 CRUD is the model for how an API is used. Each operation can be categories as a create, read, update, or delete.
@@ -54,6 +65,8 @@ xxx
 >> see link:rest_endpoints_resources.html[REST endpoints and resources] for xxx
 
 === Request and response headers
+
+>> See API conventions section 5.2
 
 The following table summaries the HTTP headers used with the Astra REST API.
 

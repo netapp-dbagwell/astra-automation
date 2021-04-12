@@ -18,7 +18,7 @@ homepage:
     - title: Get started
       links:
         - title: Introduction
-          summary: Get an overview of the Astra REST API and automation options.
+          summary: Get an overview of the Astra REST API.
           url: /intro/introduction.html
         - title: Before you begin
           summary: Prepare to get started using the API.
@@ -31,42 +31,39 @@ homepage:
           url: /get-started/hello_world.html
     - title: REST implementation
       links:
-        - title: Concepts
-          summary: Review basics REST concepts.
-          url: /rest-core/concepts.html
+        - title: REST web services
+          summary: Technology foundations of REST web services.
+          url: /rest-core/rest_web_services.html
         - title: HTTP details
-          summary: Understand details of the HTTP implementation.
+          summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
         - title: Security
-          summary: Review API security
+          summary: Review the API security technologies.
           url: /rest-core/security.html
-        - title: Diagnostics
-          summary: Be ready to debug and support the API.
-          url: /rest-core/diagnostics_debugging.html
+        - title: Diagnostics and support
+          summary: Prepare to support Astra applications.
+          url: /rest-core/diagnostics_support.html
     - title: Object model
       links:
-        - title: Introduction to REST endpoints
-          summary: Introduction and summary of the REST endpoints.
-          url: /object-model/intro_rest_endpoints.html
-        - title: Entity-Relationship model
-          summary: Internal object nmodel and REST resources.
+        - title: Entity-Relationship design
+          summary: Designed using ER modeling.
           url: /object-model/er_model.html
-        - title: URL format for API access
+        - title: URL format for API access.
           summary: Format of the URL used with the API.
           url: /object-model/url_format.html
         - title: Working with collections
-          summary: Advanced techniques for collections.
+          summary: Using query parameters to access the resource collections.
           url: /object-model/working_with_collections.html
     - title: Resource APIs
       links:
-        - title: Introduction to REST endpoints
-          summary: A high-level introduction to the REST endpoints.
-          url: /object-model/intro_rest_endpoints.html
-        - title: API endpoints and resources
-          summary: Description of the endpoints as organized into separate resource APIs.
+        - title: Resources and collections
+          summary: Become familiar with the REST resources and collections.
+          url: /rest-core/resources_collections.html
+        - title: Details of the resource APIs
+          summary: Concise introduction to the various resource APIs.
           url: /endpoints/resource_apis.html
         - title: User API
-          summary: An example of a resource API.
+          summary: An example of a typical resource API.
           url: /endpoints/ep_user.html
     - title: Administrative workflows
       links:
@@ -74,8 +71,8 @@ homepage:
           summary: Prepare to start using the workflows.
           url: /workflows/before_workflow_processes.html
         - title: Identity management
-          summary: Workflows used to administer users, credentials, roles, and tokens.
+          summary: Workflowsto administer users, credentials, roles, and tokens.
           url: /workflows/admin_wf_identity.html
         - title: Events and notifications
-          summary: Workflows used to manage events and notifications.
+          summary: Workflows to manage events and notifications.
           url: /workflows/admin_wf_events.html

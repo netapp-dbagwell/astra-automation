@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: object-model/working_with_collections.html
+permalink: additional/working_with_collections.html
 keywords: collections
 summary:
 ---

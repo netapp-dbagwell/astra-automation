@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: object-model/object_model.html
+permalink: additional/additional_considerations.html
 keywords:
 summary:
 ---
 
-= Object model
+= Additional considerations when using the REST API
 :hardbreaks:
 :nofooter:
 :icons: font

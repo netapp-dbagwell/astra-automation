@@ -5,7 +5,7 @@ sidebar:
     - section: intro
     - section: get-started
     - section: rest-core
-    - section: object-model
+    - section: additional
     - section: endpoints
     - section: workflows
     - section: reference
@@ -37,20 +37,20 @@ homepage:
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
-        - title: Diagnostics and support
-          summary: Prepare to support Astra applications.
-          url: /rest-core/diagnostics_support.html
-    - title: Object model
-      links:
-        - title: Entity-Relationship design
-          summary: Designed using ER modeling.
-          url: /object-model/er_model.html
-        - title: URL format for API access.
+        - title: URL format
           summary: Format of the URL used with the API.
-          url: /object-model/url_format.html
+          url: /rest-core/url_format.html
+    - title: Additional usage considerations
+      links:
+        - title: Security
+          summary: Explore the security provided with the REST API.
+          url: /additional/security.html
         - title: Working with collections
           summary: Using query parameters to access the resource collections.
-          url: /object-model/working_with_collections.html
+          url: /additional/working_with_collections.html
+        - title: Diagnostics and support
+          summary: Prepare to support Astra applications.
+          url: /additional/diagnostics_support.html
     - title: Resources
       links:
         - title: Resources and collections

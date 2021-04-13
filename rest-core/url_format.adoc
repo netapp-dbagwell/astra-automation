@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: object-model/url_format.html
+permalink: rest-core/url_format.html
 keywords:
 summary:
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rest-core/diagnostics_support.html
+permalink: additional/diagnostics_support.html
 keywords:
 summary:
 ---

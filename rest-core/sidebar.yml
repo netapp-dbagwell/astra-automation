@@ -8,5 +8,5 @@ entries:
     url: /rest-core/resources_collections.html
   - title: HTTP details
     url: /rest-core/http_details.html
-  - title: Diagnostics and support
-    url: /rest-core/diagnostics_support.html
+  - title: URL format
+    url: /rest-core/url_format.html

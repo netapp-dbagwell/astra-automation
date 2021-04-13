@@ -1,0 +1,10 @@
+section: additional
+title: Additional considerations
+url: /additional/additional_considerations.html
+entries:
+  - title: Security
+    url: /additional/security.html
+  - title: Working with collections
+    url: /additional/working_with_collections.html
+  - title: Diagnostics
+    url: /additional/diagnostics_support.html

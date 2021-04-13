@@ -51,4 +51,4 @@ xxx
 
 ===== Example
 
-Based on several variables, a typical path to an endpoint is `/accounts/{account_id}/core/v1/users`.
+Based on several variables, a typical path to an endpoint is: `/accounts/{account_id}/core/v1/users`.

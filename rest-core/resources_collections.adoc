@@ -51,6 +51,9 @@ Resource collections available through the Astra REST API have the following cha
 
 Every resource instance is assigned an identifier when it is created. This identifier is a 128-bit UUIDv4 value. The assigned UUIDv4 values are globally unique and immutable. After issuing an API call that creates a new instance, a URL with the associated id is returned to the caller in a `Location` header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
 
+[NOTE]
+The resource identifier is the primary key for collections.
+
 == Common structure for Astra resources
 
 Every Astra resource has a common format.
@@ -145,4 +148,4 @@ The topology resource endpoints provide access to the unmanaged applications and
 
 == Format of the access path and URL
 
-The format of the path and full URL used to access the Astra resources is based on several values. See link:../object-model/url_format.html[URL format for API access] for more information.
+The format of the path and full URL used to access the Astra resources is based on several values. See link:url_format.html[Object model and URL] for more information.

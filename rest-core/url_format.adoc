@@ -13,22 +13,22 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The format of the URL path used to access an API resource is a composite value based on the underlying object model.
+The format of the URL used to access a resource or collection is a composite value based on the underlying object model.
 
 == Astra object model
 
-The Astra REST API is based on an internal object. The structure is described and defined using an entity-relationship which can be expressed in UML.
+The Astra REST API is based on an internal object model. The structure is described and defined using an entity-relationship which can be expressed in UML.
 
 [IMPORTANT]
-Should this section be expanded?
+Should this section be expanded? How much information about the object model or UML is appropriate?
 
 == Format of the URL
 
-There are several variables used to construct the URL used to access an API endpoint. The general structure with an example is presented below.
+The general structure of the URL with an example is presented below.
 
 ===== Account as the root
 
-The root of the resource path used to reach every endpoint is the Astra account. And so all paths in the URL begin with `/account/{account_id}`. Internally this reflects a design where all resource access is based on the specific account being used.
+The root of the resource path to every REST endpoint is the Astra account. And so all paths in the URL begin with `/account/{account_id}` where `account_id` is the unique UUIDv4 value. Internally this reflects a design where all resource access is based on a specific account.
 
 ===== Endpoint resource category
 
@@ -38,19 +38,23 @@ The Astra resource endpoints fall into three different categories:
 * Managed application
 * Topology
 
-See link:../rest-code/resources_collections.html[Resources and collections] for more information.
+See link:resources_collections.html[Resources and collections] for more information.
 
 ===== Category version
 
-Each of the three resource categories has a version which controls which resources are accessed. Initially version 1 (`v1`) can be used.
+Each of the three resource categories has a global version that controls the version of the resources accessed.
 
 [IMPORTANT]
-I think it's a good idea to describe how versioning works, category versus individual resource. But the last time I spoke with David Slik, this area of the API was still undecided.
+I think it's a good idea to describe how versioning works, URL category version versus individual resource version. But the last time I spoke with David Slik, this area of the API was still undecided.
 
 ===== Resource instance or collection
 
-xxx
+A combination of resource and resource identifiers can be used, depending on if a resource instance or collection is accessed.
 
 ===== Example
 
-Based on several variables, a typical path to an endpoint is: `/accounts/{account_id}/core/v1/users`.
+Resource path::
+Based on structure presented above, a typical path to an endpoint is: `/accounts/{account_id}/core/v1/users`.
+
+Complete URL::
+The full URL for the corresponding endpoint is: `https://astra.netapp.io/accounts/{account_id}/core/v1/users`.

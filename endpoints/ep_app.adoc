@@ -13,8 +13,6 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
-
 The App API allows you to access and administer the unmanaged Kubernetes applications.
 
 == Endpoints

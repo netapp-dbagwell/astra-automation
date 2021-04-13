@@ -15,7 +15,14 @@ summary:
 [.lead]
 The Astra REST API provides multiple layers of security.
 
-==== Astra API tokens
+[NOTE]
+All HTTP network traffic is protected using the transport layer security (TLS) standard.
+
+[IMPORTANT]
+I am thinking about adding a section on the Auth0 token used with the web UI. This is another security layer, because to generate the API token they need to be able to sign in to the UI. ANy opions?
+
+
+== Astra API tokens
 
 To use the Astra REST API, you must provide an API token on every request in the `Authorization` request header. Note the following:
 
@@ -25,7 +32,31 @@ To use the Astra REST API, you must provide an API token on every request in the
 
 See link:getting_api_token.html[Getting an API token] for more information.
 
-==== Roles and access control
+== Revoking an API access token
+
+You can revoke an API token at the Astra web interface when it is no longer needed.
+
+.Before you begin
+
+You need an account for the Astra service. You should also identify the tokens you want to revoke.
+
+.About this task
+
+After a token is revoked, it is immediately and permanently unusable.
+
+.Steps
+
+. Sign in to the Astra service using your account credentials.
++
+https://astra.netapp.io/[https://astra.netapp.io^]
+
+. Click the figure icon at the top right of the page and select *API access*.
+
+. Select the token or tokens you want to revoke.
+
+. Under the *Actions* drop-down box, click *Revoke tokens*.
+
+== Roles and access control
 
 Each Astra user is assigned to a single role. The role is used to restrict access to the API calls. The defined roles include:
 
@@ -35,6 +66,5 @@ Each Astra user is assigned to a single role. The role is used to restrict acces
 * Viewer
 * SRE
 
-==== TLS protection for network connections
-
-All HTTP network traffic is protected using transport layer security (TLS) standard.
+[IMPORTANT]
+I would like to put the above list into a table with a description for each, but couldn't find where these roles are defined.

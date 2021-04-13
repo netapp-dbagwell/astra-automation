@@ -13,10 +13,10 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can generate an authorization token at the Astra web interface to access the REST API.
+You must have an API access token to access the Astra REST API.
 
 [NOTE]
-Astra API tokens never expire, however you can revoke a token if needed.
+The Astra API tokens never expire, however you can revoke a token when it is no longer needed.
 
 .Before you begin
 
@@ -24,9 +24,7 @@ You need an account for the Astra service.
 
 .About this task
 
-This task generates an API token a text string which xxx
-
-You should also retrieve the account ID fields xxx (update steps)
+This task generates an API token at the Astra web interface. You should also retrieve the account ID.
 
 .Steps
 
@@ -40,6 +38,8 @@ https://astra.netapp.io/[https://astra.netapp.io^]
 
 . Click the icon to copy the token string to the clipboard and save it in your editor.
 
+. Copy and save the account id.
+
 .After you finish
 
-When you access the Astra REST API through Curl or a programming language, you must include in the API bearer token in the `Authorization` request header.
+When you access the Astra REST API through Curl or a programming language, you must include in the API bearer token in the `Authorization` request header. To revoke the token, see link:../additional/security.html[Security].

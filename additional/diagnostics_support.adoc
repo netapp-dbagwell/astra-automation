@@ -15,6 +15,9 @@ summary:
 [.lead]
 There are several support features available with the Astra REST API that can be used for diagnostics and debugging.
 
+[IMPORTANT]
+There are two sections on this page. I will complete the problem detail section later today. This is from the API conventions page.
+
 == API resources
 
 There are several Astra features exposed through API resources that provide diagnostic information and support.
@@ -60,7 +63,7 @@ Each problem detail response shall include a response body, in JSON format, that
 |Descriptions of invalid parameters
 |===
 
-=== Addition extensions
+==== Addition extensions
 
 xxx
 

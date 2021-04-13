@@ -13,4 +13,28 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The Astra REST API provides multiple layers of security.
+
+==== Astra API tokens
+
+To use the Astra REST API, you must provide an API token on every request in the `Authorization` request header. Note the following:
+
+* You can generate an API token at the Astra web user interface.
+* A token never expires after it is created.
+* You can revoke a token at any time at the Astra web user interface.
+
+See link:getting_api_token.html[Getting an API token] for more information.
+
+==== Roles and access control
+
+Each Astra user is assigned to a single role. The role is used to restrict access to the API calls. The defined roles include:
+
+* Owner
+* Admin
+* Member
+* Viewer
+* SRE
+
+==== TLS protection for network connections
+
+All HTTP network traffic is protected using transport layer security (TLS) standard.

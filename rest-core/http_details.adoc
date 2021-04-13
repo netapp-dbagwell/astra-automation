@@ -13,80 +13,136 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The details of how HTTP is used with the Astra REST API are presented below.
+The Astra REST API is defined by how HTTP and the related parameters are used to act on the resources. The details of the Astra HTTP implementation are presented below.
 
->> See bottom of rest web services, must complete CRUD
+== API transactions and the CRUD model
 
-=== Format of the URL
+The Astra REST API implements a transactional model with well-defined operations and state transitions.
 
-xxx
+===== Request and response API transaction
 
-See link:../object-model/url_format.html[URL format for API access] for more information.
+Every REST API call is performed as an HTTP request to the Astra service. Each request generates an associated response back to the client. This request-response pair can be considered to be an API transaction.
 
-=== HTTP methods
+===== Support for CRUD operational model
+
+Each of the resource instances and collections available through the ONTAP REST API is accessed based on the CRUD model. There are four primary operations, each of which maps to a single HTTP method. The operations include:
+
+* Create
+* Read
+* Update
+* Delete
+
+For some of the Astra resources, only a subset of these operations is supported. You should review the link:../reference/api_reference.html[API reference] for more information about a specific API call.
+
+== Security
+
+The Astra REST API provides multiple layers of security.
+
+===== Astra API tokens
+
+To use the Astra REST API, you must provide an API token on every request in the `Authorization` request header. Note the following:
+
+* You can generate an API token at the Astra web user interface.
+* A token never expires after it is created.
+* You can revoke a token at any time at the Astra web user interface.
+
+See link:getting_api_token.html[Getting an API token] for more information.
+
+===== Roles and access control
+
+Each Astra user is assigned to a single role. The role is used to restrict access to the API calls. The defined roles include:
+
+* Owner
+* Admin
+* Member
+* Viewer
+* SRE
+
+===== TLS protection for network connections
+
+All HTTP network traffic is protected using transport layer security (TLS) standard.
+
+== HTTP methods
 
 The HTTP methods or verbs supported by the API are presented in the table below.
-
->> PUT:
-Updates the entire resource with the supplied JSON request body. Key values that are not user modifiable are preserved.
-
-[NOTE]
-CRUD is the model for how an API is used. Each operation can be categories as a create, read, update, or delete.
 
 [cols="15,15,70"*,options="header"]
 |===
 |Method
 |CRUD
 |Description
+
 |GET
 |Read
-|Retrieves object properties on a resource instance or collection.
+|Retrieves object properties for a resource instance or collection. This is considered a *list* operation when used with a collection.
+
 |POST
 |Create
-|Creates a new resource instance based on the input parameters.
+|Creates a new resource instance based on the input parameters. The long-term URL is returned in a `Location` response header.
+
 |PUT
 |Update
-|Updates an existing resource instance based on the input parameters.
+|Updates an entire resource instance with the supplied JSON request body. Key values that are not user modifiable are preserved.
+
 |DELETE
 |Delete
 |Deletes an existing resource instance.
+
 |HEAD
 |Read
-|Essentially issues a GET request but only returns the HTTP headers.
+|Essentially issues a GET request but only returns the HTTP response headers.
+
 |OPTIONS
 |Read
-|Used to determine what HTTP methods are supported at a specific endpoint.
+|Used to determine what HTTP methods are supported at a specific REST endpoint.
+
 |===
-
-=== MIME types
-
-xxx
->> customer mime types, based on resource type
->> see link:rest_endpoints_resources.html[REST endpoints and resources] for xxx
 
 === Request and response headers
 
+xxx
 >> See API conventions section 5.2
 
 The following table summaries the HTTP headers used with the Astra REST API.
-
->> Authorization (bearer token)
->> Content-Type (Content-Type: application/astra-user+json)
-
->> Location (for newly created resources)
->> Content-Type (Content-Type: application/astra-user+json)
 
 [cols="30,15,55"*,options="header"]
 |===
 |Header
 |Type
-|Description
+|Notes
+
+|Accept
+|Request
+|With
+
 |Authorization
 |Request
 |Bearer token of the user or API key for the user
+
+|Content-Type
+|Response
+|Returned based on the `Accept` request header.
+
+|Etag
+|Response
+|Included with a successful as defined with RFC 7232. The value is a hexadecimal representation of the MD5 value.
+
+|If-Match
+|Request
+|xxx
+
+|If-Modified-Since
+|Request
+|xxx
+
+|If-Unmodified-Since
+|Request
+|xxx
+
 |Location
 |Response
-|Full URL of the newly created resource
+|Contains the full URL of the newly created resource.
+
 |===
 
 === Query parameters

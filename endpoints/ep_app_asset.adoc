@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Application asset API
+= Application asset
 :hardbreaks:
 :nofooter:
 :icons: font

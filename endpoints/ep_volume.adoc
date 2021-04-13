@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Volume API
+= Volume
 :hardbreaks:
 :nofooter:
 :icons: font

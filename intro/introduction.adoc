@@ -13,23 +13,18 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-Most customers initially access the NetApp Astra service using a web browser. However, the service also includes a REST API which you can access directly using a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
+Customers initially access the NetApp Astra service using a web browser. However, Astra also includes a REST API that you can access directly using a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
 
 [NOTE]
-In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API. Ansible is very popular.
+In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API. Ansible is a very popular automation tool.
 
-==== Built on REST technology and design principles
+==== Built on REST technology
 
-The Astra API has been designed using REST technology and current best practices. The core technology includes:
-
-* Hypertext Transfer Protocol (HTTP)
-* JavaScript Object Notation (JSON)
-* Problem Details for HTTP APIs
-* Transport Layer Security (TLS)
+The Astra API has been created using REST technology and current best practices. Core technology includes HTTP, JSON, and RBAC.
 
 ==== Clear mapping between REST endpoint resources and object model
 
-The external REST endpoints used to access the resources map to a consistent object model maintained internally by the Astra service. The object model is described using UML and helps to clearly define the API actions and results.
+The external REST endpoints used to access the resources map to a consistent object model maintained internally by the Astra service. The object model is designed using entity relationship (ER) modeling and helps to clearly define the API actions and responses.
 
 ==== Access to the NetApp cloud token-based security
 
@@ -50,4 +45,4 @@ The Astra web interface uses the same REST API and so there is consistency betwe
 
 ==== Robust debugging and problem determination data
 
-The Astra REST API provides a robust debugging and problem determination capability, including events and notifications.
+The Astra REST API provides a robust debugging and problem determination capability. This includes events and notifications generated internally as well as support for the Problem Details for HTTP APIs standard.

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Schedule API
+= Schedule
 :hardbreaks:
 :nofooter:
 :icons: font

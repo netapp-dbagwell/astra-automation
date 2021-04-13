@@ -13,11 +13,11 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You should prepare to review and use the administrative workflow processes. This includes understanding their format and structure.
+You should be familiar with the high-level organization and format of the Astra workflow processes before using them with a live deployment.
 
 == Introduction
 
-A _workflow_ is a sequence of one or more steps used to accomplish a specific administrative task or goal. With the Astra, each step of an administrative workflows is one of the following:
+A _workflow_ is a sequence of one or more steps used to accomplish a specific administrative task or goal. With the Astra workflows, each step of an administrative workflows is one of the following:
 
 * REST API call
 * Invocation of another workflow
@@ -41,6 +41,10 @@ Each of the Astra resource APIs provides access to a primary resource type avail
 == Common parameters and variables
 
 There are several parameters or variables common among the workflows.
+
+==== Authorization request header
+
+All of the workflows require an API bearer token. You must include this in the API call using the `Authorization` request header. See link:../get-started/get+api_token.html[Getting an API access token] for more information. Rather than cite this header as a prerequisite in every REST API call, it is considered as a universal requirement.
 
 ==== Presentation of API tokens and other variables
 

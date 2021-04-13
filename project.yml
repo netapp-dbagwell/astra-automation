@@ -37,8 +37,8 @@ homepage:
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
-        - title: URL format
-          summary: Format of the URL used with the API.
+        - title: Object model and URL format
+          summary: Understand the URL format and how it is related to the object model.
           url: /rest-core/url_format.html
     - title: Additional usage considerations
       links:

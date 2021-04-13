@@ -112,7 +112,7 @@ The resource endpoints provided in the Astra REST API are organized into three c
 * Managed applications
 * Topology
 
-The resources are listed below. See link:../endpoints/resource_apis.html[Resource APIs] for more informaiton.
+The resources are listed below. See link:../endpoints/resource_apis.html[Resource APIs] for more information.
 
 ===== Core resources
 

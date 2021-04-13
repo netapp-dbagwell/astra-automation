@@ -37,6 +37,20 @@ homepage:
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
+        - title: URL format
+          summary: Format of the URL used with the API.
+          url: /rest-core/url_format.html
+    - title: Additional usage considerations
+      links:
+        - title: Security
+          summary: Explore the security provided with the REST API.
+          url: /additional/security.html
+        - title: Working with collections
+          summary: Using query parameters to access the resource collections.
+          url: /additional/working_with_collections.html
+        - title: Diagnostics and support
+          summary: Prepare to support Astra applications.
+          url: /additional/diagnostics_support.html
     - title: Resources
       links:
         - title: Resources and collections

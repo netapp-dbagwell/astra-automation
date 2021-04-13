@@ -15,6 +15,8 @@ summary:
 [.lead]
 xxx
 
+>> The resource identifier shall act as the primary key for collections.
+
 >> Repeat endpoint access either individual object instance or collection of objects
 >> Several collection operations (bullet list)
 >> Separate section for each major operation type

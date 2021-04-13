@@ -13,41 +13,51 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The Astra REST API operates on resource instances and collections of resource instances. These resources and collections provide the foundation for what is possible with the API.
-
->> See RESTful rant at API conventions 3.0 and add to this page
+The Astra REST API provides access to resource instances and collections of resource instances.
 
 [NOTE]
-Conceptually a REST *resource* is similar to an *object* used with object-oriented programming (OOP) languages and systems. Sometimes these terms can be used interchangeably depending on the context. But in generally, "resource" is preferred when referring to external API actions and "object" is used when the data is stored internally at the server.
+Conceptually a REST *resource* is similar to an *object* as defined with object-oriented programming (OOP) languages and systems. Sometimes these terms can be used interchangeably depending on the context. But in generally, "resource" is preferred when referring to the external API actions while "object" can be used for the stateful instance data stored at the server.
 
-== Defining and using REST resources
+== Attributes of the Astra resources
 
-Most REST APIs, particularly those created using the OpenAPI specification, share a common approach regarding their structure and definition.
+The Astra resource APIs conform to RESTful design principles. Each Astra resource instance is created based on a well-defined resource type. A set of resource instances of the same type is referred to as a collection. All API calls act on an individual resource or a collection of resources.
 
-=== Resource types and instances
+===== Resource types
 
-Resources are defined to model system or server-based entities. A resource type is the definition, somewhat similar like a class definition with OOP
+The resource types included with the Astra REST API have the following characteristics:
 
-Externally these resources are represented with JSON using key-value pairs.
+* Every resource type is defined using a schema (typically in JSON)
+* Every resource schema includes the resource type and version
+* Resource types are globally unique
 
-Every REST resource is assigned a unique identifier when it is created, which in most cases is a 128-bit UUIDv4. The assigned UUID values are immutable and are used both externally and internally within Astra to access and manage the resources.
+===== Resource instances
 
-[NOTE]
-The universally unique identifier version 4 (UUIDv4) is a widely used standard. UUIDv4 values are randomly generated.
+Resource instances available through the Astra REST API have the following characteristics:
 
-The UUIDv4 values are used to
+* Resource instances are created based on a single resource type
+* The resource type is indicated by the *mimetype* value
+* Instances are composed of stateful data which is maintained by the Astra service
+* Each instance is accessible through a unique and long-lived URL
+* Resource instances have one or more representations in JSON which are appended to the mimetype
 
-=== Collections of resource instances
+===== Resource collections
 
-xxx
+Resource collections available through the Astra REST API have the following characteristics:
 
-=== Format for all Astra resources
+* The set of resource instances of a single resource type is known as a collection
+* Collections of resource instances have a unique and long-lived URL
 
-Each Astra resource is defined using a common format.
+===== Instance identifiers
+
+Every resource instance is assigned an identifier when it is created. This identifier is a 128-bit UUIDv4 value. The assigned UUIDv4 values are globally unique and immutable. After issuing an API call that creates a new instance, a URL with the associated id is returned to the caller in a `Location` header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
+
+== Common structure for Astra resources
+
+Every Astra resource has a common format.
 
 ===== Common data
 
-Every API resource has the common key-values shown in the following table.
+Every Astra resource contains the key-values shown in the following table.
 
 [cols="15,85"*,options="header"]
 |===
@@ -55,21 +65,21 @@ Every API resource has the common key-values shown in the following table.
 |Description
 
 |type
-|Every resource shall have a globally unique resource type contained in the value of the "type" key. This shall be known as the "resource type".
+|A globally unique resource type which is known as the *resource type*.
 
 |version
-|Every resource shall have a version identifier contained in the value of the "version" key. This shall be known as the "resource version".
+|A version identifier which is known as the *resource version*.
 
 |id
-|Every resource shall have a globally unique identifier contained in the value of the "id" key. This shall be known as the "resource identifier". The resource identifier shall act as the primary key for collections.
+|A globally unique identifier which is known as the *resource identifier* and acts as the primary key for collections.
 
 |metadata
-|Every resource shall have a metadata object. The metadata object contains user and system labels.
+|A JSON object which contains various information, including user and system labels.
 |===
 
 ===== Metadata object
 
-Each Astra resource includes a metadata JSON object with the key-values shown in the following table. The key value is `metadata`.
+The metadata JSON object included with every Astra resource contains the key-values shown in the following table.
 
 [cols="15,85"*,options="header"]
 |===
@@ -86,13 +96,13 @@ Each Astra resource includes a metadata JSON object with the key-values shown in
 |JSON String containing an ISO-8601 formatted timestamp indicating when the resource was last altered.
 
 |createdBy
-|JSON String containing a UUIDv4 identifier of the User ID that created the resource. If the resource was created by an internal system component, and there is no UUID associated with the creating entity, the NULL UUID shall be used.
+|JSON String containing a UUIDv4 identifier of the User ID that created the resource. If the resource was created by an internal system component and there is no UUID associated with the creating entity, the NULL UUID is used.
 
 |===
 
 ===== Resource state
 
-Selected resource types have a state value which can be used to control access and orchestrate orderly lifecycle transitions.
+Selected resources a `state` value which can be used to orchestrate lifecycle transitions and control access.
 
 == Summary of resources for the Astra REST API
 
@@ -106,7 +116,7 @@ The resources are listed below. See link:../endpoints/resource_apis.html[Resourc
 
 ===== Core resources
 
-The core resource endpoints provide foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
+The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
 
 * Credential
 * Event
@@ -126,9 +136,13 @@ The managed application resource endpoints provide access to the managed Kuberne
 * Managed app
 * Schedule
 
-==== Topology resources
+===== Topology resources
 
 The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
 
 * App
 * Volume
+
+== Format of the access path and URL
+
+The format of the path and full URL used to access the Astra resources is based on several values. See link:../object-model/url_format.html[URL format for API access] for more information.

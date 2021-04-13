@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Notification API
+= Notification
 :hardbreaks:
 :nofooter:
 :icons: font

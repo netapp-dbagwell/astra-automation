@@ -40,7 +40,7 @@ The following media types are supported:
 
 ==== State
 
-The User resource type maintains a state which can be one of the values in the table below.
+The User resource type maintains a state variable which can have one of the values shown in the table below.
 
 [cols="15,85"*,options="header"]
 |===
@@ -49,9 +49,9 @@ The User resource type maintains a state which can be one of the values in the t
 |pending
 |The user account is in the process of being created (default). The API caller can read and modify the user resource.
 |active
-|The user account is operational. The user can sign in if account `isEnabled` is `true`.
+|The user account is operational. The user can sign in if the account `isEnabled` is `true`.
 |suspended
-|The user account is suspended and cannot be used regardless of account setting `isEnabled`.
+|The user account is suspended and cannot be used regardless of the account setting `isEnabled`.
 |===
 
 ==== Resource example
@@ -90,13 +90,13 @@ The User resource type maintains a state which can be one of the values in the t
 
 == API operations
 
-The operations available with this API are defined in terms of the HTTP headers and methods.
+The operations available with this API are defined below.
 
 ==== HTTP headers
 
 The following headers are used with this API.
 
-[cols="30,15,55"*,options="header"]
+[cols="25,15,60"*,options="header"]
 |===
 |Header
 |Type

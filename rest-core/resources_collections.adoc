@@ -20,7 +20,7 @@ Conceptually a REST *resource* is similar to an *object* as defined with object-
 
 == Attributes of the Astra resources
 
-The Astra resource APIs conform to RESTful design principles. Each Astra resource instance is created based on a well-defined resource type. A set of resource instances of the same type is referred to as a collection. All API calls act on an individual resource or a collection of resources.
+The Astra resource APIs conform to RESTful design principles. Each Astra resource instance is created based on a well-defined resource type. A set of resource instances of the same type is referred to as a *collection*. All API calls act on an individual resource or a collection of resources.
 
 ===== Resource types
 
@@ -52,7 +52,7 @@ Resource collections available through the Astra REST API have the following cha
 Every resource instance is assigned an identifier when it is created. This identifier is a 128-bit UUIDv4 value. The assigned UUIDv4 values are globally unique and immutable. After issuing an API call that creates a new instance, a URL with the associated id is returned to the caller in a `Location` header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
 
 [NOTE]
-The resource identifier is the primary key for collections.
+The resource identifier is the primary key used for collections.
 
 == Common structure for Astra resources
 
@@ -115,7 +115,7 @@ The resource endpoints provided in the Astra REST API are organized into three c
 * Managed applications
 * Topology
 
-The resources are listed below. See link:../endpoints/resource_apis.html[Resource APIs] for more information.
+The resources are listed below. See link:../endpoints/resource_apis.html[Resources] for more information.
 
 ===== Core resources
 
@@ -148,4 +148,4 @@ The topology resource endpoints provide access to the unmanaged applications and
 
 == Format of the access path and URL
 
-The format of the path and full URL used to access the Astra resources is based on several values. See link:url_format.html[Object model and URL] for more information.
+The format of the path and full URL used to access the Astra resources is based on several values. See link:url_format.html[Object model and URL format] for more information.

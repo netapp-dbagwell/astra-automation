@@ -13,16 +13,18 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The format of the URL path used to access a resource through the Astra REST API is a composite value based on the underlying object model.
+The format of the URL path used to access an API resource is a composite value based on the underlying object model.
 
 == Astra object model
 
-xxx
->> review previous content so no duplication
+The Astra REST API is based on an internal object. The structure is described and defined using an entity-relationship which can be expressed in UML.
+
+[IMPORTANT]
+Should this section be expanded?
 
 == Format of the URL
 
-xxx
+There are several variables used to construct the URL used to access an API endpoint. The general structure with an example is presented below.
 
 ===== Account as the root
 

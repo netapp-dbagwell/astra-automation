@@ -18,6 +18,12 @@ The Astra REST API provides multiple layers of security.
 [NOTE]
 All HTTP network traffic is protected using the transport layer security (TLS) standard.
 
+*XXXXXXXXXXXXXXXXXX*
+
+==== Access to the NetApp cloud token-based security
+
+To use the REST API, you first need to access the Astra web user interface. Sign in to the service is managed using the OAuth2 standard as provided by Auth0.com.
+
 == Astra API tokens
 
 To use the Astra REST API, you must provide an API token on every request in the `Authorization` request header. Note the following:

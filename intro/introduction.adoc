@@ -13,31 +13,26 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-Customers initially access the NetApp Astra service using a web browser. However, Astra also includes a REST API that you can access directly using a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
+Customers initially access the NetApp Astra service using a web browser. However, Astra also includes a REST API that you can use with a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
 
 [NOTE]
-In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API. Ansible is a very popular automation tool.
+In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API.
 
 ==== Built on REST technology
 
-The Astra API has been created using REST technology and current best practices. Core technology includes HTTP, JSON, and RBAC.
+The Astra API has been created using REST technology and current best practices. The core technology includes HTTP, JSON, and RBAC.
 
 ==== Clear mapping between REST endpoint resources and object model
 
 The external REST endpoints used to access the resources map to a consistent object model maintained internally by the Astra service. The object model is designed using entity relationship (ER) modeling and helps to clearly define the API actions and responses.
 
-==== Access to the NetApp cloud token-based security
-
-To use the REST API, you first need to access the Astra web user interface. Sign in to the service is managed using the OAuth2 standard as provided by Auth0.com.
-
 ==== Rich set of query parameters
 
-The REST API provides a rich set of query parameters that can be used to access the resources, especially collections. Some of the supported operations include:
+The REST API provides a rich set of query parameters that can be used to access the resources collections. Some of the supported operations include:
 
 * Filtering
 * Sorting
 * Pagination
-* Count
 
 ==== Alignment with the Astra web UI
 

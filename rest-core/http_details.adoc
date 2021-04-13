@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The Astra REST API is defined by how HTTP and the related parameters are used to act on the resources. The details of the Astra HTTP implementation are presented below.
+The Astra REST API uses HTTP and related parameters are used to act on the resources. Details of the Astra HTTP implementation are presented below.
 
 == API transactions and the CRUD model
 

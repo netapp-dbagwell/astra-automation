@@ -14,3 +14,6 @@ summary:
 
 [.lead]
 REST establishes a common set of technologies and best practices, however the details of each API can vary based on the choices made during development. You should be aware of the design characteristics of the Astra REST API before using it with a live cloud deployment.
+
+[NOTE]
+Also see link:../additional/additional_considerations.html[Additional considerations] for more details on using the Astra REST API.

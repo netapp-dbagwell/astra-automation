@@ -18,11 +18,9 @@ The Astra REST API provides multiple layers of security.
 [NOTE]
 All HTTP network traffic is protected using the transport layer security (TLS) standard.
 
-*XXXXXXXXXXXXXXXXXX*
+[IMPORTANT]
+I am thinking about adding a section on the Auth0 token used with the web UI. This is another security layer, because to generate the API token they need to be able to sign in to the UI. ANy opions?
 
-==== Access to the NetApp cloud token-based security
-
-To use the REST API, you first need to access the Astra web user interface. Sign in to the service is managed using the OAuth2 standard as provided by Auth0.com.
 
 == Astra API tokens
 
@@ -67,3 +65,6 @@ Each Astra user is assigned to a single role. The role is used to restrict acces
 * Member
 * Viewer
 * SRE
+
+[IMPORTANT]
+I would like to put the above list into a table with a description for each, but couldn't find where these roles are defined.

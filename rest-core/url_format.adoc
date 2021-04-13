@@ -53,8 +53,10 @@ A combination of resource and resource identifiers can be used, depending on if 
 
 ===== Example
 
-Resource path::
+* Resource path
++
 Based on structure presented above, a typical path to an endpoint is: `/accounts/{account_id}/core/v1/users`.
 
-Complete URL::
+* Complete URL
++
 The full URL for the corresponding endpoint is: `https://astra.netapp.io/accounts/{account_id}/core/v1/users`.

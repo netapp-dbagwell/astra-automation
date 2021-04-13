@@ -24,9 +24,7 @@ You need an account for the Astra service.
 
 .About this task
 
-This task generates an API token a text string which xxx
-
-You should also retrieve the account ID fields xxx (update steps)
+This task generates an API token that you can use with your calls to the Astra REST API. You should also retrieve the account ID.
 
 .Steps
 
@@ -42,4 +40,4 @@ https://astra.netapp.io/[https://astra.netapp.io^]
 
 .After you finish
 
-When you access the Astra REST API through Curl or a programming language, you must include in the API bearer token in the `Authorization` request header.
+When you access the Astra REST API through Curl or a programming language, you must include in the API bearer token in the `Authorization` request header. To revoke the token, see link:../additional/security.html[Security].

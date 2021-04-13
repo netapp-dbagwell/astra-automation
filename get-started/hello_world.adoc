@@ -13,18 +13,15 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can issue a simple command at your workstation’s CLI to get started using the Astra REST API and confirm its availability.
-
-[NOTE]
-The example provided below is very simple. The administrative workflow samples later in this guide use a more robust format.
+You can issue a simple Curl command at your workstation’s CLI to get started using the Astra REST API and confirm its availability.
 
 .Before you begin
 
-You must have the Curl utility available on your local workstation. Also generate a token and retrieve the account identifier as described in the task link:get_api_token.html[Getting an API access token].
+The Curl utility must be available on your local workstation. You must also have an API token and the associated account identifier. See link:get_api_token.html[Getting an API access token] for more information.
 
 .Curl example
 
-The following Curl command retrieves a list of Astra users.
+The following Curl command retrieves a list of Astra users. Provide the appropriate <ACCOUNT_ID> and <API_TOKEN> as indicated.
 
 [source,curl]
 curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/core/v1/users' --header 'Content-Type: application/json' --header 'Authorization: Bearer <API_TOKEN>'

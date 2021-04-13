@@ -16,11 +16,11 @@ summary:
 The Astra REST API provides access to resource instances and collections of resource instances.
 
 [NOTE]
-Conceptually a REST *resource* is similar to an *object* as defined with object-oriented programming (OOP) languages and systems. Sometimes these terms can be used interchangeably depending on the context. But in generally, "resource" is preferred when referring to the external API actions while "object" can be used for the stateful instance data stored at the server.
+Conceptually a REST *resource* is similar to an *object* as defined with the object-oriented programming (OOP) languages and systems. Sometimes these terms are used interchangeably. But in general, "resource" is preferred when used in the context of the external API while "object" is used for the corresponding stateful instance data stored at the server.
 
 == Attributes of the Astra resources
 
-The Astra resource APIs conform to RESTful design principles. Each Astra resource instance is created based on a well-defined resource type. A set of resource instances of the same type is referred to as a collection. All API calls act on an individual resource or a collection of resources.
+The Astra REST API conforms to RESTful design principles. Each Astra resource instance is created based on a well-defined resource type. A set of resource instances of the same type is referred to as a *collection*. The API calls act on individual resources or collections of resources.
 
 ===== Resource types
 
@@ -35,7 +35,7 @@ The resource types included with the Astra REST API have the following character
 Resource instances available through the Astra REST API have the following characteristics:
 
 * Resource instances are created based on a single resource type
-* The resource type is indicated by the *mimetype* value
+* The resource type is indicated using the *mimetype* value
 * Instances are composed of stateful data which is maintained by the Astra service
 * Each instance is accessible through a unique and long-lived URL
 * Resource instances have one or more representations in JSON which are appended to the mimetype
@@ -45,15 +45,18 @@ Resource instances available through the Astra REST API have the following chara
 Resource collections available through the Astra REST API have the following characteristics:
 
 * The set of resource instances of a single resource type is known as a collection
-* Collections of resource instances have a unique and long-lived URL
+* Collections of resources have a unique and long-lived URL
 
 ===== Instance identifiers
 
 Every resource instance is assigned an identifier when it is created. This identifier is a 128-bit UUIDv4 value. The assigned UUIDv4 values are globally unique and immutable. After issuing an API call that creates a new instance, a URL with the associated id is returned to the caller in a `Location` header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
 
+[NOTE]
+The resource identifier is the primary key used for collections.
+
 == Common structure for Astra resources
 
-Every Astra resource has a common format.
+Every Astra resource is defined using a common structure.
 
 ===== Common data
 
@@ -71,15 +74,15 @@ Every Astra resource contains the key-values shown in the following table.
 |A version identifier which is known as the *resource version*.
 
 |id
-|A globally unique identifier which is known as the *resource identifier* and acts as the primary key for collections.
+|A globally unique identifier which is known as the *resource identifier*.
 
 |metadata
-|A JSON object which contains various information, including user and system labels.
+|A JSON object containing various information, including user and system labels.
 |===
 
 ===== Metadata object
 
-The metadata JSON object included with every Astra resource contains the key-values shown in the following table.
+The metadata JSON object included with each Astra resource contains the key-values shown in the following table.
 
 [cols="15,85"*,options="header"]
 |===
@@ -87,32 +90,32 @@ The metadata JSON object included with every Astra resource contains the key-val
 |Description
 
 |labels
-|JSON Array of client-specified labels associated with the resource.
+|JSON array of client-specified labels associated with the resource.
 
 |creationTimestamp
 |JSON string containing a timestamp indicating when the resource was created.
 
 |modificationTimestamp
-|JSON String containing an ISO-8601 formatted timestamp indicating when the resource was last altered.
+|JSON string containing an ISO-8601 formatted timestamp indicating when the resource was last altered.
 
 |createdBy
-|JSON String containing a UUIDv4 identifier of the User ID that created the resource. If the resource was created by an internal system component and there is no UUID associated with the creating entity, the NULL UUID is used.
+|JSON string containing the UUIDv4 identifier of the user id that created the resource. If the resource was created by an internal system component and there is no UUID associated with the creating entity, the *null* UUID is used.
 
 |===
 
 ===== Resource state
 
-Selected resources a `state` value which can be used to orchestrate lifecycle transitions and control access.
+Selected resources a `state` value which is used to orchestrate lifecycle transitions and control access.
 
 == Summary of resources for the Astra REST API
 
-The resource endpoints provided in the Astra REST API are organized into three categories including:
+The resource endpoints provided in the Astra REST API are organized in three categories:
 
 * Core
 * Managed applications
 * Topology
 
-The resources are listed below. See link:../endpoints/resource_apis.html[Resource APIs] for more informaiton.
+The resources are listed by category below. Also see link:../endpoints/resources.html[Resources] for more information.
 
 ===== Core resources
 
@@ -145,4 +148,4 @@ The topology resource endpoints provide access to the unmanaged applications and
 
 == Format of the access path and URL
 
-The format of the path and full URL used to access the Astra resources is based on several values. See link:../object-model/url_format.html[URL format for API access] for more information.
+The format of the path and full URL used to access the Astra resources is based on several values. See link:url_format.html[Object model and URL format] for more information.

@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The Astra REST API is defined by how HTTP and the related parameters are used to act on the resources. The details of the Astra HTTP implementation are presented below.
+The Astra REST API uses HTTP and related parameters to act on the resources and collections. Details of the Astra HTTP implementation are presented below.
 
 == API transactions and the CRUD model
 
@@ -21,11 +21,11 @@ The Astra REST API implements a transactional model with well-defined operations
 
 ===== Request and response API transaction
 
-Every REST API call is performed as an HTTP request to the Astra service. Each request generates an associated response back to the client. This request-response pair can be considered to be an API transaction.
+Every REST API call is performed as an HTTP request to the Astra service. Each request generates an associated response back to the client. This request-response pair can be considered an API transaction.
 
 ===== Support for CRUD operational model
 
-Each of the resource instances and collections available through the ONTAP REST API is accessed based on the CRUD model. There are four primary operations, each of which maps to a single HTTP method. The operations include:
+Each of the resource instances and collections available through the Astra REST API is accessed based on the *CRUD* model. There are four operations, each of which maps to a single HTTP method. The operations include:
 
 * Create
 * Read
@@ -72,10 +72,7 @@ The HTTP methods or verbs supported by the API are presented in the table below.
 
 === Request and response headers
 
-xxx
->> See API conventions section 5.2
-
-The following table summaries the HTTP headers used with the Astra REST API.
+The following table summaries the HTTP headers used with the Astra REST API. See https://www.rfc-editor.org/rfc/rfc7232.txt[RFC 7232^] for more information.
 
 [cols="30,15,55"*,options="header"]
 |===
@@ -85,11 +82,11 @@ The following table summaries the HTTP headers used with the Astra REST API.
 
 |Accept
 |Request
-|With
+|If the value is `"*/*` or is not provided, `application/json` is returned in Content-Type response header. If the value is set to the Astra resource mimetype, the same mimetype is returned in the Content-Type header.
 
 |Authorization
 |Request
-|Bearer token of the user or API key for the user
+|Bearer token with the API key for the user.
 
 |Content-Type
 |Response
@@ -97,19 +94,19 @@ The following table summaries the HTTP headers used with the Astra REST API.
 
 |Etag
 |Response
-|Included with a successful as defined with RFC 7232. The value is a hexadecimal representation of the MD5 value.
+|Included with a successful as defined with RFC 7232. The value is a hexadecimal representation of the MD5 value for the entire JSON resource.
 
 |If-Match
 |Request
-|xxx
+|A precondition request header implemented as described in section 3.1 RFC 7232 and support for *PUT* requests.
 
 |If-Modified-Since
 |Request
-|xxx
+|A precondition request header implemented as described in section 3.4 RFC 7232 and support for *PUT* requests.
 
 |If-Unmodified-Since
 |Request
-|xxx
+|A precondition request header implemented as described in section 3.4 RFC 7232 and support for *PUT* requests.
 
 |Location
 |Response
@@ -119,12 +116,9 @@ The following table summaries the HTTP headers used with the Astra REST API.
 
 === Query parameters
 
-The following query parameters are available for use with the Astra REST API.
+The following query parameters are available for use with resource collections. See link:../additional/working_with_collections.html[Working with collections] for more information.
 
 // got from oav_v1.py -o top-c1
-
-[IMPORTANT]
-The query parameter `continue` is defined in the OpenAPI file, but never used. So I have not included it.
 
 [cols="20,80"*,options="header"]
 |===
@@ -159,11 +153,11 @@ The Astra REST API also uses the *Problem Details for HTTP APIs* standard. See l
 
 |200
 |OK
-|Indicates success for calls that do not create a new object.
+|Indicates success for calls that do not create a new resource instance.
 
 |201
 |Created
-|An object is successfully created; the location response header includes the unique identifier for the object.
+|An object is successfully created and the location response header includes the unique identifier for the object.
 
 |204
 |No content

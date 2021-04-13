@@ -13,4 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+There are several characteristics of the Astra REST API affecting its operation and use. You should be aware of these considerations before issuing an API call.

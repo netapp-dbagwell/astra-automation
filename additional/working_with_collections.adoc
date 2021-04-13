@@ -13,29 +13,23 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+The Astra REST API provides several different ways to access resource collections through the defined query parameters.
 
->> The resource identifier shall act as the primary key for collections.
+[IMPORTANT]
+I have each of these as sections below, anticipating that I can expand this content. Maybe provide examples? But is this same information in the Swagger (OpenAPI) page?
 
->> Repeat endpoint access either individual object instance or collection of objects
->> Several collection operations (bullet list)
->> Separate section for each major operation type
->> Exact supported operations supported for each resource type in reference content
+==== Selecting values
 
->> See *API conventions* page
->> QP: include, filter, orderBy, limit, skip, count (see HTTP details)
+You can specify which key-value pairs should be returned for each resource instance using the `include` parameter. All of the instances are returned in the response body.
 
-== Filtering
+==== Filtering
 
-xxx
+Collection resource filtering allows an API user to specify conditions which determine if a resource is returned in the response body. The `filter` parameter is used to indicate the filtering condition.
 
-== Sorting
+==== Sorting
 
-xxx
+Collection resource sorting allows an API user to specify the order in which resources are returned in the response body. The `orderBy` parameter is used to indicate the filtering condition.
 
-== Including fields
+==== Pagination
 
-xxx
->> with GET
-
-xxx
+You can enforce pagination by restricting the number of resource instances returned on a request using the `limit` parameter.

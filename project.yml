@@ -21,7 +21,7 @@ homepage:
           summary: Get an overview of the Astra REST API.
           url: /intro/introduction.html
         - title: Before you begin
-          summary: Prepare to get started using the API.
+          summary: Prepare to start using the API.
           url: /get-started/before_get_started.html
         - title: Get an API token
           summary: Generate a token you need for API access.
@@ -29,16 +29,16 @@ homepage:
         - title: Hello world
           summary: Test basic access to the REST API.
           url: /get-started/hello_world.html
-    - title: REST implementation
+    - title: Core REST implementation
       links:
         - title: REST web services
-          summary: Technology foundations of REST web services.
+          summary: Understand the technology foundations of REST web services.
           url: /rest-core/rest_web_services.html
         - title: HTTP details
           summary: Review the details of the HTTP implementation.
           url: /rest-core/http_details.html
-        - title: URL format
-          summary: Format of the URL used with the API.
+        - title: Object model and URL format
+          summary: Understand the URL format and how it is related to the underlying object model.
           url: /rest-core/url_format.html
     - title: Additional usage considerations
       links:
@@ -46,7 +46,7 @@ homepage:
           summary: Explore the security provided with the REST API.
           url: /additional/security.html
         - title: Working with collections
-          summary: Using query parameters to access the resource collections.
+          summary: Use query parameters to access the resource collections.
           url: /additional/working_with_collections.html
         - title: Diagnostics and support
           summary: Prepare to support Astra applications.
@@ -54,22 +54,19 @@ homepage:
     - title: Resources
       links:
         - title: Resources and collections
-          summary: Become familiar with the REST resources and collections.
+          summary: Become familiar with the design of REST resources and collections.
           url: /rest-core/resources_collections.html
         - title: Details of the Astra REST API resources
-          summary: Concise introduction to the various resources.
+          summary: Review a concise introduction to the various Astra resources.
           url: /endpoints/resources.html
         - title: User API
-          summary: An example of a typical resource.
+          summary: Become familiar with a typical resource.
           url: /endpoints/ep_user.html
     - title: Administrative workflows
       links:
         - title: Before you begin
-          summary: Prepare to start using the workflows.
+          summary: Prepare to get started with the workflows.
           url: /workflows/before_workflow_processes.html
         - title: Identity management
-          summary: Workflowsto administer users, credentials, roles, and tokens.
+          summary: Review the workflows to administer users, credentials, roles, and tokens.
           url: /workflows/admin_wf_identity.html
-        - title: Events and notifications
-          summary: Workflows to manage events and notifications.
-          url: /workflows/admin_wf_events.html

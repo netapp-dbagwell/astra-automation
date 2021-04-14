@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: get-started/get-started.html
+keywords:
+summary:
+---
+
+= Get started
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can quickly get started using the Astra REST API.

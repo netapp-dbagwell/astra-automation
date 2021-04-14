@@ -35,10 +35,10 @@ The resource types included with the Astra REST API have the following character
 Resource instances available through the Astra REST API have the following characteristics:
 
 * Resource instances are created based on a single resource type
-* The resource type is indicated using the *mimetype* value
+* The resource type is indicated using the Media Type value
 * Instances are composed of stateful data which is maintained by the Astra service
 * Each instance is accessible through a unique and long-lived URL
-* Resource instances have one or more representations in JSON which are appended to the mimetype
+* In cases where a resource instance can have more than one representation, different media types can be used to request the desired representation
 
 ===== Resource collections
 

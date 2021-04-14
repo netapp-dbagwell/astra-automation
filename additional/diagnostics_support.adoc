@@ -15,9 +15,6 @@ summary:
 [.lead]
 There are several support features available with the Astra REST API that can be used for diagnostics and debugging.
 
-[IMPORTANT]
-There are two sections on this page. I will complete the problem detail section later today. This is from the API conventions page.
-
 == API resources
 
 There are several Astra features exposed through API resources that provide diagnostic information and support.
@@ -32,60 +29,4 @@ There are several Astra features exposed through API resources that provide diag
 |A subset of the Events that are considered important enough to be presented to the user.
 |Unread notification
 |The notifications that have yet to be read or retrieved by the user.
-|===
-
-== HTTP problem details
-
-The Astra REST API implements the Problem Detail standard as defined in link:https://www.rfc-editor.org/rfc/rfc7807.txt[RFC 7807]. All HTTP responses with a 4xx and 5xx status code include problem detail data. When included, each problem detail response includes a response header of `Content-type: application/problem+json`.
-
-==== Format of the JSON response
-
-Each problem detail response shall include a response body, in JSON format, that includes the following fields.
-
-[cols="15,85"*,options="header"]
-|===
-|Key
-|Description
-
-|type
-|A URI that uniquely identifies the problem. Different problems with the same title and descriptions can have different type URIs.
-
-|type
-|Summarizes the problem.
-
-|detail
-|Describes the problem.
-
-|status
-|The HTTP Status code.
-
-|invalid-params
-|Descriptions of invalid parameters
-|===
-
-==== Addition extensions
-
-xxx
-
-==== Summary of the problem detail data
-
-[cols="10,25,55,10"*,options="header"]
-|===
-|HTTP status
-|Title
-|Detail
-|Extensions
-
-// 1
-|404
-|Resource Not Found
-|The resource specified in the request URI was not found
-|None
-
-// 2
-|404
-|Collection Not Found
-|The collection specified in the request URI was not found
-|None
-
 |===

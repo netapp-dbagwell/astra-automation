@@ -60,6 +60,3 @@ Each Astra user is assigned to a single role. The role is used to restrict acces
 * Admin
 * Member
 * Viewer
-
-[IMPORTANT]
-I would like to put the above list into a table with a description for each, but couldn't find where these roles are defined.

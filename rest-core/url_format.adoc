@@ -37,9 +37,6 @@ See link:resources_collections.html[Resources and collections] for more informat
 
 Each of the three resource categories has a global version that controls the version of the resources accessed. Semantic versioning is used, and for example so a move from version 1 (v1) to version 2 (v2) will introduce breaking changes in the API.
 
-[IMPORTANT]
-I think it's a good idea to describe how versioning works, URL category version versus individual resource version. But the last time I spoke with David Slik, this area of the API was still undecided.
-
 ===== Resource instance or collection
 
 A combination of resource and resource identifiers can be used, depending on if a resource instance or collection is accessed.

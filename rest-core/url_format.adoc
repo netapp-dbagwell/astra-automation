@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Object model and URL format
+= URL format
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,14 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The format of the URL used to access a resource or collection is a composite value based on the underlying object model.
-
-== Astra object model
-
-The Astra REST API is based on an internal object model. The structure is described and defined using an entity-relationship which can be expressed in UML.
-
-[IMPORTANT]
-Should this section be expanded? How much information about the object model or UML is appropriate?
+The format of the URL used to access a resource or collection is a composite value.
 
 == Format of the URL
 
@@ -42,10 +35,7 @@ See link:resources_collections.html[Resources and collections] for more informat
 
 ===== Category version
 
-Each of the three resource categories has a global version that controls the version of the resources accessed.
-
-[IMPORTANT]
-I think it's a good idea to describe how versioning works, URL category version versus individual resource version. But the last time I spoke with David Slik, this area of the API was still undecided.
+Each of the three resource categories has a global version that controls the version of the resources accessed. Semantic versioning is used, and for example so a move from version 1 (v1) to version 2 (v2) will introduce breaking changes in the API.
 
 ===== Resource instance or collection
 

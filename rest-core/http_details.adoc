@@ -64,10 +64,6 @@ The HTTP methods or verbs supported by the API are presented in the table below.
 |Read
 |Essentially issues a GET request but only returns the HTTP response headers.
 
-|OPTIONS
-|Read
-|Used to determine what HTTP methods are supported at a specific REST endpoint.
-
 |===
 
 === Request and response headers
@@ -82,7 +78,7 @@ The following table summaries the HTTP headers used with the Astra REST API. See
 
 |Accept
 |Request
-|If the value is `"*/*` or is not provided, `application/json` is returned in Content-Type response header. If the value is set to the Astra resource mimetype, the same mimetype is returned in the Content-Type header.
+|If the value is "*/*" or is not provided, `application/json` is returned in Content-Type response header. If the value is set to the Astra resource Media Type, the same Media Type is returned in the Content-Type header.
 
 |Authorization
 |Request

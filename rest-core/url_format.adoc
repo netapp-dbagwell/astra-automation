@@ -13,11 +13,11 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The format of the URL used to access a resource instance or collection is composed of several values as described below.
+The general structure of the URL used to access a resource instance or collection through the REST API is composed of several values. This structure reflects the underlying object model and system design.
 
 == Format of the URL
 
-The general structure of the URL and an example is presented below.
+The format of the URL with an example is presented below.
 
 ===== Account as the root
 
@@ -35,17 +35,17 @@ See link:../endpoints/resources.html[Resources] for more information.
 
 ===== Category version
 
-Each of the three resource categories has a global version that controls the version of the resources accessed. Semantic versioning is used, and so for example a move to a new major version (from v1 to v2) will introduce breaking changes in the API.
+Each of the three resource categories has a global version that controls the version of the resources accessed. By convention and definition, moving to a new major version of a resource category (such as, from `/v1` to `/v2`) will introduce breaking changes in the API.
 
 ===== Resource instance or collection
 
-A combination of resource and resource identifiers can be used, depending on if a resource instance or collection is accessed.
+A combination of resource types and identifiers can be used in the path, based on whether a resource instance or collection is accessed.
 
 ===== Example
 
 * Resource path
 +
-Based on structure presented above, a typical path to an endpoint is: `/accounts/{account_id}/core/v1/users`.
+Based on the structure presented above, a typical path to an endpoint is: `/accounts/{account_id}/core/v1/users`.
 
 * Complete URL
 +

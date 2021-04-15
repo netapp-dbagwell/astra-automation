@@ -33,3 +33,7 @@ Collection resource sorting allows an API user to specify the order in which res
 ==== Pagination
 
 You can enforce pagination by restricting the number of resource instances returned on a request using the `limit` parameter.
+
+==== Count
+
+If you include the Boolean parameter `count` set to `true`, the number of resources in the returned array for a given response is provided in the metadata section.

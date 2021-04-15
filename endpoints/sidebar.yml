@@ -1,32 +1,3 @@
 section: endpoints
 title: Resources
 url: /endpoints/resources.html
-entries:
-  - title: App
-    url: /endpoints/ep_app.html
-  - title: Application asset
-    url: /endpoints/ep_app_asset.html
-  - title: Application backup
-    url: /endpoints/ep_app_backup.html
-  - title: Application snapshot
-    url: /endpoints/ep_app_snapshot.html
-  - title: Credential
-    url: /endpoints/ep_credential.html
-  - title: Event
-    url: /endpoints/ep_event.html
-  - title: Managed application
-    url: /endpoints/ep_managed_app.html
-  - title: Notification
-    url: /endpoints/ep_notification.html
-  - title: Role binding
-    url: /endpoints/ep_role_binding.html
-  - title: Schedule
-    url: /endpoints/ep_schedule.html
-  - title: Token
-    url: /endpoints/ep_token.html
-  - title: Unread notification
-    url: /endpoints/ep_unread_notification.html
-  - title: User
-    url: /endpoints/ep_user.html
-  - title: Volume
-    url: /endpoints/ep_volume.html

@@ -13,24 +13,43 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The Astra REST API is composed of several smaller APIs, each providing access to a specific resource type through one or more REST endpoints. This section provides a concise description of these APIs, which is useful as part of planning an Astra automation deployment.
+You can use the resources provided through REST API to automate the administration of an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to these resources which is useful as part of planning an automation deployment.
 
-==== Consistent format
+See link:../reference/api_reference.html[API reference] for more information.
 
-Each of the resource APIs is described in a consistent format. The following information is provided for each API:
+== Summary of resources for the Astra REST API
 
-* List of REST endpoints
-* Overview of the resource definition
-* Summary of the available API operations
+The resource endpoints provided in the Astra REST API are organized in three categories
 
-Note that the *Path* variable provided for each of the API operations is abbreviated by removing the `/accounts/{account_id}` prefix. You must include this in the full URL path when issuing an actual API call.
+===== Core resources
 
-==== Additional information
+The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
 
-* link:../reference/api_reference.html[API reference]
-+
-This page provides access to a more complete description of the Astra REST API which you can use when developing your automation applications.
+* Credential
+* Event
+* Notification
+* Role Binding
+* Token
+* Unread notification
+* User
 
-* link:../workflows/workflows.html[Administrative workflows]
-+
-This section includes practical examples of making API calls to perform common administrative tasks.
+===== Managed application resources
+
+The managed application resource endpoints provide access to the managed Kubernetes applications. The endpoints include:
+
+* Application asset
+* Application backup
+* Application snapshot
+* Managed app
+* Schedule
+
+===== Topology resources
+
+The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
+
+* App
+* Volume
+
+== Format of the access path and URL
+
+The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information.

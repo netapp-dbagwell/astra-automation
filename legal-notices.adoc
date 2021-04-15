@@ -43,4 +43,4 @@ https://docs.netapp.com/us-en/astra/media/notice.pdf[Notice for Astra^]
 
 == License for the Astra API
 
-link:/media/astra-api-license.pdf[Astra API License]
+link:./media/astra-api-license.pdf[Astra API License]

@@ -15,6 +15,8 @@ summary:
 [.lead]
 Customers initially access the NetApp Astra service using a web browser. However, Astra also includes a REST API that you can use with a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
 
+// Add workflow section
+
 [NOTE]
 In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API.
 

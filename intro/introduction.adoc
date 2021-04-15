@@ -26,7 +26,7 @@ The Astra API has been created using REST technology and current best practices.
 
 ==== Clear mapping between REST endpoint resources and object model
 
-The external REST endpoints used to access the resources map to a consistent object model maintained internally by the Astra service. The object model is designed using entity relationship (ER) modeling and helps to clearly define the API actions and responses.
+The external REST endpoints used to access the resources map to a consistent object model maintained internally by the Astra service. The object model is designed using entity-relationship (ER) modeling which helps to clearly define the API actions and responses.
 
 ==== Rich set of query parameters
 
@@ -38,11 +38,11 @@ The REST API provides a rich set of query parameters that can be used to access 
 
 ==== Alignment with the Astra web UI
 
-The Astra web interface uses the same REST API and so there is consistency between the two access paths and the user experience.
+The Astra web interface uses the same REST API and so there is consistency between the two access paths and user experience.
 
 ==== Robust debugging and problem determination data
 
-The Astra REST API provides a robust debugging and problem determination capability. This includes events and notifications generated internally as well as support for the Problem Details for HTTP APIs standard.
+The Astra REST API provides a robust debugging and problem determination capability, including events and notifications generated internally.
 
 ==== Foundation for advanced automation technologies
 

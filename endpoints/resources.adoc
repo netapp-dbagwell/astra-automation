@@ -15,7 +15,7 @@ summary:
 [.lead]
 You can use the resources provided through REST API to automate the administration of an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to these resources which is useful as part of planning an automation deployment.
 
-See the link:../reference/api_reference.html[API reference] for more information.
+See link:../reference/api_reference.html[API reference] for more information.
 
 == Summary of resources for the Astra REST API
 
@@ -52,4 +52,4 @@ The topology resource endpoints provide access to the unmanaged applications and
 
 == Format of the access path and URL
 
-The format of the path and full URL used to access the Astra resources is based on several values. See link:..rest-core/url_format.html[URL format] for more information.
+The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information.

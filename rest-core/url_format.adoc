@@ -35,7 +35,7 @@ See link:resources_collections.html[Resources and collections] for more informat
 
 ===== Category version
 
-Each of the three resource categories has a global version that controls the version of the resources accessed. Semantic versioning is used, and for example so a move from version 1 (v1) to version 2 (v2) will introduce breaking changes in the API.
+Each of the three resource categories has a global version that controls the version of the resources accessed. Semantic versioning is used, and so for example a move to a new major version (from v1 to v2) will introduce breaking changes in the API.
 
 ===== Resource instance or collection
 

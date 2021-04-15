@@ -37,8 +37,8 @@ This publication introduced and established the REST application development mod
 
 * https://auth0.com/[Auth0^]
 +
-This is the authentication platform service used by Astra for web access.
+This is the authentication and authorization platform service used by the Astra service for web access.
 
 * https://www.rfc-editor.org/[RFC editor^]
 +
-Authoritative source for web and Internet standards as a collection of uniquely numbered RFC documents.
+Authoritative source for web and Internet standards maintained as a collection of uniquely numbered RFC documents.

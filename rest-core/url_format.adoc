@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The format of the URL used to access a resource or collection is a composite value.
+The format of the URL used to access a resource instance or collection is composed of several values as described below.
 
 == Format of the URL
 
@@ -21,17 +21,17 @@ The general structure of the URL and an example is presented below.
 
 ===== Account as the root
 
-The root of the resource path to every REST endpoint is the Astra account. And so all paths in the URL begin with `/account/{account_id}` where `account_id` is the unique UUIDv4 value. Internally this reflects a design where all resource access is based on a specific account.
+The root of the resource path to every REST endpoint is the Astra account. And so all paths in the URL begin with `/account/{account_id}` where `account_id` is the unique UUIDv4 value for the account. Internally structure this reflects a design where all resource access is based on a specific account.
 
 ===== Endpoint resource category
 
 The Astra resource endpoints fall into three different categories:
 
-* Core
-* Managed application
-* Topology
+* Core (`/core`)
+* Managed application (`/k8s`)
+* Topology (`/topology`)
 
-See link:resources_collections.html[Resources and collections] for more information.
+See link:../endpoints/resources.html[Resources] for more information.
 
 ===== Category version
 

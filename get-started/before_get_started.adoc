@@ -19,12 +19,8 @@ There are several steps you should take to prepare to use the Astra REST API.
 
 Make sure to review link:../rest-core/rest_implementation.html[Core REST implementation] for information about REST concepts and the details regarding how the Astra REST API is designed.
 
-===== Review the User resource API
-
-Take a quick look at the resource APIs and in particular the link:../endpoints/ep_user.html[User API] which is used in the *Hello world* example.
-
 ===== Have Cloud Central account credentials
-You'll need the *Auth0* account credentials to generate an API token which is needed to access the REST API.
+You'll need the *Auth0* account credentials to sign in to the Astra web user interface and generate an API token.
 
 ===== Getting more information
 

@@ -40,7 +40,7 @@ The managed application resource endpoints provide access to the managed Kuberne
 * Application asset
 * Application backup
 * Application snapshot
-* Managed app
+* Managed application
 * Schedule
 
 ===== Topology resources

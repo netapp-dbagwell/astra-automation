@@ -15,9 +15,6 @@ summary:
 [.lead]
 The Astra REST API provides several different ways to access resource collections through the defined query parameters.
 
-[IMPORTANT]
-I have each of these as sections below, anticipating that I can expand this content. Maybe provide examples? But is this same information in the Swagger (OpenAPI) page?
-
 ==== Selecting values
 
 You can specify which key-value pairs should be returned for each resource instance using the `include` parameter. All of the instances are returned in the response body.

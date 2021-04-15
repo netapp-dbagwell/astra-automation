@@ -13,12 +13,12 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-Customers initially access the NetApp Astra service using a web browser. However, Astra also includes a REST API that you can use with a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
+The NetApp Astra service provides a REST API that you can access directly through a programming language or utility such as Curl. The major highlights and benefits of the API are presented below.
 
 // Add workflow section
 
 [NOTE]
-In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API.
+To access the REST API, you need to first sign in to the Astra web user interface and generate an API token. You must include the token on each API request.
 
 ==== Built on REST technology
 
@@ -43,3 +43,7 @@ The Astra web interface uses the same REST API and so there is consistency betwe
 ==== Robust debugging and problem determination data
 
 The Astra REST API provides a robust debugging and problem determination capability. This includes events and notifications generated internally as well as support for the Problem Details for HTTP APIs standard.
+
+==== Foundation for advanced automation technologies
+
+In addition to accessing the REST API directly, you can use other automation technologies that are based on the REST API.

@@ -15,29 +15,45 @@ summary:
 [.lead]
 You can use the resources provided through REST API to automate the administration of an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to these resources which is useful as part of planning an automation deployment.
 
-See the following for more information:
+See the link:../reference/api_reference.html[API reference] for more information.
 
-* link:../reference/api_reference.html[API reference]
-+
-This page provides access to a more complete description of the Astra REST API which you can use when developing your automation applications.
+== Summary of resources for the Astra REST API
 
-* link:../workflows/workflows.html[Administrative workflows]
-+
-This section includes practical examples of making API calls to perform common administrative tasks.
+The resource endpoints provided in the Astra REST API are organized in three categories:
 
-=== Summary of the Astra resources
+* Core
+* Managed applications
+* Topology
 
-* App
-* Application asset
-* Application backup
-* Application snapshot
+===== Core resources
+
+The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
+
 * Credential
 * Event
-* Managed application
 * Notification
-* Role binding
-* Schedule
+* Role Binding
 * Token
 * Unread notification
 * User
+
+===== Managed application resources
+
+The managed application resource endpoints provide access to the managed Kubernetes applications. The endpoints include:
+
+* Application asset
+* Application backup
+* Application snapshot
+* Managed app
+* Schedule
+
+===== Topology resources
+
+The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
+
+* App
 * Volume
+
+== Format of the access path and URL
+
+The format of the path and full URL used to access the Astra resources is based on several values. See link:url_format.html[URL format] for more information.

@@ -19,11 +19,7 @@ See the link:../reference/api_reference.html[API reference] for more information
 
 == Summary of resources for the Astra REST API
 
-The resource endpoints provided in the Astra REST API are organized in three categories:
-
-* Core
-* Managed applications
-* Topology
+The resource endpoints provided in the Astra REST API are organized in three categories
 
 ===== Core resources
 
@@ -56,4 +52,4 @@ The topology resource endpoints provide access to the unmanaged applications and
 
 == Format of the access path and URL
 
-The format of the path and full URL used to access the Astra resources is based on several values. See link:url_format.html[URL format] for more information.
+The format of the path and full URL used to access the Astra resources is based on several values. See link:..rest-core/url_format.html[URL format] for more information.

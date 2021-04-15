@@ -13,4 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can quickly get started using the Astra REST API by first reviewing the basic preparation requirements in _Before you begin_. After that you'll need to generate an API token that can be used with the basic Curl example in _Hello world_.
+You can quickly get started using the Astra REST API by first reviewing the basic preparation requirements in _Before you begin_. After that you'll need to generate an API token at the Astra web interface and use it with the basic Curl example in _Hello world_.

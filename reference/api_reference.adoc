@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference/api_reference.html
-keywords: 
+keywords:
 summary:
 ---
 
@@ -24,8 +24,12 @@ You need an account for the Astra service.
 
 .Steps
 
-. Navigate to the following site using your browser:
+. Sign in to the Astra service using your account credentials.
 +
-link:https://astra.netapp.io/openapi[https://astra.netapp.io/openapi^]
+link:https://astra.netapp.io[https://astra.netapp.io^]
+
+. Click the figure icon at the top right of the page and select *API access*.
+
+. At the top of the page, copy the URL displayed under *API Documentation* and paste it into your browser.
 
 . Provide your account credentials if needed.

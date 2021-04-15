@@ -16,7 +16,7 @@ summary:
 The Astra REST API provides access to resource instances and collections of resource instances.
 
 [NOTE]
-Conceptually a REST *resource* is similar to an *object* as defined with the object-oriented programming (OOP) languages and systems. Sometimes these terms are used interchangeably. But in general, "resource" is preferred when used in the context of the external API while "object" is used for the corresponding stateful instance data stored at the server.
+Conceptually a REST *resource* is similar to an *object* as defined with the object-oriented programming (OOP) languages and systems. Sometimes these terms are used interchangeably. But in general, "resource" is preferred when used in the context of the external REST API while "object" is used for the corresponding stateful instance data stored at the server.
 
 == Attributes of the Astra resources
 

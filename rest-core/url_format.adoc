@@ -17,7 +17,7 @@ The format of the URL used to access a resource or collection is a composite val
 
 == Format of the URL
 
-The general structure of the URL with an example is presented below.
+The general structure of the URL and an example is presented below.
 
 ===== Account as the root
 

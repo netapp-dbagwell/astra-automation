@@ -33,4 +33,4 @@ link:https://astra.netapp.io[https://astra.netapp.io^]
 . At the top of the page click the URL displayed under *API Documentation*.
 //At the top of the page, copy the URL displayed under *API Documentation* and paste it into your browser.
 
-. Provide your account credentials if prompted.
+. Provide your account credentials again if prompted.

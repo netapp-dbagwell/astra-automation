@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_clone_app_backup.html
+keywords:
+summary:
+---
+
+= Clone a managed app from a backup
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Must complete.

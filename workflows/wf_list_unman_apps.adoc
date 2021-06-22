@@ -15,6 +15,9 @@ summary:
 [.lead]
 You can list the applications that are currently not managed by Astra. You might do this to select an app to be managed.
 
+[NOTE]
+This workflow lists all of the applications. You can look at the output to determine which apps are unmanaged by examining the `managedState` field.
+
 === 1. List the applications
 
 Perform the following REST API call.
@@ -47,43 +50,53 @@ In addition to the parameters common with all REST API calls, the following para
 [source,curl]
 curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/apps' --header 'Content-Type: application/astra-app+json' --header 'Accept: application/astra-app+json' --header 'Authorization: Bearer <API_TOKEN>'
 
-===== Curl example: Return the name, id, and state for all apps
+===== Curl example: Return the name, id, and managedState for all apps
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/apps?include=name,id,state' --header 'Content-Type: application/astra-app+json' --header 'Accept: application/astra-app+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/apps?include=name,id,managedState' --header 'Content-Type: application/astra-app+json' --header 'Accept: application/astra-app+json' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== JSON output example
 [source,json]
-{
+{{
   "items": [
     [
       "maria",
       "eed19f78-0884-4792-bb7a-313258c6b0b1",
-      "running"
+      "unmanaged"
     ],
     [
       "mariadb-mariadb",
       "8da20fff-c69c-4170-bb0d-e4f91c5a1333",
-      "running"
+      "managed"
     ],
     [
       "test-postgres-app",
       "1ee6235b-cda1-45cb-8d4c-630bdb8b41a5",
-      "running"
+      "unmanaged"
     ],
     [
       "postgres1-postgresql",
       "e591ee59-ea90-4a9f-8e6c-d2b6e8647096",
-      "running"
+      "unmanaged"
     ],
     [
       "kube-system",
       "077a2f73-4b51-4d04-8c6c-f63b3b069755",
-      "running"
+      "unmanaged"
     ],
     [
       "trident",
       "5b6fc28f-e308-4653-b9d2-6d66a764d2e1",
-      "running"
+      "unmanaged"
+    ],
+    [
+      "postgres1-postgresql-clone",
+      "06be05c5-763e-4d73-bd06-1f27f5f2e130",
+      "unmanaged"
+    ],
+    [
+      "davidns-postgres-app",
+      "11e046b7-ec64-4184-85b3-debcc3b1da4d",
+      "managed"
     ]
   ],
   "metadata": {}

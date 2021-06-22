@@ -49,4 +49,4 @@ In addition to the parameters common with all REST API calls, the following para
 
 ===== Curl example: Remove a managed app
 [source,curl]
-curl --location --request DELETE 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>' --header 'Content-Type: application/astra-managedApp+json' --header 'Accept: application/astra-managedApp+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request DELETE 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'

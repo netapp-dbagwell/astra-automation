@@ -30,11 +30,7 @@ The external REST endpoints used to access the resources map to a consistent obj
 
 ==== Rich set of query parameters
 
-The REST API provides a rich set of query parameters that can be used to access the resources collections. Some of the supported operations include:
-
-* Filtering
-* Sorting
-* Pagination
+The REST API provides a rich set of query parameters that can be used to access the resources collections. Some of the supported operations include filtering, sorting, and pagination.
 
 ==== Alignment with the Astra web UI
 

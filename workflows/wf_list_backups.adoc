@@ -49,7 +49,7 @@ In addition to the parameters common with all REST API calls, the following para
 
 ===== Curl example: Return all backups for the app
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appBackups' --header 'Content-Type: application/astra-appBackup+json' --header 'Accept: application/astra-appBackup+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appBackups' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== JSON output example
 [source,json]

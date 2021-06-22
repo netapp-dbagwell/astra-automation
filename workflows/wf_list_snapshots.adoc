@@ -53,11 +53,11 @@ In addition to the parameters common with all REST API calls, the following para
 
 ===== Curl example: Return all snapshots for the app
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appSnaps' --header 'Content-Type: application/astra-appSnap+json' --header 'Accept: application/astra-appSnap+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appSnaps' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== Curl example: Return all snapshots for the app and the count
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appSnaps?count=true' --header 'Content-Type: application/astra-appSnap+json' --header 'Accept: application/astra-appSnap+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appSnaps?count=true' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== JSON output example
 [source,json]

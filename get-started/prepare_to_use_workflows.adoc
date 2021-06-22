@@ -41,16 +41,16 @@ This is the UUIDv4 value identifying the Astra account where the API operation r
 
 === Request headers
 
-There are several request headers that you need to include with every REST API call.
+There are several request headers that you may need to include depending on the REST API call.
 
 Authorization::
 All the API calls in the workflows need an API token to identify the user. You must include the token in the `Authorization` request header. See link:../get-started/get_api_token.html[Get an API token] for more information about generating an API token.
 
 Content type::
-You should declare the media type of the request based on the Astra resource. For example, you can include the header `Content-Type: application/astra-user+json` when accessing an Astra user.
+With the HTTP POST and PUT requests where JSON is included in the request body, you should declare the media type based on the Astra resource. For example, you can include the header `Content-Type: application/astra-appSnap+json` when creating a snapshot for a managed application.
 
 Accept::
-You should declare the media type of the content you expect in the response based on the Astra resource. For example, you can include the header `Accept: application/astra-appSnap+json` when accessing a snapshot for a managed application.
+You can declare the specific media type of the content you expect in the response based on the Astra resource. For example, you can include the header `Accept: application/astra-appBackup+json` when listing the backups for a managed application. However for simplicity, the curl samples in the workflows accept all media types with the request header `Accept: */*`.
 
 == Presentation of tokens and identifiers
 

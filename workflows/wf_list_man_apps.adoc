@@ -45,11 +45,11 @@ In addition to the parameters common with all REST API calls, the following para
 
 ===== Curl example: Return all data for all apps
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps' --header 'Content-Type: application/astra-managedApp+json' --header 'Accept: application/astra-managedApp+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== Curl example: Return the name, id, and state for all apps
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps?include=name,id,state' --header 'Content-Type: application/astra-managedApp+json' --header 'Accept: application/astra-managedApp+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps?include=name,id,state' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== JSON output example
 [source,json]

@@ -19,8 +19,8 @@ You can delete a backup associated with a managed application.
 
 You must have the following:
 
-* ID of the managed app that owns the snapshot. If needed you can use the workflow link:wf_list_man_apps.html[List managed apps] to locate the application.
-* ID of the snapshot want to delete a snapshot. If needed you can use the workflow link:wf_list_backups.html[List backups] to locate the snapshot.
+* ID of the managed app that owns the backup. If needed you can use the workflow link:wf_list_man_apps.html[List managed apps] to locate the application.
+* ID of the backup you want to delete. If needed you can use the workflow link:wf_list_backups.html[List backups] to locate the snapshot.
 
 === 1. Delete the backup
 
@@ -56,4 +56,4 @@ In addition to the parameters common with all REST API calls, the following para
 
 ===== Curl example: Delete a single backup for the app
 [source,curl]
-curl --location --request DELETE 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appBackups/<BACKUP_ID>' --header 'Content-Type: application/astra-appBackup+json' --header 'Accept: application/astra-appBackup+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request DELETE 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps/<MANAGED_APP_ID>/appBackups/<BACKUP_ID>' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'

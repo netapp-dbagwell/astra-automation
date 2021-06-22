@@ -17,7 +17,7 @@ The Astra REST API provides several different ways to access resource collection
 
 ==== Selecting values
 
-You can specify which key-value pairs should be returned for each resource instance using the `include` parameter. All of the instances are returned in the response body. See the workflow link:../workflows/wf_list_unman_apps.html[List the unmanaged apps] for an example.
+You can specify which key-value pairs should be returned for each resource instance using the `include` parameter. All of the instances are returned in the response body.
 
 ==== Filtering
 

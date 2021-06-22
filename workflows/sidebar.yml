@@ -48,7 +48,5 @@ entries:
     entries:
       - title: List notifications
         url: /workflows/wf_list_notifications.html
-      - title: Delete a removed cluster
-        url: /workflows/wf_delete_removed_cluster.html
       - title: Delete a failed app
         url: /workflows/wf_delete_failed_app.html

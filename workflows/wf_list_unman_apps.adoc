@@ -16,7 +16,7 @@ summary:
 You can list the applications that are currently not managed by Astra. You might do this to select an app to be managed.
 
 [NOTE]
-This workflow lists all of the applications. You can look at the output to determine which apps are unmanaged by examining the `managedState` field.
+This workflow lists all of the applications. You can look at the output and determine which apps are unmanaged by examining the `managedState` field.
 
 === 1. List the applications
 
@@ -48,11 +48,11 @@ In addition to the parameters common with all REST API calls, the following para
 
 ===== Curl example: Return all data for all apps
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/apps' --header 'Content-Type: application/astra-app+json' --header 'Accept: application/astra-app+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/apps' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== Curl example: Return the name, id, and managedState for all apps
 [source,curl]
-curl --location --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/apps?include=name,id,managedState' --header 'Content-Type: application/astra-app+json' --header 'Accept: application/astra-app+json' --header 'Authorization: Bearer <API_TOKEN>'
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/apps?include=name,id,managedState' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
 
 ===== JSON output example
 [source,json]

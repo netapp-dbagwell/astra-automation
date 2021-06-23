@@ -44,7 +44,7 @@ In addition to the parameters common with all REST API calls, the following para
 |JSON
 |Body
 |Yes
-|Provides the required parameters to identify the application to be managed. See the example below.
+|Provides the parameters needed to identify the application to be managed. See the example below.
 |===
 
 ===== JSON input example

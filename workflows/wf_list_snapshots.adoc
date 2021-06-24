@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= List snapshots
+= List the snapshots
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -44,7 +44,7 @@ In addition to the parameters common with all REST API calls, the following para
 |managed app id
 |Path
 |Yes
-|Identifies the managed application to list the snapshots.
+|Identifies the managed application owning the listed snapshots.
 |count
 |Query
 |No

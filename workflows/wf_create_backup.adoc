@@ -48,7 +48,7 @@ In addition to the parameters common with all REST API calls, the following para
 |JSON
 |Body
 |Yes
-|Provides the required parameters for the backup. See the example below.
+|Provides the parameters for the backup. See the example below.
 |===
 
 ===== JSON input example

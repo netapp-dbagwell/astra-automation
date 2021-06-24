@@ -47,7 +47,7 @@ In addition to the parameters common with all REST API calls, the following para
 |JSON
 |Body
 |Yes
-|Provide the required resource values for the new app. See the example below and how it's used with the curl `--d @JSONinput` CLI input.
+|Provides the parameters for the cloned app. See the example below.
 |===
 
 ===== JSON input example

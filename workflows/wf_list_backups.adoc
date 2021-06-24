@@ -44,7 +44,7 @@ In addition to the parameters common with all REST API calls, the following para
 |managed app id
 |Path
 |Yes
-|Identifies the managed application owning the listed snapshots.
+|Identifies the managed application owning the listed backups.
 |===
 
 ===== Curl example: Return all backups for the app

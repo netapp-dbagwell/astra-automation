@@ -67,7 +67,7 @@ The HTTP methods or verbs supported by the API are presented in the table below.
 The following table summaries the HTTP headers used with the Astra REST API.
 
 [NOTE]
-See https://www.rfc-editor.org/rfc/rfc7232.txt[RFC 7232^] and https://www.rfc-editor.org/rfc/rfc7232.txt[RFC 7232^] for more information.
+See https://www.rfc-editor.org/rfc/rfc7232.txt[RFC 7232^] and https://www.rfc-editor.org/rfc/rfc7233.txt[RFC 7233^] for more information.
 
 [cols="30,15,55"*,options="header"]
 |===

@@ -15,8 +15,12 @@ summary:
 [.lead]
 You can create a new managed application by cloning an existing managed app.
 
-[NOTE]
-You can also clone an app based on an existing snapshot or backup.
+.Before you begin
+
+Note the following:
+
+* When cloning a managed app within the same cluster, the `sourceClusterID` (original) and 'clusterID' (target) must be the same.
+* xxx
 
 === 1. Select the managed app to clone
 
@@ -56,10 +60,10 @@ In addition to the parameters common with all REST API calls, the following para
   "type": "application/astra-managedApp",
   "version": "1.0",
   "name": "postgres1-postgresql-clone",
-  "clusterID": "30890586-d579-4d27-930f-a9633e59173b",
-  "sourceClusterID": "20890586-d579-4d27-930f-a9633e59173b",
+  "clusterID": "30880586-d579-4d27-930f-a9633e59173b",
+  "sourceClusterID": "30880586-d579-4d27-930f-a9633e59173b",
   "namespace": "davidns-postgres-app",
-  "sourceAppID": "f591ee59-ea90-4a9f-8e6c-d2b6e8647096"
+  "sourceAppID": "e591ee59-ea90-4a9f-8e6c-d2b6e8647096"
 }
 
 ===== Curl example: Clone an app

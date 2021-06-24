@@ -17,13 +17,13 @@ You can create a new managed application by cloning an existing managed app.
 
 === Before you begin
 
-Note the following:
+Note the following about this workflow:
 
-* This workflow does not use an existing app backup or snapshot.
-* Astra first creates a backup and then clones the app from the backup.
-* The `namespace` input parameter must be different than the current namespace and not exist in the cluster.
-* The example below clones within the same cluster.
-* To clone an app to a different cluster, you need to update the `clusterId` parameter.
+* An app backup or snapshot is not provided or used
+* The clone operation is performed within the same cluster
+
+[NOTE]
+To clone an app to a different cluster, you need to update the `clusterId` parameter in the JSON input.
 
 === 1. Select the managed app to clone
 

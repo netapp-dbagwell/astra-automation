@@ -17,23 +17,23 @@ These workflow describe how to clone and restore your managed applications.
 
 ==== Cloning an app
 
-Here are a few things to consider when cloning a managed application. The comments apply to the JSON input parameters in the body of the request.
+Here are a few things to consider when cloning an application. The parameters described are in the JSON input.
 
 Source cluster identifier::
 The value of `sourceClusterId` always identifies the cluster where the original app is installed.
 
 Cluster identifier::
-The value of `clusterId` always identifies the cluster where the new app will be installed. Note the following:
+The value of `clusterId` identifies the cluster where the new app will be installed.
 
-* When cloning within the same cluster, `clusterID` and `sourceClusterId` have the same values.
-* When cloning across clusters, `clusterId` must be the ID of the target cluster.
+* When cloning within the same cluster, `clusterID` and `sourceClusterId` must have the same value.
+* When cloning across clusters, `clusterId` must have the ID of the target cluster.
 
 Namespaces::
-When cloning an app, the `namespace` value must be different from the namespace of the original source app. Further, Astra will create namespace and it cannot already exist.
+When cloning an app, the `namespace` value must be different from the namespace of the original source app. Further, the namespace cannot exist and Astra will create it.
 
 Backups and snapshots::
-You can clone an application from either an existing backup or snapshot, using the `backupId` or `snapshot` parameters respectively. If you don't provide either a backup or snapshot, Astra will create a backup of the application first and then clone from the backup.
+You can clone an application from either an existing backup or snapshot using the `backupId` or `snapshot` parameters respectively. If you don't provide either a backup or snapshot, Astra will create a backup of the application first and then clone from the backup.
 
 ==== Restoring an app
 
-Restoring an application is very similar to the clone operation. The main difference is when restoring an app, you must have either a backup or snapshot.
+Restoring an application is very similar to the clone operation. The main difference when restoring an app is that you must have either a backup or snapshot.

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Application cloning
+= Cloning and restoring an app
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,18 +15,25 @@ summary:
 [.lead]
 These workflow describe how to clone and restore your managed applications.
 
-===== Cloning an app
+==== Cloning an app
 
-Here are a few things to consider when cloning a managed application.
+Here are a few things to consider when cloning a managed application. The comments apply to the JSON input parameters in the body of the request.
 
 Source cluster identifier::
-The value of `sourceClusterId` always identifies the cluster where the original app is running.
+The value of `sourceClusterId` always identifies the cluster where the original app is installed.
 
 Cluster identifier::
-The value of `clusterId` always identifies the target cluster where the new app will run.
+The value of `clusterId` always identifies the cluster where the new app will be installed. Note the following:
 
-* When cloning within the same cluster, `clusterID` and `sourceClusterId` are the same.
+* When cloning within the same cluster, `clusterID` and `sourceClusterId` have the same values.
 * When cloning across clusters, `clusterId` must be the ID of the target cluster.
 
 Namespaces::
-xxx
+When cloning an app, the `namespace` value must be different from the namespace of the original source app. Further, Astra will create namespace and it cannot already exist.
+
+Backups and snapshots::
+You can clone an application from either an existing backup or snapshot, using the `backupId` or `snapshot` parameters respectively. If you don't provide either a backup or snapshot, Astra will create a backup of the application first and then clone from the backup.
+
+==== Restoring an app
+
+Restoring an application is very similar to the clone operation. The main difference is when restoring an app, you must have either a backup or snapshot.

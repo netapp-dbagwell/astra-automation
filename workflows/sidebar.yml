@@ -30,7 +30,7 @@ entries:
         url: /workflows/wf_delete_snapshot.html
       - title: Delete backup
         url: /workflows/wf_delete_backup.html
-  - title: App cloning and restoring
+  - title: Cloning and restoring an app
     url: /workflows/wf_app_cloning.html
     entries:
       - title: Clone an app

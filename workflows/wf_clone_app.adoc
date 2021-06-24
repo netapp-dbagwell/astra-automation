@@ -15,13 +15,6 @@ summary:
 [.lead]
 You can create a new managed application by cloning an existing managed app.
 
-.Before you begin
-
-Note the following:
-
-* When cloning a managed app within the same cluster, the `sourceClusterID` (original) and 'clusterID' (target) must be the same.
-* xxx
-
 === 1. Select the managed app to clone
 
 Perform the workflow link:wf_list_man_apps.html[List the managed apps] and select application you want to clone. You'll need many of the resource values returned for the application.

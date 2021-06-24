@@ -13,4 +13,20 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-These workflow describe how to clone your managed applications, both within a cluster and across clusters.
+These workflow describe how to clone and restore your managed applications.
+
+===== Cloning an app
+
+Here are a few things to consider when cloning a managed application.
+
+Source cluster identifier::
+The value of `sourceClusterId` always identifies the cluster where the original app is running.
+
+Cluster identifier::
+The value of `clusterId` always identifies the target cluster where the new app will run.
+
+* When cloning within the same cluster, `clusterID` and `sourceClusterId` are the same.
+* When cloning across clusters, `clusterId` must be the ID of the target cluster.
+
+Namespaces::
+xxx

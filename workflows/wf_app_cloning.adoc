@@ -20,23 +20,23 @@ These workflow describe how to clone and restore your managed applications.
 Here are a few things to consider when cloning an application. The parameters described below are in the JSON input.
 
 Source cluster identifier::
-The value of `sourceClusterId` always identifies the cluster where the original app is installed.
+The value of `sourceClusterID` always identifies the cluster where the original app is installed.
 
 Cluster identifier::
-The value of `clusterId` identifies the cluster where the new app will be installed.
+The value of `clusterID` identifies the cluster where the new app will be installed.
 
-* When cloning within the same cluster, `clusterID` and `sourceClusterId` have the same value.
-* When cloning across clusters, the two values are different and `clusterId` will have the ID of the target cluster.
+* When cloning within the same cluster, `clusterID` and `sourceClusterID` have the same value.
+* When cloning across clusters, the two values are different and `clusterID` will have the ID of the target cluster.
 
 Namespaces::
 The `namespace` value must be different than the original source app. Further, the namespace for the clone cannot exist (Astra will create it).
 
 Backups and snapshots::
-You can clone an application from an existing backup or snapshot using the `backupId` or `snapshot` parameter respectively. If you don't provide a backup or snapshot, Astra will create a backup of the application first and then clone from the backup.
+You can clone an application from an existing backup or snapshot using the `backupID` or `snapshotID` parameter respectively. If you don't provide a backup or snapshot, Astra will create a backup of the application first and then clone from the backup.
 
 === Restoring an app
 
 Here are a few things to consider when cloning an application.
 
 * Restoring an application is very similar to the clone operation.
-* When restoring an app, you must provide either a backup or snapshot.
+* When restoring an app, you need to provide either a backup or snapshot.

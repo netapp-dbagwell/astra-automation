@@ -39,8 +39,6 @@ entries:
         url: /workflows/wf_clone_app_snapshot.html
       - title: Clone an app from a backup
         url: /workflows/wf_clone_app_backup.html
-      - title: Restore an app from a snapshot
-        url: /workflows/wf_restore_app_snapshot.html
       - title: Restore an app from a backup
         url: /workflows/wf_restore_app_backup.html
   - title: Support

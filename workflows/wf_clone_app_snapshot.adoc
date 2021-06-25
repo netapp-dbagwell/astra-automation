@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can create a new managed application by cloning it from an app snapshot.
+You can create a new application by cloning it from an app snapshot.
 
 === Before you begin
 
@@ -31,7 +31,7 @@ Perform the workflow link:wf_list_man_apps.html[List the managed apps] and selec
 
 === 2. Select the snapshot to use
 
-Perform the workflow link:wf_list_snapshot.html[List the snapshot] and select snapshot you want to use.
+Perform the workflow link:wf_list_snapshots.html[List the snapshots] and select snapshot you want to use.
 
 === 3. Clone the app
 

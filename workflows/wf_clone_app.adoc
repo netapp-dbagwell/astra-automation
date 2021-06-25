@@ -13,13 +13,13 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can create a new managed application by cloning an existing managed app.
+You can create a new application by cloning an existing managed app.
 
 === Before you begin
 
 Note the following about this workflow:
 
-* An app backup or snapshot is not provided or used
+* An app backup or snapshot is not used
 * The clone operation is performed within the same cluster
 
 [NOTE]

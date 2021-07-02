@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can create a managed application based on an application already known to Astra. When an application is managed, you can protect it by taking regular snapshots and backups.
+You can create a managed application based on an application already known to Astra. When an application is managed, you can protect it by taking regular backups and snapshots.
 
 === Before you begin
 
@@ -57,4 +57,4 @@ In addition to the parameters common with all REST API calls, the following para
 
 ===== Curl example: Manage an app
 [source,curl]
-curl --location -i --request POST'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps' --header 'Content-Type: application/astra-managedApp+json' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'  --d @JSONinput
+curl --location -i --request POST 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/k8s/v1/managedApps' --header 'Content-Type: application/astra-managedApp+json' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'  --d @JSONinput

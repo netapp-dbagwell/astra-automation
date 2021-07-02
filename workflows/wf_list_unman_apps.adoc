@@ -13,10 +13,10 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can list the applications that are currently not managed by Astra. You might do this to select an app to be managed.
+You can list the applications that are currently not managed by Astra. You might do this as part of selecting an app to be managed.
 
 [NOTE]
-This workflow lists all the Astra applications. You can look at the output and determine which apps are unmanaged by examining the `managedState` field.
+This workflow lists all the Astra applications. You can look at the output to determine which apps are unmanaged by examining the `managedState` field.
 
 === 1. List the applications
 

@@ -13,11 +13,13 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can remove a managed app when it's no longer needed. Removing a managed application also deletes all of the associated snapshots and backups.
+You can remove a managed app when it's no longer needed. Removing a managed application also deletes the associated schedules.
 
 === Before you begin
 
 You must have the ID of the managed app you want to unmanage. If needed you can use the workflow link:wf_list_man_apps.html[List the managed apps] to locate the application.
+
+The application's backups and snapshots are not automatically removed when it is deleted. If you no longer need the backups and snapshots, you should delete them before removing the application.
 
 === 1. Unmanaged the app
 

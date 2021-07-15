@@ -26,7 +26,7 @@ The Astra API has been created using REST technology and current best practices.
 
 ==== Support for the two Astra deployment models
 
-Astra Control Service is used within the public cloud environment while Astra Control Center is for your on-premises deployments. There is one Astra REST API supporting both of these deployment models. Note there are some differences in terms of the resources and workflows supported as indicated.
+Astra Control Service is used within the public cloud environment while Astra Control Center is for your on-premises deployments. There is one Astra REST API supporting both of these deployment models. Note there are some differences between the two in terms of the resources and workflows supported.
 
 ==== Clear mapping between REST endpoint resources and object model
 

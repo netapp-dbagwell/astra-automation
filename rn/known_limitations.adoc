@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rn/known-limitations.html
+permalink: rn/known_limitations.html
 keywords:
 summary:
 ---

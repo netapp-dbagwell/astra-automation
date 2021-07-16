@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rn/known-issues.html
+permalink: rn/known_issues.html
 keywords:
 summary:
 ---

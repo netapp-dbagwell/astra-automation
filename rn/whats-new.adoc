@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: rn/whats-new.html
+keywords:
+summary:
+---
+
+= What's new with the Astra REST API and automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp periodically updates Astra Control Service to bring you new features, enhancements, and bug fixes.
+
+== 29 July 2021
+
+This release is really cool.

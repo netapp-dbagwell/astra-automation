@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: rn/rn.html
+keywords:
+summary:
+---
+
+= Release notes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

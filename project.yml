@@ -2,6 +2,7 @@ sidebar:
   entries:
     - title: Astra automation docs
       url: /index.html
+    - section: rn
     - section: intro
     - section: get-started
     - section: rest-core

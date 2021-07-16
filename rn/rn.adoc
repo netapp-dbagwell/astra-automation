@@ -13,4 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+These notes describe the new features, known issues, and known limitations for this release of the Astra REST API.

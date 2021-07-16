@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-NetApp periodically updates Astra Control Service to bring you new features, enhancements, and bug fixes.
+NetApp periodically updates Astra REST API to bring you new features, enhancements, and bug fixes.
 
 == 29 July 2021
 

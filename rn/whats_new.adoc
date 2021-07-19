@@ -27,8 +27,12 @@ In addition to the Astra Control Service offering provided as a public cloud ser
 
 The number of resources accessible through the Astra REST has greatly expanded. Many of the new resources provide a foundation for the on-premises Astra Control Center offering. The new resources continue to be organized in three major categories. See link:../endpoints/resources.html[Resources] for more information.
 
-=== Support for OpenMetrics
+=== Additional endpoints supporting an Astra deployment
 
+OpenAPI support::
+xxx
+
+OpenMetrics support::
 xxx; ACC only
 
 == 15 April 2021

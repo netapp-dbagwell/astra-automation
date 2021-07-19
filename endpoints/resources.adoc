@@ -19,16 +19,22 @@ See link:../reference/api_reference.html[API reference] for more information.
 
 == Summary of resources for the Astra REST API
 
-The resource endpoints provided in the Astra REST API are organized in three categories
+The resource endpoints provided in the Astra REST API are organized in three categories.
 
 ===== Core resources
 
 The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
 
+* ASUP *(Q2)*
 * Credential
+* Entitlement *(Q2)*
 * Event
+* Feature *(Q2)*
+* License *(Q2)*
 * Notification
 * Role Binding
+* Setting *(Q2)*
+* Subscription *(Q2)*
 * Token
 * Unread notification
 * User
@@ -37,17 +43,32 @@ The core resource endpoints provide the foundational services needed to establis
 
 The managed application resource endpoints provide access to the managed Kubernetes applications. The endpoints include:
 
-* Application asset
-* Application backup
-* Application snapshot
-* Managed application
-* Schedule
+Application asset::
+xxx
+
+Application backup::
+xxx
+
+Application snapshot::
+xxx
+
+Managed application::
+xxx
+
+Schedule::
+xxx
 
 ===== Topology resources
 
 The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
 
 * App
+* Bucket *(Q2)*
+* Cloud *(Q2)*
+* Cluster *(Q2)*
+* Managed cluster *(Q2)*
+* Storage backend *(Q2)*
+* Storage class *(Q2)*
 * Volume
 
 == Format of the access path and URL

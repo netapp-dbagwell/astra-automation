@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: get-started/deployment_models.html
+keywords:
+summary:
+---
+
+= Deployment models
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
+>> Two
+>> Summary
+
+== Astra Control Service
+
+xxx
+
+== Astra Control Centers
+
+xxx

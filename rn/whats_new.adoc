@@ -17,4 +17,35 @@ NetApp periodically updates Astra REST API to bring you new features, enhancemen
 
 == 29 July 2021
 
-This release is really cool.
+This release includes bug fixes and a major expansion of the Astra REST API.
+
+=== Introduction of the Astra Control Center deployment model
+
+In addition to the Astra Control Service offering provided as a public cloud service, this release also includes the Astra Control Center on-premises deployment model. You need to install the control center offering at your site to manage your local Kubernetes environment. The two deployment models share the same REST API, with minor differences as noted in the documentation.
+
+=== Expansion of the accessible REST resources
+
+The number of resources accessible through the Astra REST has greatly expanded. Many of the new resources provide a foundation for the on-premises Astra Control Center offering. The new resources continue to be organized in three major categories. See link:../endpoints/resources.html[Resources] for more information.
+
+=== Support for OpenMetrics
+
+xxx; ACC only
+
+== 15 April 2021
+
+This release includes the following new features and enhancements.
+
+=== Introduction of the REST API
+
+The Astra REST API is now available for use with the Astra Control Service. It was created based on REST technologies and current best practices. The API provides a foundation for the automation of your Astra deployments and includes the following features and benefits.
+
+Resources::
+xxx; fourteen distinct
+
+API token access::
+xxx; security
+
+Support for collections::
+xxx; rich QP (see intro)
+
+The REST API provides a rich set of query parameters that can be used to access the resources collections. Some of the supported operations include filtering, sorting, and pagination.

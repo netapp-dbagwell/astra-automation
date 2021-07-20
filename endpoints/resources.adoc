@@ -13,27 +13,29 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can use the resources provided through REST API to automate the administration of an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to these resources which is useful as part of planning an automation deployment.
+You can use the resources provided through REST API to automate an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to these resources which is useful as part of planning an automation deployment.
 
 [NOTE]
-The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information. Also see link:../reference/api_reference.html[API reference] for more details about the Astra resources.
+The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information. Also see link:../reference/api_reference.html[API reference] for details about the Astra resources.
 
 == Primary Astra resources and endpoints
 
 The primary resource endpoints provided in the Astra REST API are organized in three categories.
 
-==== Core resources
+=== Core resources
 
 The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
 
 ASUP::
-(Q2) xxx
+(Q2)
+The ASUP resources represent the AutoSupport bundles used by NetApp support.
 
 Credential::
-xxx
+The credential resources contain security related information which can be used with Astra users, clusters, buckets, and storage backends.
 
 Entitlement::
-(Q2) xxx
+(Q2)
+The entitlement resources represent the features and capacities available for an account based on the active licenses and subscriptions.
 
 Event::
 xxx
@@ -65,7 +67,7 @@ xxx
 User::
 xxx
 
-==== Managed application resources
+=== Managed application resources
 
 The managed application resource endpoints provide access to the managed Kubernetes applications. The endpoints include:
 
@@ -84,7 +86,7 @@ xxx
 Schedule::
 xxx
 
-==== Topology resources
+=== Topology resources
 
 The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
 
@@ -112,14 +114,14 @@ Storage class::
 Volume::
 xxx
 
-== Additional Astra resources and endpoints
+== Additional resources and endpoints
 
 There are several additional resources and endpoints that you can use to support an Astra deployment.
 
-==== OpenAPI
+=== OpenAPI
 
 xxx
 
-==== OpenMetrics
+=== OpenMetrics
 
 xxx

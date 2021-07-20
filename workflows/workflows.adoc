@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Workflows
+= Common workflows
 :hardbreaks:
 :nofooter:
 :icons: font

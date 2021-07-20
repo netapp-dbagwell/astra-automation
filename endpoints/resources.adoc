@@ -22,6 +22,9 @@ The format of the path and full URL used to access the Astra resources is based 
 
 The primary resource endpoints provided in the Astra REST API are organized in three categories. The Astra release when the resource first became available is indicated for each.
 
+[NOTE]
+Each resource can be accessed with the full set of CRUD operations (create, read, update, delete) except where noted.
+
 === Core resources
 
 The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment.
@@ -39,31 +42,31 @@ Event::
 The event resources represent all the events occurring in the system, including the subset classified as notifications.
 
 Feature::
-(Q2) xxx
+The feature resources represent selected Astra features which you can query to determine if they are enabled or disabled in the system. Access is limited to read-only.
 
 License::
-(Q2) xxx
+The license resources represent the licenses available with an Astra account.
 
 Notification::
-xxx
+The notification resources represent Astra events that have a notification destination. Access is provided on a per-user basis.
 
 Role Binding::
-xxx
+The role binding resources represent the relationships between specific pairs of users and accounts. In addition to the linkage between the two, a set of permissions is specified for each through a specific role.
 
 Setting::
-(Q2) xxx
+The setting resources represent a collection of key-value pairs which describe a feature for a specific Astra account.
 
 Subscription::
-(Q2) xxx
+The subscription resources represent the active subscriptions for the Astra account.
 
 Token::
-xxx
+The token resources represent the tokens used to programmatically access the Astra REST API.
 
 Unread notification::
-xxx
+The unread notification resources represent notifications assigned to a specific user but not yet read.
 
 User::
-xxx
+The user resources represent Astra users able to access the system based on their associated role.
 
 === Managed application resources
 
@@ -115,6 +118,9 @@ xxx
 == Additional resources and endpoints
 
 There are several additional resources and endpoints that you can use to support an Astra deployment.
+
+[NOTE]
+These resources and endpoints are not included in the Astra API reference documentation.
 
 === OpenAPI
 

@@ -20,15 +20,14 @@ The format of the path and full URL used to access the Astra resources is based 
 
 == Primary Astra resources and endpoints
 
-The primary resource endpoints provided in the Astra REST API are organized in three categories.
+The primary resource endpoints provided in the Astra REST API are organized in three categories. The Astra release when the resource first became available is indicated for each.
 
 === Core resources
 
 The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
 
 ASUP::
-(Q2)
-The ASUP resources represent the AutoSupport bundles used by NetApp support.
+_21.07_ The ASUP resources represent the AutoSupport bundles used by NetApp support.
 
 Credential::
 The credential resources contain security related information which can be used with Astra users, clusters, buckets, and storage backends.

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= What's new with the Astra REST API and automation
+= What's new with the Astra REST API
 :hardbreaks:
 :nofooter:
 :icons: font

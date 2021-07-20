@@ -13,10 +13,10 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can use the resources provided through REST API to automate an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to these resources which is useful as part of planning an automation deployment.
+You can use the resources provided through REST API to automate an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to the REST resources which is useful as part of planning an automation deployment.
 
 [NOTE]
-The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information. Also see link:../reference/api_reference.html[API reference] for details about the Astra resources.
+The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information. Also see link:../reference/api_reference.html[API reference] for details about using the Astra resources.
 
 == Primary Astra resources and endpoints
 
@@ -24,20 +24,19 @@ The primary resource endpoints provided in the Astra REST API are organized in t
 
 === Core resources
 
-The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment. The endpoints include:
+The core resource endpoints provide the foundational services needed to establish and maintain the Astra runtime environment.
 
 ASUP::
-_21.07_ The ASUP resources represent the AutoSupport bundles used by NetApp support.
+The ASUP resources represent the AutoSupport bundles used by NetApp support.
 
 Credential::
 The credential resources contain security related information which can be used with Astra users, clusters, buckets, and storage backends.
 
 Entitlement::
-(Q2)
 The entitlement resources represent the features and capacities available for an account based on the active licenses and subscriptions.
 
 Event::
-xxx
+The event resources represent all the events occurring in the system, including the subset classified as notifications.
 
 Feature::
 (Q2) xxx
@@ -68,7 +67,7 @@ xxx
 
 === Managed application resources
 
-The managed application resource endpoints provide access to the managed Kubernetes applications. The endpoints include:
+The managed application resource endpoints provide access to the managed Kubernetes applications.
 
 Application asset::
 xxx
@@ -87,7 +86,7 @@ xxx
 
 === Topology resources
 
-The topology resource endpoints provide access to the unmanaged applications and storage resources. The endpoints include:
+The topology resource endpoints provide access to the unmanaged applications and storage resources.
 
 App::
 xxx

@@ -2,6 +2,11 @@ section: workflows
 title: Common workflows
 url: /workflows/workflows.html
 entries:
+  - title: Identity and access
+    url: /workflows/wf_identity.html
+    entries:
+      - title: List users
+        url: /workflows/wf_list_unman_apps.html
   - title: App control
     url: /workflows/wf_app_control.html
     entries:

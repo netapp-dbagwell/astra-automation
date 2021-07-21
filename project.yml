@@ -9,6 +9,7 @@ sidebar:
     - section: additional
     - section: endpoints
     - section: workflows
+    - section: workflows_acc
     - section: python
     - section: reference
     - section: information
@@ -66,7 +67,7 @@ homepage:
         - title: Preparation
           summary: Prepare to use the Astra workflows.
           url: /get-started/prepare_to_use_workflows.html
-        - title: Workflows by category
+        - title: Common workflows by category
           summary: The workflows are organized in several different categories.
           url: /workflows/workflows.html
     - title: Python

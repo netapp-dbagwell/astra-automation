@@ -1,0 +1,9 @@
+section: workflows_acc
+title: Control Center workflows
+url: /workflows_acc/workflows_acc.html
+entries:
+  - title: Identity and access
+    url: /workflows/wf_identity.html
+    entries:
+      - title: List users
+        url: /workflows/wf_list_users.html

@@ -13,4 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-These workflows allow you to manage user identity and related access controls.
+These workflows allow you to manage users and identity, including credentials, roles, and tokens.

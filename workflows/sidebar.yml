@@ -6,7 +6,7 @@ entries:
     url: /workflows/wf_identity.html
     entries:
       - title: List users
-        url: /workflows/wf_list_unman_apps.html
+        url: /workflows/wf_list_users.html
   - title: App control
     url: /workflows/wf_app_control.html
     entries:

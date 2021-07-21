@@ -15,6 +15,9 @@ summary:
 [.lead]
 You can use the resources provided through REST API to automate an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to the REST resources which is useful as part of planning an automation deployment.
 
+[IMPORTANT]
+DP: Review the text at the Swagger page for each of the resources.
+
 [NOTE]
 The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information. Also see link:../reference/api_reference.html[API reference] for details about using the Astra resources.
 
@@ -73,19 +76,19 @@ The user resources represent Astra users able to access the system based on thei
 The managed application resource endpoints provide access to the managed Kubernetes applications.
 
 Application asset::
-xxx
+The application asset resources represent internal collections of state information needed to manage the Astra applications.
 
 Application backup::
-xxx
+The application backup resources represent backups of the managed applications.
 
 Application snapshot::
-xxx
+The application backup resources represent snapshots of the managed applications.
 
 Managed application::
-xxx
+The managed app resources represent Kubernetes applications that are managed by Astra.
 
 Schedule::
-xxx
+The schedule resources represent data protection operations that are scheduled for the managed applications.
 
 === Topology resources
 

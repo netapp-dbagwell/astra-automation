@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Control Center workflows
+= Control center workflows
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-XXX
-
-The common Astra workflows can be used with both Astra Control deployment models. They are organized in different categories to make it easier to locate the one you want.
+There are several workflows that you can only use with the Astra Control Center deployment model. They are organized in different categories to make it easier to locate the one you want.
 
 [NOTE]
 Before using any of the Astra REST API workflows, make sure to review link:../get-started/prepare_to_use_workflows.html[Prepare to use the workflows].

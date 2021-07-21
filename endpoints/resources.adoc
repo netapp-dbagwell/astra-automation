@@ -125,10 +125,9 @@ There are several additional resources and endpoints that you can use to support
 [NOTE]
 These resources and endpoints are not included in the Astra API reference documentation.
 
-=== OpenAPI
-
+OpenAPI::
 xxx
 
-=== OpenMetrics
-
+OpenMetrics::
 xxx
+>> ACC only ?

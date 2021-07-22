@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Deployment models
+= Astra deployment models
 :hardbreaks:
 :nofooter:
 :icons: font

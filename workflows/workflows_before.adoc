@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_app_cloning.html
+permalink: workflows/workflows_before.html
 keywords:
 summary:
 ---
 
-= Cloning and restoring an app
+= Before you begin
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,35 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+The common Astra workflows can be used with both Astra Control deployment models.
+
+== General preparation
+
+xxx
+
+Before using any of the Astra REST API workflows, make sure to review link:../get-started/prepare_to_use_workflows.html[Prepare to use the workflows].
+
+== Workflow categories
+
+The workflows are organized in different categories to make it easier to locate the one you want.
+
+=== Identity and access
+
+These workflows allow you to manage users and identity, including credentials, roles, and tokens.
+
+=== Application control
+
+These workflows allow you to control the managed and unmanaged applications. You can list the apps as well as create and remove a managed app.
+
+=== Application protection
+
+You can use these workflows to protect your managed applications through snapshots and backups.
+
+=== Cloning and restoring apps
+
 These workflow describe how to clone and restore your managed applications.
 
-=== Cloning an app
+==== Cloning an app
 
 Here are a few things to consider when cloning an application. The parameters described below are part of the JSON input.
 
@@ -34,9 +60,13 @@ The `namespace` value must be different than the original source app. Further, t
 Backups and snapshots::
 You can optionally clone an application from an existing backup or snapshot using the `backupID` or `snapshotID` parameters. If you don't provide a backup or snapshot, Astra will create a backup of the application first and then clone from the backup.
 
-=== Restoring an app
+==== Restoring an app
 
 Here are a few things to consider when restoring an application.
 
 * Restoring an application is very similar to the clone operation.
 * When restoring an app, you must provide either a backup or snapshot.
+
+=== Support
+
+There are several workflows available to debug and support your applications as well as the general Kubernetes environment.

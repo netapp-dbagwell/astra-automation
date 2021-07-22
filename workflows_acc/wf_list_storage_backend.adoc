@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows_acc/wf_list_storage_backends.html
+keywords:
+summary:
+---
+
+= List storage backends
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

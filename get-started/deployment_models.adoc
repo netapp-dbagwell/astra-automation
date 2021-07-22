@@ -17,9 +17,14 @@ xxx
 >> Two
 >> Summary
 
+[IMPORTANT]
+Look at the two doc sites to get some basic information. Also, will ACS link change?
+
 == Astra Control Service
 
 xxx
+
+See https://docs.netapp.com/us-en/astra/[Astra Control Service documentation^]
 
 == Astra Control Centers
 

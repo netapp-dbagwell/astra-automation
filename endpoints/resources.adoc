@@ -95,28 +95,28 @@ The schedule resources represent data protection operations that are scheduled f
 The topology resource endpoints provide access to the unmanaged applications and storage resources.
 
 App::
-xxx
+The app resources represent all of the Kubernetes applications, including those unmanaged by Astra.
 
 Bucket::
-(Q2) xxx
+The bucket resources represent the S3 cloud buckets used to store backups of the applications managed by Astra.
 
 Cloud::
-(Q2) xxx
+The cloud resources represent clouds that Astra clients can connect to in order to manage clusters and applications.
 
 Cluster::
-(Q2) xxx
+The cluster resources represent the Kubernetes clusters not managed by Kubernetes.
 
 Managed cluster::
-(Q2) xxx
+The managed cluster resources represent the Kubernetes clusters currently managed by Kubernetes.
 
 Storage backend::
-(Q2) xxx
+The storage backend resources represent providers of storage services that can be used by Astra managed clusters and applications.
 
 Storage class::
-(Q2) xxx
+The storage class resources represent different classes or types of storage known and available to a specific managed cluster.
 
 Volume::
-xxx
+The volume resources represent the Kubernetes storage volumes associated with the managed applications.
 
 == Additional resources and endpoints
 

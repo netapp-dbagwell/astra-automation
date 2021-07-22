@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-There are several steps you should take to prepare to use the Astra REST API.
+You can quickly prepare to get started using the Astra REST API by reviewing the steps described below.
 
 ===== Review REST concepts and implementation
 

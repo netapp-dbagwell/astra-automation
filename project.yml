@@ -8,8 +8,8 @@ sidebar:
     - section: rest-core
     - section: additional
     - section: endpoints
-    - section: workflows
     - section: workflows_acc
+    - section: workflows
     - section: python
     - section: reference
     - section: information

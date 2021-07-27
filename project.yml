@@ -76,8 +76,11 @@ homepage:
     - title: Python
       links:
         - title: Before you begin
-          summary: Prepare to run the sample Python scripts.
+          summary: Prepare to run the sample Python script.
           url: /python/python_before.html
         - title: List the managed apps
           summary: Run a sample script to list the managed apps.
           url: /python/py_list_man_apps.html
+        - title: NetApp Astra toolkit
+          summary: Access a complete set of Python code samples.
+          url: /python/astra_toolkit.html

@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Astra toolkit
+= NetApp Astra toolkit
 :hardbreaks:
 :nofooter:
 :icons: font

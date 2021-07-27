@@ -1,9 +1,0 @@
-section: workflows_acc
-title: Control center workflows
-entries:
-  - title: Before you begin
-    url: /workflows_acc/workflows_acc_before.html
-  - title: Storage backends
-    entries:
-      - title: List storage backends
-        url: /workflows_acc/wf_list_storage_backends.html

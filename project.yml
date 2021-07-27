@@ -8,7 +8,7 @@ sidebar:
     - section: rest-core
     - section: additional
     - section: endpoints
-    - section: workflows_acc
+    - section: workflows_infra
     - section: workflows
     - section: python
     - section: reference

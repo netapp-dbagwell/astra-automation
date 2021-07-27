@@ -1,0 +1,9 @@
+section: workflows_infra
+title: Infrastructure workflows
+entries:
+  - title: Before you begin
+    url: /workflows_infra/workflows_infra_before.html
+  - title: Storage backends
+    entries:
+      - title: List storage backends
+        url: /workflows_infra/wf_list_storage_backends.html

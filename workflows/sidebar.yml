@@ -1,12 +1,8 @@
 section: workflows
-title: Common workflows
+title: Management workflows
 entries:
   - title: Before you begin
     url: /workflows/workflows_before.html
-  - title: Identity and access
-    entries:
-      - title: List users
-        url: /workflows/wf_list_users.html
   - title: App control
     entries:
       - title: List unmanaged apps

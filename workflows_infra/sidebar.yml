@@ -3,6 +3,10 @@ title: Infrastructure workflows
 entries:
   - title: Before you begin
     url: /workflows_infra/workflows_infra_before.html
+  - title: Identity and access
+    entries:
+      - title: List users
+        url: /workflows_infra/wf_list_users.html
   - title: Storage backends
     entries:
       - title: List storage backends

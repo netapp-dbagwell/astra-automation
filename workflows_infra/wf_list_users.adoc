@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_list_users.html
+permalink: workflows_infra/wf_list_users.html
 keywords:
 summary:
 ---

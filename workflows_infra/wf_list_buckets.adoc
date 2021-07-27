@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows_infra/wf_list_buckets.html
+keywords:
+summary:
+---
+
+= List buckets
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

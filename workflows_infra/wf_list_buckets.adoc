@@ -13,4 +13,41 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+You can list the S3 buckets defined for a specific Astra account.
+
+=== 1. List the buckets
+
+Perform the following REST API call.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/account/{accountID}/topology/v1/buckets
+|===
+
+===== Additional input parameters
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|include
+|Query
+|No
+|Optionally select the values you want returned in the response.
+|===
+
+===== Curl example: Return all data for all buckets
+[source,curl]
+curl --location -i --request GET 'https://astra.netapp.io/accounts/<ACCOUNT_ID>/topology/v1/buckets' --header 'Accept: */*' --header 'Authorization: Bearer <API_TOKEN>'
+
+===== JSON output example
+[source,json]
+{
+}

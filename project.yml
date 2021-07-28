@@ -71,7 +71,7 @@ homepage:
           summary: The workflows needed to maintain the Astra runtime infrastructure.
           url: /workflows_infra/workflows_infra_before.html
         - title: Management workflows
-          summary: The workflows used to administer the managed clusters and apps.
+          summary: The common workflows used to administer the managed clusters and apps.
           url: /workflows/workflows_before.html
     - title: Python
       links:

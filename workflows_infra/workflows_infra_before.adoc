@@ -17,7 +17,7 @@ The common Astra workflows can be used with both Astra Control deployment models
 
 == General preparation
 
-Before using any of the REST API workflows, make sure to review link:../get-started/prepare_to_use_workflows.html[Prepare to use the workflows].
+Before using any of the Astra workflows, make sure to review link:../get-started/prepare_to_use_workflows.html[Prepare to use the workflows].
 
 == Workflow categories
 

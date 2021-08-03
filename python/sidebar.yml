@@ -5,5 +5,3 @@ entries:
     url: /python/python_before.html
   - title: List the managed apps
     url: /python/py_list_man_apps.html
-  - title: NetApp Astra toolkit
-    url: /python/astra_toolkit.html

@@ -80,12 +80,12 @@ Here are some of the common reserved keywords used in the curl examples. This li
 
 == Workflow categories
 
-xxx
+There are two broad categories of Astra workflows available based on your deployment model. If you are using Astra Control Center, you should start with the infrastructure workflows and then proceed to the management workflows. When using Astra Control Service, you can typically go directly to the management workflows.
 
 === Infrastructure workflows
 
-xxx
+These workflows deal with the Astra infrastructure, including credentials, buckets, storage backends, clusters. They are needed with Astra Control Center but in most cases can also be used with Astra Control Service. The workflows focus on the tasks to establish and maintain a managed cluster.
 
 === Management workflows
 
-xxx
+You can use these workflows after you have a managed cluster. The workflows focus on application protection through operations such as snapshots, backups, and cloning.

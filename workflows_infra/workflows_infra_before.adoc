@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-The common Astra workflows can be used with both Astra Control deployment models.
+You can use these workflows to create and maintain the infrastructure used with the Astra Control Center deployment model. In most case, the workflows can also be used with Astra Control Service.
 
 == General preparation
 
@@ -23,17 +23,23 @@ Before using any of the Astra workflows, make sure to review link:../get-started
 
 The workflows are organized in different categories to make it easier to locate the one you want.
 
-==== Identity and access
+=== Identity and access
 
-These workflows allow you to manage identity, including users and credentials.
+These workflows allow you to manage identity and how Astra is accessed. Workflows using the following resources are available:
+
+* Users
+* Credentials
+* Tokens
+
+=== Buckets
+
+xxx
+>> S3
 
 === Storage backends
 
 xxx
 
->> These workflows allow you to manage users and identity, including credentials, roles, and tokens.
-
->>>>>>>>>>>>>>
 
 When storage classes are listed for unmanaged clusters, additional NetApp-provided storage classes are added to the collection. These are indicated by the resource "available" key having the value of "Eligible".
 

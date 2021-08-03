@@ -77,3 +77,15 @@ Here are some of the common reserved keywords used in the curl examples. This li
 |Path
 |The UUIDv4 value identifying the managed application for the API call.
 |===
+
+== Workflow categories
+
+xxx
+
+=== Infrastructure workflows
+
+xxx
+
+=== Management workflows
+
+xxx

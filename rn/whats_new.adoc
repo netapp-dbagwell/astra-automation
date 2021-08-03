@@ -15,7 +15,7 @@ summary:
 [.lead]
 NetApp periodically updates Astra REST API to bring you new features, enhancements, and bug fixes.
 
-== 29 July 2021
+== 5 August 2021
 
 This release includes bug fixes and a major expansion of the Astra REST API.
 
@@ -25,7 +25,7 @@ In addition to the Astra Control Service offering provided as a public cloud ser
 
 === Expansion of the primary REST resources
 
-The number of resources accessible through the Astra REST has greatly expanded, with many of the new resources providing a foundation for the on-premises Astra Control Center offering. The new resources include: ASUP, Entitlement, Feature, License, Setting, Subscription, Bucket, Cloud, Cluster, Managed cluster, Storage backend, and Storage class. See link:../endpoints/resources.html[Resources] for more information.
+The number of resources accessible through the Astra REST has greatly expanded, with many of the new resources providing a foundation for the on-premises Astra Control Center offering. The new resources include: ASUP, entitlement, feature, license, setting, subscription, bucket, cloud, cluster, managed cluster, storage backend, and storage class. See link:../endpoints/resources.html[Resources] for more information.
 
 === Additional endpoints supporting an Astra deployment
 
@@ -35,7 +35,7 @@ OpenAPI support::
 The OpenAPI endpoints provide access to the current OpenAPI JSON document and other related resources.
 
 OpenMetrics support::
-The OpenMetrics endpoints provide access to the account metrics through the OpenMetrics resource. Support is provided with the Astra Control Center deployment model.
+The OpenMetrics endpoints provide access to the account metrics through the OpenMetrics resource. Support is available with the Astra Control Center deployment model.
 
 == 15 April 2021
 
@@ -46,12 +46,10 @@ This release includes the following new features and enhancements.
 The Astra REST API is now available for use with the Astra Control Service. It was created based on REST technologies and current best practices. The API provides a foundation for the automation of your Astra deployments and includes the following features and benefits.
 
 Resources::
-xxx; fourteen distinct
+There are fourteen REST resources available.
 
 API token access::
-xxx; security
+Access to the REST API is provided through an API access token which you can generate through the web user interface.
 
 Support for collections::
-xxx; rich QP (see intro)
-
-The REST API provides a rich set of query parameters that can be used to access the resources collections. Some of the supported operations include filtering, sorting, and pagination.
+There is a rich set of query parameters which can be used to access the resources collections. Some of the supported operations include filtering, sorting, and pagination.

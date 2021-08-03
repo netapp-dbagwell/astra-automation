@@ -17,19 +17,13 @@ The common Astra workflows can be used with both Astra Control deployment models
 
 == General preparation
 
-xxx
-
-Before using any of the Astra REST API workflows, make sure to review link:../get-started/prepare_to_use_workflows.html[Prepare to use the workflows].
+Before using any of the REST API workflows, make sure to review link:../get-started/prepare_to_use_workflows.html[Prepare to use the workflows].
 
 == Workflow categories
 
 The workflows are organized in different categories to make it easier to locate the one you want.
 
-=== Identity and access
-
-These workflows allow you to manage users and identity, including credentials, roles, and tokens.
-
-=== Application control
+==== Application control
 
 These workflows allow you to control the managed and unmanaged applications. You can list the apps as well as create and remove a managed app.
 

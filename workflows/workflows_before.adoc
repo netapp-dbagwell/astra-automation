@@ -23,7 +23,6 @@ Before using any of the Astra workflows, make sure to review link:../get-started
 
 The workflows are organized in different categories to make it easier to locate the one you want.
 
-
 [cols="25,75"*,options="header"]
 |===
 |Category
@@ -38,7 +37,7 @@ The workflows are organized in different categories to make it easier to locate 
 |There are several workflows available to debug and support your applications as well as the general Kubernetes environment.
 |===
 
-== Cloning and restoring apps
+== Additional considerations
 
 xxx
 

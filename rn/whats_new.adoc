@@ -17,7 +17,7 @@ NetApp periodically updates Astra REST API to bring you new features, enhancemen
 
 == 5 August 2021
 
-This release includes a major expansion of the Astra REST API.
+This release includes the introduction of a new Astra deployment model and a major expansion of the REST API.
 
 === Astra Control Center deployment model
 

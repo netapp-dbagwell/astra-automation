@@ -23,19 +23,26 @@ Before using any of the Astra workflows, make sure to review link:../get-started
 
 The workflows are organized in different categories to make it easier to locate the one you want.
 
-=== Application control
 
-These workflows allow you to control the managed and unmanaged applications. You can list the apps as well as create and remove a managed app.
+[cols="25,75"*,options="header"]
+|===
+|Category
+|Description
+|Application control
+|These workflows allow you to control the managed and unmanaged applications. You can list the apps as well as create and remove a managed app.
+|Application protection
+|You can use these workflows to protect your managed applications through snapshots and backups.
+|Cloning and restoring apps
+|These workflow describe how to clone and restore your managed applications.
+|Support
+|There are several workflows available to debug and support your applications as well as the general Kubernetes environment.
+|===
 
-=== Application protection
+== Cloning and restoring apps
 
-You can use these workflows to protect your managed applications through snapshots and backups.
+xxx
 
-=== Cloning and restoring apps
-
-These workflow describe how to clone and restore your managed applications.
-
-===== Cloning an app
+==== Cloning an app
 
 There are a few things to consider when cloning an application. The parameters described below are part of the JSON input.
 
@@ -60,7 +67,3 @@ Here are a few things to consider when restoring an application.
 
 * Restoring an application is very similar to the clone operation.
 * When restoring an app, you must provide either a backup or snapshot.
-
-=== Support
-
-There are several workflows available to debug and support your applications as well as the general Kubernetes environment.

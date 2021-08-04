@@ -13,12 +13,12 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can use the resources provided through REST API to automate an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to the REST resources which is helpful when planning an automation deployment.
+You can use the resources provided through REST API to automate an Astra deployment. Each resource is access through one or more endpoints. This section provides an introduction to the REST resources which you can use as part of planning an automation deployment.
 
 [NOTE]
 The format of the path and full URL used to access the Astra resources is based on several values. See link:../rest-core/url_format.html[URL format] for more information. Also see link:../reference/api_reference.html[API reference] for details about using the Astra resources and endpoints.
 
-== Primary Astra resources and endpoints
+== Astra REST resources and endpoints
 
 The primary resource endpoints provided in the Astra REST API are organized in three categories. Each resource can be accessed with the full set of CRUD operations (create, read, update, delete) except where noted.
 

@@ -21,7 +21,7 @@ Before using any of the Astra workflows, make sure to review link:../get-started
 
 == Workflow categories
 
-The workflows are organized in different categories to make it easier to locate the one you want.
+The infrastructure workflows are organized in different categories to make it easier to locate the one you want.
 
 [cols="25,75"*,options="header"]
 |===

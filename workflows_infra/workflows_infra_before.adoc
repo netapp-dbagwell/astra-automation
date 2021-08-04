@@ -44,3 +44,7 @@ xxx
 When storage classes are listed for unmanaged clusters, additional NetApp-provided storage classes are added to the collection. These are indicated by the resource "available" key having the value of "Eligible".
 
 When storage classes are listed for managed clusters, only the actual storage classes available to the cluster are included in the collection.
+
+=== Clusters
+
+xxx

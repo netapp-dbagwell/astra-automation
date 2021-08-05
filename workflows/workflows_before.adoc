@@ -41,7 +41,7 @@ The management workflows are organized in different categories to make it easier
 
 There are a several additional considerations when using the management workflows.
 
-==== Cloning an app
+=== Cloning an app
 
 There are a few things to consider when cloning an application. The parameters described below are part of the JSON input.
 
@@ -60,7 +60,7 @@ The `namespace` value must be different than the original source app. Further, t
 Backups and snapshots::
 You can optionally clone an application from an existing backup or snapshot using the `backupID` or `snapshotID` parameters. If you don't provide a backup or snapshot, Astra will create a backup of the application first and then clone from the backup.
 
-===== Restoring an app
+==== Restoring an app
 
 Here are a few things to consider when restoring an application.
 

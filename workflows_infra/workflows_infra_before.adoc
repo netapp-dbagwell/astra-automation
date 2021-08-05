@@ -31,8 +31,8 @@ The infrastructure workflows are organized in different categories to make it ea
 |These workflows allow you to manage identity and how Astra is accessed. The resources include users, credentials, and tokens.
 |Buckets
 |You can use these workflows to create and manage the S3 buckets used to store backups.
-|Storage backends
-|These workflows allow you to add and maintain storage backends holding the persistent volumes.
+|Storage
+|These workflows allow you to add and maintain storage backends and volumes.
 |Clusters
 |You can add managed Kubernetes clusters which allows you to protect and support the applications they contain.
 |===

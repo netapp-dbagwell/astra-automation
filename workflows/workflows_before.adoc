@@ -16,7 +16,7 @@ summary:
 You can use these workflows as part of administering the applications within an Astra managed cluster.
 
 [NOTE]
-These workflows can be expanded and enhanced by NetApp at any time. You should review these pages on a periodic basis.
+These workflows can be expanded and enhanced by NetApp at any time and so you should review them periodically.
 
 == General preparation
 

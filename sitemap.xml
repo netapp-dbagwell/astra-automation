@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/information/additional_resources.html</loc>
+      
+      <lastmod>2021-08-05T18:10:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/reference/api_reference.html</loc>
+      
+      <lastmod>2021-08-04T14:44:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/python/astra_toolkit.html</loc>
+      
+      <lastmod>2021-08-03T18:45:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/get-started/before_get_started.html</loc>
+      
+      <lastmod>2021-08-04T18:01:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/additional/diagnostics_support.html</loc>
+      
+      <lastmod>2021-04-14T21:21:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/get-started/get_api_token.html</loc>
+      
+      <lastmod>2021-08-04T18:01:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/get-started/hello_world.html</loc>
+      
+      <lastmod>2021-08-04T18:01:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/rest-core/http_details.html</loc>
+      
+      <lastmod>2021-06-24T16:38:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/</loc>
+      
+      <lastmod>2021-04-11T15:55:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/intro/introduction.html</loc>
+      
+      <lastmod>2021-08-12T16:11:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/rn/known_issues.html</loc>
+      
+      <lastmod>2021-07-16T20:30:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/rn/known_limitations.html</loc>
+      
+      <lastmod>2021-07-16T20:30:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/legal-notices.html</loc>
+      
+      <lastmod>2021-04-19T13:45:54+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/get-started/prepare_to_use_workflows.html</loc>
+      
+      <lastmod>2021-08-04T23:58:03+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/python/py_list_man_apps.html</loc>
+      
+      <lastmod>2021-06-21T13:13:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/python/python_before.html</loc>
+      
+      <lastmod>2021-08-05T18:10:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/endpoints/resources.html</loc>
+      
+      <lastmod>2021-08-04T19:57:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/rest-core/resources_collections.html</loc>
+      
+      <lastmod>2021-04-15T15:00:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/rest-core/rest_web_services.html</loc>
+      
+      <lastmod>2021-07-22T16:40:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation//search.html</loc>
+      
+      <lastmod>2021-09-13T04:12:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/additional/security.html</loc>
+      
+      <lastmod>2021-08-04T18:01:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/rest-core/url_format.html</loc>
+      
+      <lastmod>2021-04-15T15:22:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_clone_app.html</loc>
+      
+      <lastmod>2021-06-25T15:31:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_clone_app_backup.html</loc>
+      
+      <lastmod>2021-06-25T15:07:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_clone_app_snapshot.html</loc>
+      
+      <lastmod>2021-06-25T15:31:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_create_backup.html</loc>
+      
+      <lastmod>2021-06-24T13:38:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_create_snapshot.html</loc>
+      
+      <lastmod>2021-06-24T13:38:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_delete_backup.html</loc>
+      
+      <lastmod>2021-07-21T17:39:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_delete_failed_app.html</loc>
+      
+      <lastmod>2021-06-24T13:38:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_delete_snapshot.html</loc>
+      
+      <lastmod>2021-06-24T13:38:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_get_man_app.html</loc>
+      
+      <lastmod>2021-07-02T13:58:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_list_backups.html</loc>
+      
+      <lastmod>2021-06-24T13:38:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows_infra/wf_list_buckets.html</loc>
+      
+      <lastmod>2021-08-05T13:06:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_list_man_apps.html</loc>
+      
+      <lastmod>2021-06-22T14:12:35+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows_infra/wf_list_man_clusters.html</loc>
+      
+      <lastmod>2021-08-05T13:06:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_list_notifications.html</loc>
+      
+      <lastmod>2021-06-22T19:44:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_list_snapshots.html</loc>
+      
+      <lastmod>2021-06-24T13:38:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows_infra/wf_list_storage_backends.html</loc>
+      
+      <lastmod>2021-08-05T13:06:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_list_unman_apps.html</loc>
+      
+      <lastmod>2021-07-21T17:39:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows_infra/wf_list_users.html</loc>
+      
+      <lastmod>2021-07-27T16:25:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_manage_app.html</loc>
+      
+      <lastmod>2021-07-02T13:58:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_restore_app_backup.html</loc>
+      
+      <lastmod>2021-06-25T15:07:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/wf_unmanage_app.html</loc>
+      
+      <lastmod>2021-07-02T13:58:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/rn/whats_new.html</loc>
+      
+      <lastmod>2021-08-04T19:57:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows/workflows_before.html</loc>
+      
+      <lastmod>2021-08-06T12:53:50+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/workflows_infra/workflows_infra_before.html</loc>
+      
+      <lastmod>2021-08-06T12:53:50+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/astra-automation/additional/working_with_collections.html</loc>
+      
+      <lastmod>2021-04-15T12:31:57+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
